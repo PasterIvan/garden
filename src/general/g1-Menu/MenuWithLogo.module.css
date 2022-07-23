@@ -1,0 +1,19 @@
+.menuWithLogo {
+    /*max-width: 1170px;*/
+    /*display: flex;*/
+    justify-content: space-between;
+    /*align-items: center;*/
+    font-weight: 700;
+    font-size: 32px;
+    color: #374A3D;
+}
+
+.logo {
+   /* display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+}
+
+.text {
+
+}

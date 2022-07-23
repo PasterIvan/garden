@@ -1,0 +1,22 @@
+.header {
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    height: 87px;
+    display: flex;
+
+    flex-direction: column;
+}
+
+.contacts {
+    align-self: flex-end;
+}
+
+img {
+    position: a;
+    z-index: 5;
+}
