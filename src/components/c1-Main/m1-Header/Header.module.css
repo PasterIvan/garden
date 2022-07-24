@@ -1,0 +1,38 @@
+.background {
+    background: url("./Picture/img/picture.svg");
+    max-width: 1600px;
+    height: 876px;
+    left: 0;
+    top: -337px;
+    z-index: -5;
+}
+
+.header {
+    background-color: #FFFFFF;
+    min-height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flower {
+    display: block;
+    position: absolute;
+    left: 2.06%;
+    right: 89.55%;
+    top: 0%;
+    bottom: 97.84%;
+}
+
+.menu {
+    width: 1170px;
+    min-height: 87px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.contacts {
+    align-self: flex-end;
+}
+

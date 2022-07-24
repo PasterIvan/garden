@@ -1,0 +1,11 @@
+.icons {
+   max-width: 572px;
+   min-height: 365px;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+.icons div {
+   display: flex;
+   flex-wrap: wrap;
+}

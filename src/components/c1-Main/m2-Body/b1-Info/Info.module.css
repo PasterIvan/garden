@@ -1,0 +1,7 @@
+.info {
+    min-height: 606px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}

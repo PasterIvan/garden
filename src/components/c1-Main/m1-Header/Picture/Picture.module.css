@@ -1,0 +1,38 @@
+.picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text1 {
+    font-family: "Fredoka";
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 76px;
+    color: #374A3D;
+}
+
+.text1 div {
+    display: inline-block;
+    color: #0CA941;
+}
+
+.text2 {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 32px;
+    color: #707070;
+}
+
+.button {
+    width: 234px;
+    height: 68px;
+    background: url("./img/button/Ellipse.svg");
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

@@ -1,19 +1,26 @@
 .menuWithLogo {
-    /*max-width: 1170px;*/
-    /*display: flex;*/
+    max-width: 1170px;
+    display: flex;
     justify-content: space-between;
-    /*align-items: center;*/
+    flex-wrap: wrap;
     font-weight: 700;
     font-size: 32px;
     color: #374A3D;
+
 }
 
 .logo {
-   /* display: flex;
-    justify-content: space-between;
-    align-items: center;*/
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    display: flex;
+    align-items: center;
 }
 
 .text {
-
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
