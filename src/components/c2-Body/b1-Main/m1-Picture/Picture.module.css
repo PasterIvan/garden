@@ -1,4 +1,24 @@
 .picture {
+    /*min-width: 1600px;*/
+    /*background: url("./img/picture.svg");*/
+    /*height: 876px;*/
+    /*left: 0;*/
+    /*top: -337px;*/
+    /*z-index: -5;*/
+}
+
+.content {
+    max-width: 1170px;
+    min-height: 876px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.texts {
+    max-width: 616px;
+    min-height: 233px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -27,7 +47,7 @@
 .button {
     width: 234px;
     height: 68px;
-    background: url("./img/button/Ellipse.svg");
+    background: url("img/button/Ellipse.svg");
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;

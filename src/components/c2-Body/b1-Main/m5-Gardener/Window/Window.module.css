@@ -1,9 +1,8 @@
 .border {
-    max-width: 1171px;
+    max-width: 1170px;
     min-height: 479px;
     display: flex;
     justify-content: space-evenly;
-
     background: rgba(178, 62, 62, 0.63);
     border-radius: 16px;
 }
@@ -39,7 +38,7 @@
 }
 .form button {
     height: 59px;
-    background: linear-gradient(270deg, #00C67F 0%, #27C19C 100%);
+    background: #49F3B6;
     border-radius: 90px;
     font-weight: 700;
     font-size: 18px;

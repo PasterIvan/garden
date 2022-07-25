@@ -1,5 +1,5 @@
 .menu {
-    width: 774px;
+    max-width: 774px;
     display: flex;
     justify-content: space-between;
     align-items: center;
