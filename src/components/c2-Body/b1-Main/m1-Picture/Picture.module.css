@@ -1,10 +1,14 @@
 .picture {
-    /*min-width: 1600px;*/
-    /*background: url("./img/picture.svg");*/
-    /*height: 876px;*/
-    /*left: 0;*/
-    /*top: -337px;*/
-    /*z-index: -5;*/
+    width: 100%;
+
+}
+.picture::before {
+    content: url("./img/picture.svg");
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -5;
 }
 
 .content {

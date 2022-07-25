@@ -1,0 +1,41 @@
+.plan {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    min-height: 126px;
+    justify-content: space-between;
+}
+
+
+.title {
+    max-width: 530.77px;
+    min-height: 60px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 60px;
+    letter-spacing: 0.05em;
+    color: #0CA941;
+}
+
+.text {
+    max-width: 530.77px;
+    height: 52px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #678570;
+}
+.plan::after {
+    content: url("./img/plan.svg");
+    position: relative;
+    width: 50%;
+    left: 0;
+    top: 0;
+    z-index: -5;
+}
