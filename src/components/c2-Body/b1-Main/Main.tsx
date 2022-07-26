@@ -9,11 +9,11 @@ import {Gardener} from "./m5-Gardener/Gardener";
 export const Main = () => {
     return (
         <div className={style.main}>
-            <Picture/>
-            <Info/>
-            <GardenPlan/>
-            <Cards/>
-            <Gardener/>
+           {/* <Picture/>
+            <Info/>*/}
+            {/*<GardenPlan/>*/}
+            {/*<Cards/>*/}
+            {/*<Gardener/>*/}
         </div>
     )
 }
