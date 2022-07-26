@@ -13,18 +13,16 @@ type Icons = {
 export const Icon: React.FC<Icons> = ({icons}) => {
 
     return (
-        <div>
+        <>
             {icons.map(icon => {
                 return (
                     <div key={icon.id} className={style.icon}>
-                        <div>
                             <img src={icon.logo}/>
-                        </div>
                         <div className={style.text}>{icon.text}</div>
                     </div>
                 )
             })}
-        </div>
+        </>
 
 
     )

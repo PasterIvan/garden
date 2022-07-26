@@ -2,11 +2,7 @@
    max-width: 572px;
    min-height: 365px;
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-between;
+   align-content: space-between;
    flex-wrap: wrap;
-}
-.icons div {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
 }
