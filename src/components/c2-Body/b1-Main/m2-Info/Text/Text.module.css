@@ -24,3 +24,10 @@
     line-height: 26px;
     color: #5B7262;
 }
+@media (max-width: 1599px) {
+    .title {
+        width: 100%;
+
+    }
+
+}

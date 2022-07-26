@@ -3,12 +3,12 @@
 
 }
 .picture::before {
-    /*content: url("./img/picture.svg");*/
-    /*position: absolute;*/
-    /*width: 100%;*/
-    /*left: 0;*/
-    /*top: 0;*/
-    /*z-index: -5;*/
+    content: url("./img/picture.svg");
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -5;
 }
 
 .content {

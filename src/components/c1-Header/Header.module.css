@@ -27,12 +27,6 @@ header {
     align-items: flex-end;
     background-color: #ffffff;
 }
-/*@media (max-width: 350px) {*/
-/*    header {*/
-/*        width: 100%;*/
-/*       */
-/*    }*/
-/*}*/
 
 @media (max-width: 1170px) {
     .flower::before {
