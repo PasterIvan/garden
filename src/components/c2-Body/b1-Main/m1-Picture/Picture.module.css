@@ -2,10 +2,11 @@
     width: 100%;
 
 }
+
 .picture::before {
     content: url("./img/picture.svg");
     position: absolute;
-    width: 100%;
+
     left: 0;
     top: 0;
     z-index: -5;
@@ -59,4 +60,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+@media (max-width: 1170px) {
+    .picture::before {
+       display: none;
+    }
 }

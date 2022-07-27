@@ -91,6 +91,7 @@
     }
 
     .menuActive {
+        background-color: #FFFFFF;
         width: 100%;
         height: 300px;
         display: flex;
@@ -100,7 +101,7 @@
         position: fixed;
         top: 80px;
         left: 0;
-        z-index: 5;
+        z-index: 4;
     }
     .menuActive div {
         height: 100%;

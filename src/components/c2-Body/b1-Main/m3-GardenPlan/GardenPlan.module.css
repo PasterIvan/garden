@@ -3,6 +3,13 @@
     display: flex;
     justify-content: space-between;
 }
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -11,7 +18,7 @@
 }
 
 
-.title {
+.headerTitle {
     max-width: 530.77px;
     min-height: 60px;
     font-style: normal;
@@ -22,7 +29,7 @@
     color: #0CA941;
 }
 
-.text {
+.headerText {
     max-width: 530.77px;
     height: 52px;
     font-style: normal;
@@ -30,7 +37,137 @@
     font-size: 16px;
     line-height: 160%;
     color: #678570;
+    padding-right: 100px;
 }
+
+.buttons input {
+  display: block;
+}
+
+.buttons input:checked::before {
+    content: url("./img/blockRed.svg");
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.buttons label {
+    margin-right: 24px;
+}
+
+.buttons div {
+    color: #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 34px;
+    gap: 34px;
+    width: 433px;
+    height: 110px;
+    border-radius: 10px;
+    margin: 24px 100px 24px 0;
+}
+
+.buttons div::before {
+    content: url("./img/znakVoskl.svg");
+}
+
+.buttonsInfo-red {
+    background-color: #E53F3F;
+}
+
+.buttonsInfo-orange {
+    background-color: #F38A2A;
+}
+
+.buttonsInfo-green {
+    background: #0CA941;
+}
+
+.buttonsInfo-blue {
+    background-color: #3FBEE5;
+}
+
+.buttonsInfo-violet {
+    background-color: #5056B5;
+}
+
+.planBody-red {
+    max-width: 499px;
+    height: 338px;
+    display: flex;
+    align-items: center;
+    color: #E53F3F;
+}
+.planBody-red::before {
+    content: url("img/lineRed.svg");
+}
+.planBody-orange {
+    max-width: 499px;
+    height: 338px;
+    display: flex;
+    align-items: center;
+    color: #F38A2A;
+}
+.planBody-orange::before {
+    content: url("img/lineOrange.svg");
+}
+.planBody-green {
+    max-width: 499px;
+    height: 338px;
+    display: flex;
+    align-items: center;
+    color: #0CA941;
+}
+.planBody-green::before {
+    content: url("img/lineGreen.svg");
+}
+.planBody-blue {
+    max-width: 499px;
+    height: 338px;
+    display: flex;
+    align-items: center;
+    color: #3FBEE5;
+}
+.planBody-blue::before {
+    content: url("img/lineBlue.svg");
+}
+.planBody-violet {
+    max-width: 499px;
+    height: 338px;
+    display: flex;
+    align-items: center;
+    color: #5056B5;
+}
+.planBody-violet::before {
+    content: url("img/lineViolet.svg");
+}
+
+.planBodyTitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    padding: 20px;
+}
+
+.planBodyText {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #402B2B;
+    padding: 20px;
+    align-self: stretch;
+}
+
 .plan::after {
     content: url("./img/plan.svg");
     position: relative;

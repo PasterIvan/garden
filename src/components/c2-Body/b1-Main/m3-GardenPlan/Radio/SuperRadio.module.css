@@ -1,0 +1,106 @@
+.button-red {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    border-radius: 7px;
+    border: 3px solid #E53F3F;
+    position: relative;
+}
+.button-red:checked::before {
+    content: url("../img/blockRed.svg");
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.button-orange {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    border-radius: 7px;
+    border: 3px solid #F38A2A;
+    position: relative;
+}
+.button-orange:checked::before {
+     content: url("../img/blockOrange.svg");
+     position: absolute;
+     top: 5px;
+     left: 5px;
+ }
+.button-green {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    border-radius: 7px;
+    border: 3px solid #76CC67;
+    position: relative;
+}
+.button-green:checked::before {
+    content: url("../img/blockGreen.svg");
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.button-blue {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    border-radius: 7px;
+    border: 3px solid #3FBEE5;
+    position: relative;
+}
+.button-blue:checked::before {
+    content: url("../img/blockBlue.svg");
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.button-violet {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    border-radius: 7px;
+    border: 3px solid #5056B5;
+    position: relative;
+}
+.button-violet:checked::before {
+    content: url("../img/blockViolet.svg");
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.red-block {
+    width: 17px;
+    height: 17px;
+    border-radius: 2px;
+    background-color: #E53F3F;
+}
+.orange {
+    width: 17px;
+    height: 17px;
+    border-radius: 2px;
+    background-color: #F38A2A;
+}
+.green {
+    width: 17px;
+    height: 17px;
+    border-radius: 2px;
+    background-color: #76CC67;
+}
+.blue {
+    width: 17px;
+    height: 17px;
+    border-radius: 2px;
+    background-color: #3FBEE5;
+}
+.violet {
+    width: 17px;
+    height: 17px;
+    border-radius: 2px;
+    background-color: #5056B5;
+}
+

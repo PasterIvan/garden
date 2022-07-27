@@ -6,7 +6,7 @@
     align-items: center;
     flex-wrap: wrap;
 }
-@media (max-width: 1599px) {
+@media (max-width: 1170px) {
     .info {
         flex-direction: column;
     }
