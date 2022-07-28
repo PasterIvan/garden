@@ -93,6 +93,7 @@
         align-items: center;
         justify-content: space-evenly;
         position: fixed;
+        overflow: auto;
         top: 80px;
         left: 0;
         z-index: 4;
