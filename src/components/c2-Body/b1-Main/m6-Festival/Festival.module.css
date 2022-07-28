@@ -1,0 +1,25 @@
+.header {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 100%;
+    color: #0CA941;
+padding: 194px 0 63px 0;
+}
+
+.img {
+    width: 100%;
+    display: flex;
+justify-content: center;
+}
+
+.text {
+    background-color: #FFFFFF;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    padding: 34px;
+}

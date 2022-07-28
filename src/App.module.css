@@ -1,6 +1,28 @@
 .App {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    /*width: 100%;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+
 }
+
+/*.App::after {*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  width: 1600px;*/
+/*  height: 5304px;*/
+/*  left: calc(50% - 1600px/2);*/
+/*  bottom: 0;*/
+/*  background: linear-gradient(180deg, rgba(211, 247, 202, 0) 0%, rgba(12, 169, 65, 0.55) 91.98%);*/
+/*  z-index: -50;*/
+/*}*/
+
+/*.App::before {*/
+/*  content: url("./img/Ellipse 37.svg");*/
+/*  position: absolute;*/
+/*  width: 514.19px;*/
+/*  height: 514.19px;*/
+/*  left: 74.91px;*/
+/*  top: 1287.36px;*/
+/*  z-index: -1;*/
+/*}*/

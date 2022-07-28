@@ -17,15 +17,10 @@ export const Menu = () => {
             <div className={style.textAndButton}>
                 <div className={`${menuActive ? style.menuActive : style.text}`}>
                     <div>
-
-                            <NavLink to={'/main'}>наш сад</NavLink>
-
-                            <NavLink to={'/about_us'}>О нас</NavLink>
-
-                            <NavLink to={'/concurs'}>конкурсные работы</NavLink>
-
-                            <NavLink to={'/about_festival'}>О фестивале</NavLink>
-
+                        <NavLink to={'/main'}>наш сад</NavLink>
+                        <NavLink to={'/about_us'}>О нас</NavLink>
+                        <NavLink to={'/concurs'}>конкурсные работы</NavLink>
+                        <NavLink to={'/about_festival'}>О фестивале</NavLink>
                     </div>
                     <Button className={style.buttonTrees}>деревья</Button>
                 </div>

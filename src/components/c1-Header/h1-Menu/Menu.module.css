@@ -6,12 +6,11 @@
 }
 
 .logo {
-    max-width: 173px;
+    width: 50%;
     display: flex;
 }
 
 .logo div {
-    width: 136px;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -20,7 +19,7 @@
 }
 
 .textAndButton {
-    width: 100%;
+    width: 150%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,11 +40,12 @@
 .text {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
+
 .text div {
-    width: 600px;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -63,18 +63,13 @@
     line-height: 21px;
 }
 
-@media (max-width: 978px) {
+@media (max-width: 767px) {
     .menu {
         flex-wrap: wrap
-    }
-
-    .logo {
-        max-width: 173px;
     }
     .text {
         display: none;
     }
-
     .buttonMenu  {
         display: block;
         width: 156px;
@@ -89,7 +84,6 @@
         line-height: 21px;
         margin-right: 1px;
     }
-
     .menuActive {
         background-color: #FFFFFF;
         width: 100%;
@@ -112,11 +106,11 @@
     }
 }
 
-@media (min-width: 1170px) {
-    .textAndButton {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+@media (max-width: 362px) {
+    .buttonMenu {
+        width: 90px;
+    }
+    .logo {
+        width: 65%;
     }
 }

@@ -4,9 +4,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
-@media (max-width: 1170px) {
+@media (max-width: 960px) {
     .info {
         flex-direction: column;
     }

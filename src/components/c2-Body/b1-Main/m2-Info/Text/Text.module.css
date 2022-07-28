@@ -1,13 +1,12 @@
 .header {
-    min-height: 186px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .title {
-    max-width: 530px;
-    min-height: 110px;
+
     font-style: normal;
     font-weight: 900;
     font-size: 46px;
@@ -17,8 +16,7 @@
 }
 
 .text {
-    max-width: 530px;
-    min-height: 52px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -27,11 +25,12 @@
 
 
 }
-@media (max-width: 1574px) {
-    .title {
 
+@media (max-width: 960px) {
+    .title {
         text-align: center;
     }
+
     .text {
         text-align: center;
         margin-bottom: 50px;

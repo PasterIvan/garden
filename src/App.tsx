@@ -12,16 +12,16 @@ export const App = () => {
   return (
       <div className={style.App}>
           <Header/>
-          <Routes>
-              <Route path='/' element={<Navigate to={'/main'}/>}/>
-              <Route path='/main' element={<Main/>}/>
-              <Route path='/about_us' element={<AboutUs/>}/>
-              <Route path='/concurs' element={<Concurs/>}/>
-              <Route path='/about_festival' element={<AboutFestival/>}/>
-              <Route path='404' element={<h1>404: PAGE NOT FOUND</h1>}/>
-              <Route path='*' element={<Navigate to={"404"}/>}/>
-          </Routes>
-          <Footer/>
+          {/*<Routes>*/}
+          {/*    <Route path='/' element={<Navigate to={'/main'}/>}/>*/}
+          {/*    <Route path='/main' element={<Main/>}/>*/}
+          {/*    <Route path='/about_us' element={<AboutUs/>}/>*/}
+          {/*    <Route path='/concurs' element={<Concurs/>}/>*/}
+          {/*    <Route path='/about_festival' element={<AboutFestival/>}/>*/}
+          {/*    <Route path='404' element={<h1>404: PAGE NOT FOUND</h1>}/>*/}
+          {/*    <Route path='*' element={<Navigate to={"404"}/>}/>*/}
+          {/*</Routes>*/}
+          {/*<Footer/>*/}
       </div>
   );
 }

@@ -1,6 +1,5 @@
 .icons {
-   max-width: 572px;
-   min-height: 365px;
+   width: 100%;
    display: flex;
    justify-content: space-between;
    align-content: space-between;
