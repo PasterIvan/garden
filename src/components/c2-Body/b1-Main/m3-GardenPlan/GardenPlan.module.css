@@ -41,14 +41,40 @@
 }
 
 .buttons input {
-  display: block;
+    position: absolute;
+    top: 2px;
+    appearance: none;
 }
 
-.buttons input:checked::before {
+
+.buttons-red input:checked::before {
     content: url("./img/blockRed.svg");
+    display: block;
     position: absolute;
-    top: 5px;
-    left: 5px;
+}
+.buttons-orange input:checked::before {
+    content: url("./img/blockOrange.svg");
+    display: block;
+    position: absolute;
+
+}
+.buttons-green input:checked::before {
+    content: url("./img/blockGreen.svg");
+    display: block;
+    position: absolute;
+
+}
+.buttons-blue input:checked::before {
+    content: url("./img/blockBlue.svg");
+    display: block;
+    position: absolute;
+
+}
+.buttons-violet input:checked::before {
+    content: url("./img/blockViolet.svg");
+    display: block;
+    position: absolute;
+
 }
 
 .buttons label {
@@ -154,7 +180,7 @@
     display: flex;
     align-items: center;
     letter-spacing: 0.05em;
-    padding: 20px;
+    padding: 20px 50px 20px 20px;
 }
 
 .planBodyText {

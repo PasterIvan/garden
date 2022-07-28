@@ -99,12 +99,16 @@ export const GardenPlan = () => {
                         Парк разделен на 2 зоны : открытую, для активного отдыха и закрытую в тени садовых деревьев.
                     </div>
                 </div>
-                <div className={style.buttons }>
-                    <SuperRadio
-                        options={themes}
-                        value={theme}
-                        onChangeOption={onChangeCallback}
-                    />
+                <div className={style.buttons}>
+
+                    <span className={style['buttons-'+theme]} >
+                        <SuperRadio
+                            className={style['button-'+theme] }
+                            options={themes}
+                            value={theme}
+                            onChangeOption={onChangeCallback}
+                        />
+                    </span>
 
                     <div className={style['buttonsInfo-' + theme]}>
                         {themeTexts.textButton}
