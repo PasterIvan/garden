@@ -16,7 +16,7 @@ type TextType = ZoneType[]
 
 const themes = ['red', 'orange', 'green', 'blue', 'violet'];
 
-const texts: TextType = [
+const zone: TextType = [
     {
         color: 'red',
         textButton: ' Красная зона - в ней распологпается зона тихого отдыха с фонтаном и лавочками',
@@ -86,7 +86,7 @@ export const GardenPlan = () => {
         dispatch(changeThemeC(theme))
     }
 
-    const themeTexts = texts.filter(t => t.color === theme)[0]
+    const themeTexts = zone.filter(t => t.color === theme)[0]
 
     return (
         <div className={style.plan}>

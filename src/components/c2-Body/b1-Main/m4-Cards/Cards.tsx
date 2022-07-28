@@ -1,23 +1,12 @@
-import React, {useState} from "react";
-import {Card} from "./Card/Card";
-import plant1 from "./img/plant1.svg";
-import plant2 from "./img/plant2.svg";
+import React from "react";
 import style from "./Cards.module.css"
+import {useSelector} from "react-redux";
+import {AppStoreType} from "../../../../store/store";
+import {Card} from "./Card/Card";
 
 export const Cards = () => {
 
-    let [cards, setCards] = useState(
-        [
-            {id: 1, img: plant2, title: 'Дикий виноград', isDone: true},
-            {id: 2, img: plant1, title: 'Дуб', isDone: false},
-            {id: 3, img: plant1, title: 'Вишня', isDone: false},
-            {id: 4, img: plant1, title: 'Яблоня', isDone: true},
-            {id: 5, img: plant1, title: 'Дикий виноград', isDone: true},
-            {id: 6, img: plant1, title: 'Дикий виноград', isDone: true},
-            {id: 7, img: plant1, title: 'Дикий виноград', isDone: true},
-            {id: 8, img: plant1, title: 'Дикий виноград', isDone: true},
-        ]
-    )
+    const cards = useSelector<AppStoreType, Card[]>(state => state.cards.cards);
 
     return (
         <div className={style.cards}>

@@ -1,18 +1,28 @@
-import React from "react";
+import React, { useCallback } from "react";
+import { useDispatch } from "react-redux";
 import Button from "../../../../../common/Button/Button";
 import style from "./Card.module.css"
+import {choosePlantAC} from "../bll/cardsReducer";
 
-type Card = {
+export type Card = {
     id: number
     img: string
     title: string
     isDone: boolean
 }
-type Cards = {
+export type CardsType = {
     cards: Card[]
 }
 
-export const Card: React.FC<Cards> = ({cards}) => {
+export const Card: React.FC<CardsType> = ({cards}) => {
+const {id, isDone} = cards[0]
+    const dispatch = useDispatch()
+
+    const choosePlant = useCallback(() => {
+        dispatch(choosePlantAC( id, isDone));
+        alert(cards[0].isDone)
+    }, [dispatch, id])
+
     return (
         <div className={style.cards}>
             {cards.map(card=>{
@@ -22,7 +32,7 @@ export const Card: React.FC<Cards> = ({cards}) => {
                             <img src={card.img} />
                         </div>
                         <div>{card.title}</div>
-                        <Button>Выбрать</Button>
+                        <Button onClick={choosePlant}>Выбрать</Button>
                     </div>
                 )
             })}
