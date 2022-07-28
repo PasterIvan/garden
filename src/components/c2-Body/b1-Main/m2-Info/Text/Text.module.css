@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 .title {
@@ -25,12 +26,18 @@
 
 
 }
-
-@media (max-width: 960px) {
+@media (min-width: 1024px) {
+    .header {
+        padding-right: 20px;
+    }
+}
+@media (max-width: 906px) {
     .title {
         text-align: center;
     }
-
+    .header {
+        margin: 0;
+    }
     .text {
         text-align: center;
         margin-bottom: 50px;

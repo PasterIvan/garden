@@ -1,11 +1,11 @@
 .info {
-    width: 100%;
-    margin: 130px 0 111px 0;
+    width: 75%;
+    margin: 130px auto 111px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-@media (max-width: 960px) {
+@media (max-width: 906px) {
     .info {
         flex-direction: column;
     }
