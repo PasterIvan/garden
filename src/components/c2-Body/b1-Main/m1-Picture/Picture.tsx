@@ -6,10 +6,8 @@ export const Picture = () => {
     return (
         <div className={style.picture}>
             <div className={style.content}>
-                <div className={style.texts}>
-                    <div className={style.text1}>Старый <div>сад </div> <br/> на новый лад</div>
-                    <div className={style.text2}>Мы продаем деревья</div>
-                </div>
+                <div className={style.text1}>Старый <div>сад </div> <br/> на новый лад</div>
+                <div className={style.text2}>Выбери свое дерево</div>
                 <div className={style.button}>
                     Выбрать дерево
                     <img src={Group333553}/>

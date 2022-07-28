@@ -11,8 +11,8 @@ import {Gallery} from "./m7-Gallery/Gallery";
 export const Main = () => {
     return (
         <div className={style.main}>
-           {/* <Picture/>
-            <Info/>
+           <Picture/>
+            {/* <Info/>
             <GardenPlan/>
             <Cards/>
             <Gardener/>
