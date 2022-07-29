@@ -3,3 +3,35 @@
     margin: 126px auto 0;
 }
 
+.picture {
+    margin: 47px auto 0 auto;
+    width: 100%;
+
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.picture img {
+    margin: 0 20px 31px 0;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.picture::-webkit-scrollbar {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #EBDBDB;
+
+}
+
+.picture::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #8DA67A;
+}
+@media (max-width: 1023px) {
+    .gallery {
+        width: 95%;
+    }
+}

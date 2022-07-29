@@ -28,11 +28,15 @@
     display: flex;
     justify-content: space-between;
 }
-@media (max-width: 1123px) {
+.socialNetworks img {
+    margin-left: 5px;
+}
+@media (max-width: 1023px) {
     .footer {
         width: 95%;
     }
 }
+
 @media (max-width: 768px) {
     .footer {
        display: block;
