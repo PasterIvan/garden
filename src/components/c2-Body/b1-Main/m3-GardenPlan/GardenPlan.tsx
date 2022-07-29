@@ -4,6 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "../../../../store/store";
 import {changeThemeC, ThemesType} from "./bll/themeReducer";
 import SuperRadio from "./Radio/SuperRadio";
+import plan from "./img/planNew.svg"
 
 type ZoneType = {
     color: string
@@ -131,7 +132,7 @@ export const GardenPlan = () => {
                 </div>
             </div>
             <div className={style.picture}>
-                <button>смотреть план</button>
+                <img src= {plan} />
             </div>
         </div>
     );

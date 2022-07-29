@@ -206,18 +206,10 @@
     content: url("img/lineViolet.svg");
 }
 
-
-.picture::after {
-    content: url("./img/plan.svg");
-    position: relative;
+.picture {
+    display: block;
     width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 1;
-}
-
-.picture button {
-    display: none;
+    height: 100%;
 }
 
 @media (max-width: 1599px) {
@@ -252,28 +244,7 @@
     }
 
     .planBodyTitle {
-        padding: 20px 20px 0px 20px;
-    }
-}
-
-@media (max-width: 814px) {
-    .picture::after {
-        display: none;
-    }
-
-    .picture button {
-        display: block;
-        width: 156px;
-        height: 45px;
-        background: #0CA941;
-        border: none;
-        border-radius: 6px;
-        color: #FFFFFF;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 21px;
-        margin-right: 1px;
+        padding: 20px 20px 0 20px;
     }
 }
 
