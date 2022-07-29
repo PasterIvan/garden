@@ -13,9 +13,9 @@ export const Main = () => {
         <div className={style.main}>
             <Picture/>
             <Info/>
-           <GardenPlan/>
-             {/*<Cards/>
-            <Gardener/>
+            <GardenPlan/>
+            <Cards/>
+            {/*<Gardener/>
             <Festival/>
             <Gallery/>*/}
         </div>
