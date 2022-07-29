@@ -1,5 +1,7 @@
 .gallery {
-    margin-top: 130px;
+    width: 75%;
+
+    margin: 0 auto;
 }
 
 .video {

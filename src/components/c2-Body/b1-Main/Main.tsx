@@ -17,7 +17,7 @@ export const Main = () => {
             <Cards/>
             <Gardener/>
             <Festival/>
-            {/*<Gallery/>*/}
+            <Gallery/>
         </div>
     )
 }
