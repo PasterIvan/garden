@@ -1,3 +1,8 @@
+.festival {
+    width: 75%;
+    margin: 0 auto;
+}
+
 .header {
     font-family: 'Poppins';
     font-style: normal;
@@ -5,13 +10,13 @@
     font-size: 46px;
     line-height: 100%;
     color: #0CA941;
-padding: 194px 0 63px 0;
+    padding: 194px 0 63px 0;
 }
 
 .img {
     width: 100%;
     display: flex;
-justify-content: center;
+    justify-content: center;
 }
 
 .text {
@@ -22,4 +27,16 @@ justify-content: center;
     font-size: 16px;
     line-height: 140%;
     padding: 34px;
+}
+
+@media (max-width: 1023px) {
+    .festival {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .img img {
+
+    }
 }

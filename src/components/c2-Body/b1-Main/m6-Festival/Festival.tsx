@@ -5,7 +5,7 @@ import festival from "./img/festival.svg"
 export const Festival = () => {
 
     return (
-        <div>
+        <div className={style.festival}>
             <div className={style.header}>
                 ФЕСТИВАЛЬ
             </div>
