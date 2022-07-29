@@ -91,27 +91,36 @@ export const GardenPlan = () => {
     return (
         <div className={style.plan}>
             <div className={style.column}>
-                <div className={style.header}>
-                    <div className={style.headerTitle}>
-                        ПЛАН САДА
+                <div style={{
+                    width: '100%',
+                    display: "flex",
+                    flexDirection: 'column',
+                    justifyContent: "space-between",
+                    marginRight: "24px",
+                    padding: "24px 0"
+                }}>
+                    <div className={style.header}>
+                        <div className={style.headerTitle}>
+                            ПЛАН САДА
+                        </div>
+                        <div className={style.headerText}>
+                            Парк разделен на 2 зоны : открытую, для активного отдыха и закрытую в тени садовых деревьев.
+                        </div>
                     </div>
-                    <div className={style.headerText}>
-                        Парк разделен на 2 зоны : открытую, для активного отдыха и закрытую в тени садовых деревьев.
-                    </div>
-                </div>
-                <div className={style.buttons}>
+                    <div className={style.buttons}>
 
-                    <span className={style['buttons-'+theme]} >
+                    <span className={style['buttons-' + theme]}>
                         <SuperRadio
-                            className={style['button-'+theme] }
+                            className={style['button-' + theme]}
                             options={themes}
                             value={theme}
                             onChangeOption={onChangeCallback}
                         />
                     </span>
 
-                    <div className={style['buttonsInfo-' + theme]}>
-                        {themeTexts.textButton}
+                        <div className={style['buttonsInfo-' + theme]}>
+                            {themeTexts.textButton}
+                        </div>
                     </div>
                 </div>
                 <div className={style['planBody-' + theme]}>
@@ -120,6 +129,9 @@ export const GardenPlan = () => {
                         <div className={style.planBodyText}>{themeTexts.text}</div>
                     </div>
                 </div>
+            </div>
+            <div className={style.picture}>
+                <button>смотреть план</button>
             </div>
         </div>
     );

@@ -5,9 +5,14 @@
     justify-content: space-between;
     align-items: center;
 }
-@media (max-width: 906px) {
+
+@media (max-width: 1023px) {
     .info {
         width: 95%;
+    }
+}
+@media (max-width: 906px) {
+    .info {
         flex-direction: column;
     }
 }
