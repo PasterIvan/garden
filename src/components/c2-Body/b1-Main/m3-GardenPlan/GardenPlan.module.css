@@ -44,12 +44,13 @@
 
 .buttons input {
     position: absolute;
-    top: 2px;
+    top: 5px;
+    left: 5px;
     appearance: none;
     background-color: initial;
     cursor: default;
     box-sizing: border-box;
-    margin: 3px 3px 0px 5px;
+    margin: 0;
     padding: 0;
     border: none;
 }
