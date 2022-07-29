@@ -15,8 +15,8 @@ export const Main = () => {
             <Info/>
             <GardenPlan/>
             <Cards/>
-            {/*<Gardener/>
-            <Festival/>
+            <Gardener/>
+            {/*<Festival/>
             <Gallery/>*/}
         </div>
     )

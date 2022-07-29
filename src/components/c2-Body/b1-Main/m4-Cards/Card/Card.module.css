@@ -1,12 +1,12 @@
 .cards {
-    max-width: 1170px;
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .box {
-    width: 360px;
+    width: 340px;
     height: 437px;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@
     font-size: 24px;
     line-height: 30px;
     color: #374A3D;
-    margin-bottom: 33px;
+    margin: 15px 10px;
 }
 
 .box button {
@@ -41,3 +41,13 @@
     align-items: center;
     align-content: center;
 }
+@media (max-width: 1023px) {
+    .cards {
+        width: 95%;
+    }
+}
+@media (max-width: 768px) {
+    .box {
+       width: 300px;
+    }
+    }
