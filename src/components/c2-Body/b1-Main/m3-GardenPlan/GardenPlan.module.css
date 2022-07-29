@@ -46,6 +46,12 @@
     position: absolute;
     top: 2px;
     appearance: none;
+    background-color: initial;
+    cursor: default;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: 0;
+    border: none;
 }
 
 .planBodyTitle {
