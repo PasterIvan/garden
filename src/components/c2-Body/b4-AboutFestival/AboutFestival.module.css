@@ -1,4 +1,4 @@
-.aboutUs {
+.aboutFestival {
     padding-top: 200px;
     display: flex;
     flex-direction: column;
@@ -6,10 +6,11 @@
     margin: 0 auto;
 }
 
-.aboutUsHeader {
+.aboutFestivalHeader {
     text-align: center;
 }
-.aboutUsHeaderTitle {
+
+.aboutFestivalHeaderTitle {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
@@ -20,9 +21,8 @@
     color: #219653;
 
 }
-.aboutUsHeaderText {
-    width: 100%;
-    height: 100%;
+
+.aboutFestivalHeaderText {
     margin-top: 20px;
     font-family: 'Rubik';
     font-style: normal;
@@ -32,42 +32,40 @@
     text-align: center;
     color: #402B2B;
 }
-.aboutUsBody {
-    width: 87.5%;
+.aboutFestivalBody {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin: 64px auto 0 0;
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 140%;
-
+    flex-direction: column;
+    align-items: center;
 }
-
-.aboutUsBodyPicture{
+.aboutFestivalVideo {
     display: block;
     width: 100%;
     height: 100%;
+    margin-top: 54px;
 }
-.aboutUsBodyText {
-    width: 100%;
-    padding: 34px 34px 0 34px;
+
+.aboutFestivalBodyText {
+    width: 75%;
+    padding: 34px;
 }
-.aboutUsBodyTextGreen {
+
+.aboutFestivalBodyTextGreen {
     color: #588535;
 }
-@media (max-width: 1023px) {
-    .aboutUs {
+
+@media (max-width: 768px) {
+    .aboutFestival {
         padding-top: 85px;
     }
-    .aboutUsBody {
+
+    .aboutFestivalVideo {
+        margin-top: 30px;
+
+    }
+
+    .aboutFestivalBodyText {
         width: 95%;
-        margin: 30px auto 0 ;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+
     }
 }
