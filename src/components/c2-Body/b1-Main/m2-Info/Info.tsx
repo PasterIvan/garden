@@ -5,9 +5,7 @@ import style from "./Info.module.css"
 
 export const Info = () => {
     return (
-        <div style={{width: '100%',
-        backgroundColor: 'white',
-            padding: "130px 0 111px 0"}}>
+        <div className={style.infoContainer} >
             <div className={style.info}>
                 <Text/>
                 <Icons/>

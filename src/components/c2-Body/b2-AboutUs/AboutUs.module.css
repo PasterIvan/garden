@@ -1,0 +1,75 @@
+.aboutUs {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.aboutUsHeader {
+    text-align: center;
+}
+.aboutUsHeaderTitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #219653;
+
+}
+.aboutUsHeaderText {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #402B2B;
+}
+.aboutUsBody {
+    width: 87.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 64px auto 0 0;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.aboutUsBodyPicture{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.aboutUsBodyText {
+    width: 100%;
+}
+.aboutUsBodyTextGreen {
+    color: #588535;
+}
+@media (max-width: 1023px) {
+    .aboutUs {
+        padding-top: 85px;
+    }
+    .aboutUsBody {
+        width: 95%;
+        margin: 30px auto 0 ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .planBodyTitle {
+        padding: 20px 20px 0 20px;
+    }
+}

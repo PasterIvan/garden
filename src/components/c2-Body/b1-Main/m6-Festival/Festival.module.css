@@ -36,7 +36,7 @@
 }
 
 @media (max-width: 768px) {
-    .img img {
-
+    .header {
+        padding: 54px 0 30px 0;
     }
 }
