@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/garden/static/css/main.7b2fb3a1.css",
-    "main.js": "/garden/static/js/main.349985ea.js",
+    "main.css": "/garden/static/css/main.7f8d703c.css",
+    "main.js": "/garden/static/js/main.2952f660.js",
     "static/js/787.226f672d.chunk.js": "/garden/static/js/787.226f672d.chunk.js",
     "static/media/planNew.svg": "/garden/static/media/planNew.1657609496fc402d78591b33699a65f0.svg",
+    "static/media/aboutUsNew.svg": "/garden/static/media/aboutUsNew.a2574bf55649d5edad6c2937c1c539c9.svg",
     "static/media/plant2.svg": "/garden/static/media/plant2.8e361629960cc538f829636b5e1fdcef.svg",
     "static/media/plant1.svg": "/garden/static/media/plant1.6b99de0a9fedce0b2ba6e768fb16b793.svg",
     "static/media/Rectangle 7912.svg": "/garden/static/media/Rectangle 7912.547cb991ac555fac755341c18c0167f9.svg",
@@ -42,12 +43,12 @@
     "static/media/lineOrange.svg": "/garden/static/media/lineOrange.d94307865b86bdb8a135.svg",
     "static/media/lineRed.svg": "/garden/static/media/lineRed.b95104713b83e3a6c3b0.svg",
     "static/media/lineViolet.svg": "/garden/static/media/lineViolet.4d847becefd7337c8034.svg",
-    "main.7b2fb3a1.css.map": "/garden/static/css/main.7b2fb3a1.css.map",
-    "main.349985ea.js.map": "/garden/static/js/main.349985ea.js.map",
+    "main.7f8d703c.css.map": "/garden/static/css/main.7f8d703c.css.map",
+    "main.2952f660.js.map": "/garden/static/js/main.2952f660.js.map",
     "787.226f672d.chunk.js.map": "/garden/static/js/787.226f672d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b2fb3a1.css",
-    "static/js/main.349985ea.js"
+    "static/css/main.7f8d703c.css",
+    "static/js/main.2952f660.js"
   ]
 }
