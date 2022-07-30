@@ -28,6 +28,9 @@
     line-height: 140%;
     padding: 34px;
 }
+.festivalBodyTextGreen {
+    color: #588535;
+}
 
 @media (max-width: 1023px) {
     .festival {

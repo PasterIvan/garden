@@ -41,8 +41,9 @@
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 140%;
+
 }
 
 .aboutUsBodyPicture{
@@ -52,6 +53,7 @@
 }
 .aboutUsBodyText {
     width: 100%;
+    padding: 34px 34px 0 34px;
 }
 .aboutUsBodyTextGreen {
     color: #588535;
