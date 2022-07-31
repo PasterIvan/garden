@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/garden/static/css/main.e064cc3c.css",
-    "main.js": "/garden/static/js/main.08b51841.js",
+    "main.css": "/garden/static/css/main.f533bf7c.css",
+    "main.js": "/garden/static/js/main.2cd7b4db.js",
     "static/js/787.226f672d.chunk.js": "/garden/static/js/787.226f672d.chunk.js",
     "static/media/planNew.svg": "/garden/static/media/planNew.1657609496fc402d78591b33699a65f0.svg",
     "static/media/aboutUsNew.svg": "/garden/static/media/aboutUsNew.a2574bf55649d5edad6c2937c1c539c9.svg",
@@ -44,12 +44,12 @@
     "static/media/lineOrange.svg": "/garden/static/media/lineOrange.d94307865b86bdb8a135.svg",
     "static/media/lineRed.svg": "/garden/static/media/lineRed.b95104713b83e3a6c3b0.svg",
     "static/media/lineViolet.svg": "/garden/static/media/lineViolet.4d847becefd7337c8034.svg",
-    "main.e064cc3c.css.map": "/garden/static/css/main.e064cc3c.css.map",
-    "main.08b51841.js.map": "/garden/static/js/main.08b51841.js.map",
+    "main.f533bf7c.css.map": "/garden/static/css/main.f533bf7c.css.map",
+    "main.2cd7b4db.js.map": "/garden/static/js/main.2cd7b4db.js.map",
     "787.226f672d.chunk.js.map": "/garden/static/js/787.226f672d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e064cc3c.css",
-    "static/js/main.08b51841.js"
+    "static/css/main.f533bf7c.css",
+    "static/js/main.2cd7b4db.js"
   ]
 }
