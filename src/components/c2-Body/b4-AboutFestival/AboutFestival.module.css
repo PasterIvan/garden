@@ -19,7 +19,7 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #219653;
-
+    margin: 0 auto;
 }
 
 .aboutFestivalHeaderText {
@@ -32,12 +32,13 @@
     text-align: center;
     color: #402B2B;
 }
+
 .aboutFestivalBody {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .aboutFestivalVideo {
     display: block;
     width: 100%;
@@ -48,7 +49,9 @@
 .aboutFestivalBodyText {
     width: 75%;
     padding: 34px;
+    margin: 0 auto;
 }
+
 
 .aboutFestivalBodyTextGreen {
     color: #588535;
@@ -61,11 +64,17 @@
 
     .aboutFestivalVideo {
         margin-top: 30px;
-
     }
 
     .aboutFestivalBodyText {
         width: 95%;
+        padding: 0;
+        margin: 0;
+    }
+}
 
+@media (max-width: 425px) {
+    .aboutFestivalHeaderTitle {
+        font-size: 38px;
     }
 }

@@ -8,15 +8,13 @@ export const AboutFestival = () => {
                 <div className={style.aboutFestivalHeaderTitle}>О ФЕСТИВАЛЕ</div>
                 <div className={style.aboutFestivalHeaderText}>Узнайте про фестиваль подробнее</div>
             </div>
-
+            <div className={style.aboutFestivalVideo}>
+                <iframe width="100%" height="519px" src="https://www.youtube.com/embed/evSn0cGIxfs"
+                        title="YouTube video player" frameBorder="0"
+                >
+                </iframe>
+            </div>
             <div className={style.aboutFestivalBody}>
-                <div className={style.aboutFestivalVideo}>
-                    <iframe width="100%" height="519px" src="https://www.youtube.com/embed/evSn0cGIxfs"
-                            title="YouTube video player" frameBorder="0"
-                    >
-                    </iframe>
-                </div>
-
                 <div className={style.aboutFestivalBodyText}>
                     <p>
                         <b className={style.aboutFestivalBodyTextGreen}>Рамонский Родник</b> существует с 2003 года. За
