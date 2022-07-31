@@ -13,10 +13,12 @@
     padding: 194px 0 63px 0;
 }
 
-.img {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.festivalPicture {
+    width: 58%;
+    margin: 0 auto;
+}
+.festivalPicture svg {
+    padding: 0;
 }
 
 .text {

@@ -9,7 +9,7 @@ export const Festival = () => {
             <div className={style.header}>
                 ФЕСТИВАЛЬ
             </div>
-            <div className={style.img}>
+            <div className={style.festivalPicture}>
                 <img src={festival}/>
             </div>
             <div className={style.text}>
