@@ -8,6 +8,8 @@
 
 .aboutUsHeader {
     text-align: center;
+    width: 75%;
+    margin: 0 auto;
 }
 .aboutUsHeaderTitle {
     font-family: 'Poppins';
@@ -64,11 +66,15 @@
         padding-top: 85px;
     }
     .aboutUsBody {
-        width: 95%;
+        width:100%;
         margin: 30px auto 0 ;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+    }
+    .aboutUsBodyText {
+        width: 95%;
+        padding: 14px 0;
     }
 }

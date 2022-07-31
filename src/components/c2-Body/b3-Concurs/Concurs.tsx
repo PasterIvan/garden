@@ -7,7 +7,6 @@ import page3 from "../b1-Main/m7-Gallery/img/Rectangle 7913.svg";
 
 export const Concurs = () => {
     return (
-
         <div className={style.aboutConcurs}>
             <div className={style.aboutConcursHeader}>
                 <div className={style.aboutConcursHeaderTitle}>КОНКУРС</div>
@@ -15,9 +14,9 @@ export const Concurs = () => {
             </div>
             <div className={style.aboutConcursBody}>
 
-
+                <div className={style.aboutUsBodyPicture}>
                     <img src={aboutConcurs}/>
-
+                </div>
 
                 <div className={style.aboutConcursBodyText}>
                     <p>Всего в 40 км от Воронежа раскинулось скрытое от многих глаз волшебное место.</p>
