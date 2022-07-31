@@ -1,0 +1,80 @@
+.aboutConcurs {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.aboutConcursHeader {
+    text-align: center;
+}
+.aboutConcursHeaderTitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #219653;
+
+}
+.aboutConcursHeaderText {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #402B2B;
+}
+.aboutConcursBody {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 64px auto 0 auto;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+
+}
+
+.aboutConcursBodyText {
+    padding: 34px ;
+}
+.aboutConcursBodyTextGreen {
+    color: #588535;
+}
+
+.aboutConcursBodyPicture {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 54px;
+}
+.aboutConcursBodyPicture img {
+    margin-bottom: 24px;
+}
+
+@media (max-width: 1023px) {
+    .aboutConcurs {
+        padding-top: 85px;
+    }
+    .aboutConcursBody {
+        width: 95%;
+        margin: 30px auto 0 ;
+    }
+}
+@media (max-width: 768px) {
+    .aboutConcursBodyText {
+        padding: 15px;
+    }
+}
