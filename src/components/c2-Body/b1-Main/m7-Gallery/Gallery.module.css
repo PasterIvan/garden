@@ -12,6 +12,7 @@
 }
 
 .picture img {
+    max-width: 320px;
     margin: 0 20px 31px 0;
     border-radius: 5px;
     display: inline-block;

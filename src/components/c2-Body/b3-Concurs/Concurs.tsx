@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./Concurs.module.css";
 import aboutConcurs from "./img/aboutConcurs.svg";
-import {Gallery} from "../b1-Main/m7-Gallery/Gallery";
 import page1 from "../b1-Main/m7-Gallery/img/Rectangle 7911.svg";
 import page2 from "../b1-Main/m7-Gallery/img/Rectangle 7912.svg";
 import page3 from "../b1-Main/m7-Gallery/img/Rectangle 7913.svg";
@@ -16,7 +15,9 @@ export const Concurs = () => {
             </div>
             <div className={style.aboutConcursBody}>
 
-                <img src={aboutConcurs}/>
+                <div className={style.aboutConcursBodyPicture}>
+                    <img src={aboutConcurs}/>
+                </div>
 
                 <div className={style.aboutConcursBodyText}>
                     <p>Всего в 40 км от Воронежа раскинулось скрытое от многих глаз волшебное место.</p>
@@ -39,26 +40,26 @@ export const Concurs = () => {
                     </p>
                 </div>
                 <iframe width="100%" height="519px" src="https://www.youtube.com/embed/evSn0cGIxfs"
-                        style={{borderRadius: "28px"}}
+                        style={{borderRadius: "28px", margin: "0 auto"}}
                         title="YouTube video player" frameBorder="0"
                 >
                 </iframe>
-                <div className={style.aboutConcursBodyPicture}>
-                    <img src={page1}/>
-                    <img src={page2}/>
-                    <img src={page3}/>
-                    <img src={page1}/>
-                    <img src={page2}/>
-                    <img src={page3}/>
-                    <img src={page1}/>
-                    <img src={page2}/>
-                    <img src={page3}/>
-                    <img src={page1}/>
-                    <img src={page2}/>
-                    <img src={page3}/>
-                </div>
-            </div>
 
+            </div>
+            <div className={style.aboutConcursGallery}>
+                <img src={page1}/>
+                <img src={page2}/>
+                <img src={page3}/>
+                <img src={page1}/>
+                <img src={page2}/>
+                <img src={page3}/>
+                <img src={page1}/>
+                <img src={page2}/>
+                <img src={page3}/>
+                <img src={page1}/>
+                <img src={page2}/>
+                <img src={page3}/>
+            </div>
         </div>
     )
 }
