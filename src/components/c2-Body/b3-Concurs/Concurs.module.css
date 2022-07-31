@@ -60,7 +60,9 @@
 .aboutConcursBodyTextGreen {
     color: #588535;
 }
-
+.aboutConcursBody svg {
+    padding: 0;
+}
 .aboutConcursGallery {
     width: 95%;
     display: flex;
