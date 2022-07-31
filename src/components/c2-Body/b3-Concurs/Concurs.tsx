@@ -15,10 +15,12 @@ export const Concurs = () => {
             </div>
             <div className={style.aboutConcursBody}>
 
-                <div className={style.aboutConcursBodyPicture}>
-                    <img src={aboutConcurs}/>
-                </div>
-
+                {/*<div className={style.aboutConcursBodyPicture}>*/}
+                {/*    <img src={aboutConcurs}/>*/}
+                {/*</div>*/}
+                <object type="image/svg+xml" data={aboutConcurs} width="100%" height="100%">
+                    <img src={aboutConcurs} width="100%" height="100%" alt="image format png" />
+                </object>
                 <div className={style.aboutConcursBodyText}>
                     <p>Всего в 40 км от Воронежа раскинулось скрытое от многих глаз волшебное место.</p>
 
