@@ -14,7 +14,8 @@ code {
 
 @font-face {
     font-family: 'FredokaOne-Regular';
-    src: local("FredokaOne-Regular"),
+    src: local("Fredoka One (OneType)"),
+            local("Fredoka One обычный"),
     url("/src/fonts/FredokaOne-Regular.ttf");
 
 }
