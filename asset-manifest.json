@@ -1,25 +1,22 @@
 {
   "files": {
-    "main.css": "/garden/static/css/main.8ab07b66.css",
-    "main.js": "/garden/static/js/main.7bdbd404.js",
+    "main.css": "/garden/static/css/main.2105206b.css",
+    "main.js": "/garden/static/js/main.0d0c965a.js",
     "static/js/787.226f672d.chunk.js": "/garden/static/js/787.226f672d.chunk.js",
     "static/media/planNew.svg": "/garden/static/media/planNew.1657609496fc402d78591b33699a65f0.svg",
     "static/media/aboutUsNew.svg": "/garden/static/media/aboutUsNew.a2574bf55649d5edad6c2937c1c539c9.svg",
     "static/media/plant2.svg": "/garden/static/media/plant2.8e361629960cc538f829636b5e1fdcef.svg",
     "static/media/plant1.svg": "/garden/static/media/plant1.6b99de0a9fedce0b2ba6e768fb16b793.svg",
     "static/media/aboutConcurs.svg": "/garden/static/media/aboutConcurs.a7c105b5d7f00ec9f250895f21395e70.svg",
-    "static/media/Poppins-Regular.ttf": "/garden/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
-    "static/media/Poppins-Black.ttf": "/garden/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
     "static/media/Rectangle 7912.svg": "/garden/static/media/Rectangle 7912.dc161843e736f452ef768d457ac79926.svg",
     "static/media/Rectangle 7913.svg": "/garden/static/media/Rectangle 7913.310d738b5972ec5dc96ba406d9259855.svg",
     "static/media/Rectangle 7911.svg": "/garden/static/media/Rectangle 7911.ef6f615b1c972fc3d6e037a4db025478.svg",
-    "static/media/FredokaOne-Regular.woff2": "/garden/static/media/FredokaOne-Regular.9b1d64f75b01ea1956d9.woff2",
+    "static/media/Fredoka-Medium.ttf": "/garden/static/media/Fredoka-Medium.f076e1813d589e1f94cf.ttf",
+    "static/media/Fredoka-SemiBold.ttf": "/garden/static/media/Fredoka-SemiBold.0226f5ea7790dbdda248.ttf",
+    "static/media/Fredoka-Bold.ttf": "/garden/static/media/Fredoka-Bold.3f86046ff5e241743e2c.ttf",
     "static/media/picture.svg": "/garden/static/media/picture.7f4a5e65cd738c37bf8a.svg",
-    "static/media/FredokaOne-Regular.ttf": "/garden/static/media/FredokaOne-Regular.4aea26dd6637dfac0fac.ttf",
     "static/media/festival.svg": "/garden/static/media/festival.88889700f37389570b5cd4a67364865c.svg",
     "static/media/flower.svg": "/garden/static/media/flower.82405dc2f47db633dddf.svg",
-    "static/media/FredokaOne-Regular.woff": "/garden/static/media/FredokaOne-Regular.b7c62c6fbd87e5e2c136.woff",
-    "static/media/test.svg": "/garden/static/media/test.913fd6f03dfbbfaf45d1a4957095cfa7.svg",
     "static/media/logo5.svg": "/garden/static/media/logo5.231ffd59632a590b371d4af4ccff6581.svg",
     "static/media/logo.svg": "/garden/static/media/logo.6cfd462376c589c353a83539a96e872b.svg",
     "static/media/logo4.svg": "/garden/static/media/logo4.a85ac54f0b2cfb00a6b1ccb126b49de8.svg",
@@ -50,12 +47,12 @@
     "static/media/lineOrange.svg": "/garden/static/media/lineOrange.d94307865b86bdb8a135.svg",
     "static/media/lineRed.svg": "/garden/static/media/lineRed.b95104713b83e3a6c3b0.svg",
     "static/media/lineViolet.svg": "/garden/static/media/lineViolet.4d847becefd7337c8034.svg",
-    "main.8ab07b66.css.map": "/garden/static/css/main.8ab07b66.css.map",
-    "main.7bdbd404.js.map": "/garden/static/js/main.7bdbd404.js.map",
+    "main.2105206b.css.map": "/garden/static/css/main.2105206b.css.map",
+    "main.0d0c965a.js.map": "/garden/static/js/main.0d0c965a.js.map",
     "787.226f672d.chunk.js.map": "/garden/static/js/787.226f672d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ab07b66.css",
-    "static/js/main.7bdbd404.js"
+    "static/css/main.2105206b.css",
+    "static/js/main.0d0c965a.js"
   ]
 }
