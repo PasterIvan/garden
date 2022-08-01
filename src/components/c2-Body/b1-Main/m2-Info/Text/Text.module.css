@@ -7,9 +7,9 @@
 }
 
 .title {
-    font-family: 'Poppins900';
-    /*font-style: normal;*/
-    /*font-weight: 900;*/
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 900;
     font-size: 46px;
     line-height: 120%;
     color: #219653;
@@ -17,9 +17,9 @@
 }
 
 .text {
-    font-family: 'Poppins400';
-    /*font-style: normal;*/
-    /*font-weight: 400;*/
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: #5B7262;

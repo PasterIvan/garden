@@ -11,6 +11,7 @@
 }
 
 .logo div {
+    font-family: Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -30,6 +31,7 @@
 }
 
 .textAndButton a {
+    font-family: Arial, sans-serif;
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
@@ -57,6 +59,7 @@
     border: none;
     border-radius: 6px;
     color: #FFFFFF;
+    font-family: Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -78,6 +81,7 @@
         border: none;
         border-radius: 6px;
         color: #FFFFFF;
+        font-family: Arial, sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -94,7 +98,6 @@
         align-items: center;
         justify-content: space-evenly;
         position: fixed;
-
         top: 80px;
         left: 0;
         z-index: 4;
