@@ -1,14 +1,23 @@
 {
   "files": {
-    "main.css": "/garden/static/css/main.2105206b.css",
-    "main.js": "/garden/static/js/main.0d0c965a.js",
+    "main.css": "/garden/static/css/main.33d19643.css",
+    "main.js": "/garden/static/js/main.6ccde0f4.js",
     "static/js/787.226f672d.chunk.js": "/garden/static/js/787.226f672d.chunk.js",
     "static/media/planNew.svg": "/garden/static/media/planNew.1657609496fc402d78591b33699a65f0.svg",
     "static/media/aboutUsNew.svg": "/garden/static/media/aboutUsNew.a2574bf55649d5edad6c2937c1c539c9.svg",
     "static/media/plant2.svg": "/garden/static/media/plant2.8e361629960cc538f829636b5e1fdcef.svg",
     "static/media/plant1.svg": "/garden/static/media/plant1.6b99de0a9fedce0b2ba6e768fb16b793.svg",
+    "static/media/Inter-Bold.ttf": "/garden/static/media/Inter-Bold.88fa7ae373b07b41ecce.ttf",
     "static/media/aboutConcurs.svg": "/garden/static/media/aboutConcurs.a7c105b5d7f00ec9f250895f21395e70.svg",
+    "static/media/Poppins-Regular.ttf": "/garden/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/garden/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
+    "static/media/Poppins-Bold.ttf": "/garden/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/Poppins-Black.ttf": "/garden/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
     "static/media/Rectangle 7912.svg": "/garden/static/media/Rectangle 7912.dc161843e736f452ef768d457ac79926.svg",
+    "static/media/Rubik-Regular.ttf": "/garden/static/media/Rubik-Regular.974ab100afa4538622da.ttf",
+    "static/media/Rubik-Medium.ttf": "/garden/static/media/Rubik-Medium.9eca2a21c16a15364ea0.ttf",
+    "static/media/Rubik-Bold.ttf": "/garden/static/media/Rubik-Bold.12b9f128a901a8977a57.ttf",
+    "static/media/Rubik-Light.ttf": "/garden/static/media/Rubik-Light.4f69a31f58eb5e296d8d.ttf",
     "static/media/Rectangle 7913.svg": "/garden/static/media/Rectangle 7913.310d738b5972ec5dc96ba406d9259855.svg",
     "static/media/Rectangle 7911.svg": "/garden/static/media/Rectangle 7911.ef6f615b1c972fc3d6e037a4db025478.svg",
     "static/media/Fredoka-Medium.ttf": "/garden/static/media/Fredoka-Medium.f076e1813d589e1f94cf.ttf",
@@ -30,8 +39,8 @@
     "static/media/t.svg": "/garden/static/media/t.79af74db7fff244835cd0c232c559788.svg",
     "static/media/whatsapp.svg": "/garden/static/media/whatsapp.659102152f7840f98b7bdc28577765f2.svg",
     "static/media/vk.svg": "/garden/static/media/vk.bba161daf9b7fed51bd12d0a93c3e2eb.svg",
-    "index.html": "/garden/index.html",
     "static/media/Ellipse.svg": "/garden/static/media/Ellipse.39866932440bcd842e22.svg",
+    "index.html": "/garden/index.html",
     "static/media/logo1.svg": "/garden/static/media/logo1.5d2f1cfe9583fc5f6ad433718767a77e.svg",
     "static/media/telegram.svg": "/garden/static/media/telegram.ecedd4b078365a55f3408af6d713da7b.svg",
     "static/media/znakVoskl.svg": "/garden/static/media/znakVoskl.32327935a01603379586.svg",
@@ -47,12 +56,12 @@
     "static/media/lineOrange.svg": "/garden/static/media/lineOrange.d94307865b86bdb8a135.svg",
     "static/media/lineRed.svg": "/garden/static/media/lineRed.b95104713b83e3a6c3b0.svg",
     "static/media/lineViolet.svg": "/garden/static/media/lineViolet.4d847becefd7337c8034.svg",
-    "main.2105206b.css.map": "/garden/static/css/main.2105206b.css.map",
-    "main.0d0c965a.js.map": "/garden/static/js/main.0d0c965a.js.map",
+    "main.33d19643.css.map": "/garden/static/css/main.33d19643.css.map",
+    "main.6ccde0f4.js.map": "/garden/static/js/main.6ccde0f4.js.map",
     "787.226f672d.chunk.js.map": "/garden/static/js/787.226f672d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2105206b.css",
-    "static/js/main.0d0c965a.js"
+    "static/css/main.33d19643.css",
+    "static/js/main.6ccde0f4.js"
   ]
 }
