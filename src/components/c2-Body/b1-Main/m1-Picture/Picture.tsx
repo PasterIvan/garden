@@ -7,7 +7,7 @@ export const Picture = () => {
     return (
         <div className={style.picture}>
             <div className={style.content}>
-                <div className={style.text1}>
+                <div className={style.text1} style={{fontFamily: 'Fredoka'}}>
                     Старый <div>сад </div> <br/> на новый лад
                 </div>
                 <div className={style.text2}>Выбери свое дерево</div>

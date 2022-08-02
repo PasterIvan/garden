@@ -1,15 +1,15 @@
 @font-face {
     font-family: 'Fredoka';
-    src: url('./Fredoka/static/Fredoka/Fredoka-Bold.ttf') format('truetype');
+    src: url('Fredoka/Fredoka-Bold.ttf') format('truetype');
     font-weight: 700;
 }
 @font-face {
     font-family: 'Fredoka';
-    src: url('./Fredoka/static/Fredoka/Fredoka-Medium.ttf') format('truetype');
+    src: url('Fredoka/Fredoka-Medium.ttf') format('truetype');
     font-weight: 500;
 }
 @font-face {
     font-family: 'Fredoka';
-    src: url('./Fredoka/static/Fredoka/Fredoka-SemiBold.ttf') format('truetype');
+    src: url('Fredoka/Fredoka-SemiBold.ttf') format('truetype');
     font-weight: 600;
 }
