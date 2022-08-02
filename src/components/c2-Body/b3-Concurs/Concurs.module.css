@@ -33,13 +33,6 @@
     text-align: center;
     color: #402B2B;
 }
-.aboutConcursBodyPicture {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
 .aboutConcursBody {
     width: 75%;
     display: flex;
@@ -52,6 +45,15 @@
     font-size: 18px;
     line-height: 140%;
 }
+.aboutConcursBodyPicture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.aboutConcursBodyPicture svg {
+    padding: 0;
+    margin: 0;
+}
 
 .aboutConcursBodyText {
     padding: 34px ;
@@ -59,9 +61,7 @@
 .aboutConcursBodyTextGreen {
     color: #588535;
 }
-.aboutConcursBodyPicture svg {
-    padding: 0;
-}
+
 .aboutConcursGallery {
     width: 95%;
     display: flex;
