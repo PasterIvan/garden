@@ -7,11 +7,11 @@
 }
 
 .aboutFestivalHeader {
+    font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 
 .aboutFestivalHeaderTitle {
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
     font-size: 46px;
@@ -24,9 +24,8 @@
 
 .aboutFestivalHeaderText {
     margin-top: 20px;
-    font-family: 'Rubik';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
     line-height: 140%;
     text-align: center;
@@ -47,6 +46,11 @@
 }
 
 .aboutFestivalBodyText {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
     width: 75%;
     padding: 34px;
     margin: 0 auto;

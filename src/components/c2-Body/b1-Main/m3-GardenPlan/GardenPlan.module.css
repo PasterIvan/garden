@@ -24,6 +24,7 @@
 
 
 .headerTitle {
+    font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 46px;
@@ -34,9 +35,10 @@
 }
 
 .headerText {
+    font-family: Rubik, sans-serif;
     max-width: 530px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 160%;
     color: #678570;
@@ -57,7 +59,7 @@
 }
 
 .planBodyTitle {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -69,7 +71,7 @@
 }
 
 .planBodyText {
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -115,6 +117,11 @@
 
 .buttons div {
     color: #FFFFFF;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;

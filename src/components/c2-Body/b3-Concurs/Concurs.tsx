@@ -14,7 +14,7 @@ export const Concurs = () => {
             </div>
             <div className={style.aboutConcursBody}>
 
-                <div className={style.aboutUsBodyPicture}>
+                <div className={style.aboutConcursBodyPicture}>
                     <img src={aboutConcurs}/>
                 </div>
 
