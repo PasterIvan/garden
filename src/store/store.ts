@@ -1,13 +1,15 @@
 import {combineReducers, createStore} from "redux";
-import {themeReducer} from "../components/c2-Body/b1-Main/m3-GardenPlan/bll/themeReducer";
-import {cardsReducer} from "../components/c2-Body/b1-Main/m4-Cards/bll/cardsReducer";
+import {zonesReducer} from "../bll/zonesReducer";
+import {cardsReducer} from "../bll/cardsReducer";
+import {themeReducer} from "../bll/themeReducer";
 
 const reducers = combineReducers({
         theme: themeReducer,
+        zones: zonesReducer,
         cards: cardsReducer
 })
 
-const store = createStore(reducers)
+export const store = createStore(reducers)
 
 export default store
 

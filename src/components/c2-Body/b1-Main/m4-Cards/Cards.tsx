@@ -2,11 +2,16 @@ import React from "react";
 import style from "./Cards.module.css"
 import {useSelector} from "react-redux";
 import {AppStoreType} from "../../../../store/store";
+import {cards, zones} from "../../../../store/state";
 import {Card} from "./Card/Card";
+
 
 export const Cards = () => {
 
-    const cards = useSelector<AppStoreType, Card[]>(state => state.cards.cards);
+    const theme = useSelector<AppStoreType, string>(state => state.theme.startTheme);
+
+    const zoneTexts = zones.filter(z => z.idZone === theme)[0]
+    let zoneCards = cards[theme]
 
     return (
         <div className={style.cards}>
@@ -15,10 +20,16 @@ export const Cards = () => {
                     Выберите растение
                 </div>
                 <div className={style.text}>
-                    Растения зеленой зоны: лимонник китайский, калина давида, дикий виноград, пузыреплодник, дерен
+                    {zoneTexts.cardText}
                 </div>
             </div>
-            <Card cards={cards}/>
+            <div className={style.card}>
+                {
+                    zoneCards.map(z => {
+                        return <Card idCard={z.idCard} title={z.title} img={z.img} isDone={z.isDone}/>
+                    })
+                }
+            </div>
         </div>
     );
 }

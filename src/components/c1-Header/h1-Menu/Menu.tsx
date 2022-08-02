@@ -11,7 +11,7 @@ export const Menu = () => {
         if (window.screen.width <= 768) {
             setMenuActive(!menuActive);
         }
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
     }
 
     return (
