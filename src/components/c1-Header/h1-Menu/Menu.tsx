@@ -8,9 +8,12 @@ export const Menu = () => {
     const [menuActive, setMenuActive] = useState(false)
 
     const scrollUp = () => {
-        setMenuActive(!menuActive);
+        if (window.screen.width <= 768) {
+            setMenuActive(!menuActive);
+        }
         window.scrollTo(0, 0)
     }
+
     return (
         <div className={style.menu}>
             <div className={style.logo}>
@@ -20,11 +23,11 @@ export const Menu = () => {
             <Button className={style.buttonMenu} onClick={() => setMenuActive(!menuActive)}>меню</Button>
             <div className={style.textAndButton}>
                 <div className={`${menuActive ? style.menuActive : style.text}`}>
-                    <div onClick={scrollUp}>
-                        <NavLink to={'/main'} >наш сад</NavLink>
-                        <NavLink to={'/about_us'}>О нас</NavLink>
-                        <NavLink to={'/concurs'}>конкурсные работы</NavLink>
-                        <NavLink to={'/about_festival'}>О фестивале</NavLink>
+                    <div>
+                        <NavLink onClick={scrollUp} to={'/main'} >наш сад</NavLink>
+                        <NavLink onClick={scrollUp} to={'/about_us'}>О нас</NavLink>
+                        <NavLink onClick={scrollUp} to={'/concurs'}>конкурсные работы</NavLink>
+                        <NavLink onClick={scrollUp} to={'/about_festival'}>О фестивале</NavLink>
                     </div>
                     <Button className={style.buttonTrees}>деревья</Button>
                 </div>
