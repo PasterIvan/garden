@@ -26,7 +26,7 @@ export const Cards = () => {
             <div className={style.card}>
                 {
                     zoneCards.map(z => {
-                        return <Card idCard={z.idCard} title={z.title} img={z.img} isDone={z.isDone}/>
+                        return <Card key={z.idCard} idCard={z.idCard} title={z.title} img={z.img} isDone={z.isDone}/>
                     })
                 }
             </div>
