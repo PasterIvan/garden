@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useEffect} from "react";
 import style from "./GardenPlan.module.css"
 import {useDispatch, useSelector} from "react-redux";
-import {AppStoreType} from "../../../../store/store";
+import {AppStateType} from "../../../../store/store";
 import {changeThemeAC} from "../../../../bll/zonesReducer";
 import SuperRadio from "./Radio/SuperRadio";
 import plan from "./img/planNew.svg"
@@ -10,12 +10,17 @@ import {themes, zones, ZonesType} from "../../../../store/state";
 
 export const GardenPlan = () => {
 
-    const theme = useSelector<AppStoreType, string>(state => state.theme.startTheme);
+    const theme = useSelector<AppStateType, string>(state => state.theme.startTheme);
 
     const dispatch = useDispatch()
 
+    useEffect(()=>{
+
+    }, [])
+
     const onChangeCallback = (zone: ZonesType) => {
-        dispatch(changeThemeAC(zone))
+        dispatch(changeThemeAC(zone));
+
     }
 
     const zoneTexts = zones.filter(z => z.idZone === theme)[0]

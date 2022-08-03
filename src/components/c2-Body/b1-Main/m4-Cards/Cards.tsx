@@ -1,14 +1,14 @@
 import React from "react";
 import style from "./Cards.module.css"
 import {useSelector} from "react-redux";
-import {AppStoreType} from "../../../../store/store";
+import {AppStateType} from "../../../../store/store";
 import {cards, zones} from "../../../../store/state";
 import {Card} from "./Card/Card";
 
 
 export const Cards = () => {
 
-    const theme = useSelector<AppStoreType, string>(state => state.theme.startTheme);
+    const theme = useSelector<AppStateType, string>(state => state.theme.startTheme);
 
     const zoneTexts = zones.filter(z => z.idZone === theme)[0]
     let zoneCards = cards[theme]
