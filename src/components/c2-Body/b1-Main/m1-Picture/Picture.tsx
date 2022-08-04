@@ -4,6 +4,10 @@ import Group333553 from './img/button/Group33553.svg'
 import '../../../../fonts/fonts.css'
 
 export const Picture = () => {
+    const scrollGardenPlan = () => {
+        const divElement = document.getElementById('gardenPlan');
+        divElement && divElement.scrollIntoView({behavior: 'smooth'});
+    }
     return (
         <div className={style.picture}>
             <div className={style.content}>
@@ -11,7 +15,8 @@ export const Picture = () => {
                     Старый <div>сад </div> <br/> на новый лад
                 </div>
                 <div className={style.text2}>Выбери свое дерево</div>
-                <div className={style.button}>
+                <div className={style.button}
+                     onClick={scrollGardenPlan}>
                     Выбрать дерево
                     <img src={Group333553}/>
                 </div>

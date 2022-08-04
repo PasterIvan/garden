@@ -1,11 +1,11 @@
-.cards {
+.card {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .box {
-    width: 340px;
+    width: 300px;
     height: 437px;
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@
     margin: 15px 1px 15px 0;
 }
 .selectedBox {
-    width: 340px;
+    width: 300px;
     height: 437px;
     display: flex;
     flex-direction: column;
@@ -52,6 +52,7 @@
     font-size: 16px;
     line-height: 24px;
     color: #678570;
+    cursor: pointer;
 }
 .selectedBox button {
     width: 128.06px;
@@ -64,6 +65,7 @@
     font-size: 16px;
     line-height: 24px;
     color: #ECF1E7;
+    cursor: pointer;
 }
 
 .img {
@@ -72,11 +74,7 @@
     align-items: center;
     align-content: center;
 }
-@media (max-width: 1023px) {
-    .cards {
-        width: 95%;
-    }
-}
+
 @media (max-width: 768px) {
     .box {
        width: 300px;

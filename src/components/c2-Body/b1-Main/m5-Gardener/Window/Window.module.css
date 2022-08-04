@@ -59,8 +59,7 @@
     font-family: 'Arial', sans-serif;
     font-style: normal;
     text-align: center;
-
-
+    cursor: pointer;
 }
 
 .text1 {
@@ -69,8 +68,18 @@
     font-size: 14px;
     line-height: 120%;
     text-align: center;
-
 }
+
+.text1 a {
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.text1 a:hover {
+    color: #4c5a93;
+    cursor: pointer;
+}
+
 
 .additional {
     display: flex;
@@ -98,15 +107,18 @@
 
 @media (max-width: 768px) {
     .border {
-       margin: 0 auto;
-       flex-direction: column;
+        margin: 0 auto;
+        flex-direction: column;
     }
+
     .body {
         width: 100%;
     }
+
     .additional {
         margin: 34px 10px;
     }
+
     .text2 {
 
     }

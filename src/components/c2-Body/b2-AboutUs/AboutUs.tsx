@@ -8,7 +8,6 @@ export const AboutUs = () => {
         <div className={style.aboutUs}>
             <div className={style.aboutUsHeader}>
                 <div className={style.aboutUsHeaderTitle}>О НАС</div>
-                <div className={style.aboutUsHeaderText}>Узнайте про нас подробнее</div>
             </div>
             <div className={style.aboutUsBody}>
 

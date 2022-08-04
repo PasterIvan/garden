@@ -7,12 +7,15 @@ import logo from "./img/logo.svg";
 export const Menu = () => {
     const [menuActive, setMenuActive] = useState(false)
 
-    const setMenu = () => setMenuActive(!menuActive)
+    const setMenu = () => {
+        if (window.screen.width <= 768) {
+            setTimeout(function () {
+                setMenuActive(!menuActive);
+            }, 0)
+        }
+    }
 
     const scrollUp = () => {
-        if (window.screen.width <= 768) {
-            setMenuActive(!menuActive);
-        }
         window.scrollTo(0, 0);
     }
 
@@ -24,7 +27,6 @@ export const Menu = () => {
         }, 0)
     }
 
-
     return (
         <div className={style.menu}>
             <div className={style.logo}>
@@ -33,8 +35,9 @@ export const Menu = () => {
             </div>
             <Button className={style.buttonMenu}
                     onClick={setMenu}
-                    onBlur={setMenu}>меню</Button>
-            <div className={style.textAndButton}>
+                    onBlur={setMenu}
+                    >меню</Button>
+            <div className={style.textAndButton} >
                 <div className={`${menuActive ? style.menuActive : style.text}`}>
                     <div>
                         <NavLink onClick={scrollUp} to={'/main'}>Наш сад</NavLink>

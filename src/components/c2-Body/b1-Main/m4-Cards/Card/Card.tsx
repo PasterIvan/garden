@@ -21,7 +21,7 @@ export const Card: React.FC<CardCT> = ({idZone, idCard, img, title, isDone}) => 
     }
 
     return (
-        <div className={style.cards}>
+        <div className={style.card}>
             <div className={isDone ? style.selectedBox : style.box}>
                 <div className={style.img}>
                     <img src={img}/>

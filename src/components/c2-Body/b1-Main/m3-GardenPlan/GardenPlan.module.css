@@ -3,7 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 130px 0 130px auto;
+    padding-top: 120px;
+    margin: 0 0 0 auto;
 }
 
 .column {
@@ -219,9 +220,9 @@
     height: 100%;
 }
 
-@media (max-width: 1599px) {
+@media (max-width: 1023px) {
     .plan {
-        width: 75%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 120px;
 }
 
 .header {
@@ -14,11 +15,10 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding-bottom: 74px;
+    padding-bottom: 59px;
 }
 
 .title {
-    max-width: 530.77px;
     min-height: 60px;
     font-style: normal;
     font-weight: 900;
@@ -47,7 +47,11 @@
     justify-content: space-evenly;
 }
 
-
+@media (max-width: 1023px) {
+    .card {
+        width: 95%;
+    }
+}
 @media (max-width: 768px) {
     .header {
         padding-bottom: 30px;
