@@ -21,7 +21,7 @@ export const GardenPlan = () => {
     const zoneTexts = zones.filter(z => z.idZone === theme)[0]
 
     return (
-        <div className={style.plan}>
+        <div id={'gardenPlan'} className={style.plan}>
             <div className={style.column}>
                 <div style={{
                     width: '100%',

@@ -1,16 +1,34 @@
+a {
+    text-decoration: none;
+}
+
 .menu {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.menu a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0CA941;
+    text-decoration: underline;
+}
 
 .logo {
     width: 50%;
     display: flex;
+    align-items: center;
+    padding-bottom: 4px;
 }
 
-.logo div {
+.logo img{
+    margin: 0 9px 0 0;
+}
+
+.logo a {
     font-family: Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -18,7 +36,10 @@
     line-height: 100%;
     color: #374A3D;
 }
-
+.logo a:hover {
+    color: #0CA941;
+    text-decoration: none;
+}
 .textAndButton {
     width: 150%;
     display: flex;
@@ -32,11 +53,15 @@
 
 .textAndButton a {
     font-family: Arial, sans-serif;
-    text-decoration: none;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
     color: #1D3B53;
+}
+
+.textAndButton a:hover {
+    color: #0CA941;
+    text-decoration: none;
 }
 
 .text {
