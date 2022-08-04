@@ -1,5 +1,4 @@
 .cards {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -23,6 +22,24 @@
     color: #374A3D;
     margin: 15px 1px 15px 0;
 }
+.selectedBox {
+    width: 340px;
+    height: 437px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    background: #ECF1E7;
+    border: 0.5px solid rgba(0, 0, 0, 0.36);
+    border-radius: 37px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #374A3D;
+    margin: 15px 1px 15px 0;
+}
 
 .box button {
     width: 128.06px;
@@ -35,6 +52,18 @@
     font-size: 16px;
     line-height: 24px;
     color: #678570;
+}
+.selectedBox button {
+    width: 128.06px;
+    height: 43.93px;
+    background: #69C889;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ECF1E7;
 }
 
 .img {
@@ -50,6 +79,9 @@
 }
 @media (max-width: 768px) {
     .box {
+       width: 300px;
+    }
+    .selectedBox {
        width: 300px;
     }
     }

@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import style from "./GardenPlan.module.css"
 import {useDispatch, useSelector} from "react-redux";
 import {AppStateType} from "../../../../store/store";
@@ -14,13 +14,8 @@ export const GardenPlan = () => {
 
     const dispatch = useDispatch()
 
-    useEffect(()=>{
-
-    }, [])
-
-    const onChangeCallback = (zone: ZonesType) => {
+    const onChangeTheme = (zone: ZonesType) => {
         dispatch(changeThemeAC(zone));
-
     }
 
     const zoneTexts = zones.filter(z => z.idZone === theme)[0]
@@ -51,7 +46,7 @@ export const GardenPlan = () => {
                             className={style['button-' + theme]}
                             options={themes}
                             value={theme}
-                            onChangeOption={onChangeCallback}
+                            onChangeOption={onChangeTheme}
                         />
                     </span>
 

@@ -30,19 +30,19 @@ const zoneViolet = 'violet';
 
 export const cards: CardsType = {
     [zoneRed]: [
-        {idCard: 'r1', img: plant2, title: 'Дерево 1', isDone: true},
+        {idCard: 'r1', img: plant2, title: 'Дерево 1', isDone: false},
         {idCard: 'r2', img: plant1, title: 'Дерево 2', isDone: false},
         {idCard: 'r3', img: plant1, title: 'Дерево 3', isDone: false},
         {idCard: 'r4', img: plant1, title: 'Дерево 4', isDone: false},
         {idCard: 'r5', img: plant1, title: 'Дерево 5', isDone: false},
     ],
     [zoneOrange]: [
-        {idCard: 'o1', img: plant2, title: 'Куст 1', isDone: true},
+        {idCard: 'o1', img: plant2, title: 'Куст 1', isDone: false},
         {idCard: 'o2', img: plant2, title: 'Куст 2', isDone: false},
         {idCard: 'o3', img: plant1, title: 'Куст 3', isDone: false},
     ],
     [zoneGreen]: [
-        {idCard: 'g1', img: plant2, title: 'Цветок 1', isDone: true},
+        {idCard: 'g1', img: plant2, title: 'Цветок 1', isDone: false},
         {idCard: 'g2', img: plant2, title: 'Цветок 2', isDone: false},
         {idCard: 'g3', img: plant2, title: 'Цветок 3', isDone: false},
         {idCard: 'g4', img: plant2, title: 'Цветок 4', isDone: false},
@@ -51,13 +51,13 @@ export const cards: CardsType = {
         {idCard: 'g7', img: plant2, title: 'Цветок 7', isDone: false},
     ],
     [zoneBlue]: [
-        {idCard: 'b1', img: plant1, title: 'Ягода 1', isDone: true},
+        {idCard: 'b1', img: plant1, title: 'Ягода 1', isDone: false},
         {idCard: 'b2', img: plant1, title: 'Ягода 2', isDone: false},
         {idCard: 'b3', img: plant1, title: 'Ягода 3', isDone: false},
         {idCard: 'b4', img: plant1, title: 'Ягода 4', isDone: false},
     ],
     [zoneViolet]: [
-        {idCard: 'v1', img: plant1, title: 'Трава 1', isDone: true},
+        {idCard: 'v1', img: plant1, title: 'Трава 1', isDone: false},
         {idCard: 'v2', img: plant1, title: 'Трава 2', isDone: false},
         {idCard: 'v3', img: plant2, title: 'Трава 3', isDone: false},
     ]
