@@ -36,7 +36,7 @@ export const HeaderMenu = () => {
                 <img src={logo}/>
                 <NavLink onClick={scrollUp} to={'/main'}>Наш сад</NavLink>
             </div>
-            <div>
+            <div className={style.burger}>
                 <Button className={style.buttonMenu}
                         onClick={handleClick}>
                     меню
@@ -47,19 +47,20 @@ export const HeaderMenu = () => {
                     open={open}
                     onClose={handleClose}
                     MenuListProps={{
-                        'aria-labelledby': 'basic-button',
+                        'aria-labelledby': 'basic-button'
                     }}
                 >
-                    <MenuItem onClick={handleClose}>
+
+                    <MenuItem className={style.burgerLink} onClick={handleClose}>
                         <NavLink to={'/main'}>Наш сад</NavLink>
                     </MenuItem>
-                    <MenuItem onClick={handleClose}>
+                    <MenuItem className={style.burgerLink} onClick={handleClose}>
                         <NavLink to={'/about_us'}>О нас</NavLink>
                     </MenuItem>
-                    <MenuItem onClick={handleClose}>
+                    <MenuItem className={style.burgerLink} onClick={handleClose}>
                         <NavLink to={'/concurs'}>Конкурсные работы</NavLink>
                     </MenuItem>
-                    <MenuItem onClick={handleClose}>
+                    <MenuItem className={style.burgerLink} onClick={handleClose}>
                         <NavLink to={'/about_festival'}>О фестивале</NavLink>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
