@@ -11,7 +11,7 @@ export const Menu = () => {
         if (window.screen.width <= 768) {
             setTimeout(function () {
                 setMenuActive(!menuActive);
-            }, 0)
+            }, 10)
         }
     }
 
@@ -24,7 +24,7 @@ export const Menu = () => {
         setTimeout(function () {
             const divElement = document.getElementById('gardenPlan');
             divElement && divElement.scrollIntoView({behavior: 'smooth'});
-        }, 0)
+        }, 10)
     }
 
     return (
