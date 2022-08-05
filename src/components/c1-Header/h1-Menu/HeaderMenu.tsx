@@ -27,6 +27,9 @@ export const HeaderMenu = () => {
     };
     const handleClose = () => {
         setAnchorEl(null);
+    };
+    const handleCloseAndScrollUp = () => {
+        setAnchorEl(null);
         window.scrollTo(0, 0);
     };
 
@@ -41,7 +44,7 @@ export const HeaderMenu = () => {
                         onClick={handleClick}>
                     меню
                 </Button>
-                <Menu
+                <Menu className={style.burgerLinks}
                     id="basic-menu"
                     anchorEl={anchorEl}
                     open={open}
@@ -51,16 +54,16 @@ export const HeaderMenu = () => {
                     }}
                 >
 
-                    <MenuItem className={style.burgerLink} onClick={handleClose}>
+                    <MenuItem className={style.burgerLink} onClick={handleCloseAndScrollUp}>
                         <NavLink to={'/main'}>Наш сад</NavLink>
                     </MenuItem>
-                    <MenuItem className={style.burgerLink} onClick={handleClose}>
+                    <MenuItem className={style.burgerLink} onClick={handleCloseAndScrollUp}>
                         <NavLink to={'/about_us'}>О нас</NavLink>
                     </MenuItem>
-                    <MenuItem className={style.burgerLink} onClick={handleClose}>
+                    <MenuItem className={style.burgerLink} onClick={handleCloseAndScrollUp}>
                         <NavLink to={'/concurs'}>Конкурсные работы</NavLink>
                     </MenuItem>
-                    <MenuItem className={style.burgerLink} onClick={handleClose}>
+                    <MenuItem className={style.burgerLink} onClick={handleCloseAndScrollUp}>
                         <NavLink to={'/about_festival'}>О фестивале</NavLink>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>

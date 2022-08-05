@@ -227,7 +227,8 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin: 130px auto;
+        margin: 0 auto;
+        padding-top: 80px;
     }
 
     .column {
@@ -257,9 +258,6 @@
 }
 
 @media (max-width: 768px) {
-    .plan {
-        margin: 30px auto 54px;
-    }
 
     .column {
         display: flex;

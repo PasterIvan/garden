@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .menu a {
     text-decoration: none;
 }
@@ -32,10 +33,12 @@ a:hover {
     line-height: 100%;
     color: #374A3D;
 }
+
 .logo a:hover {
     color: #0CA941;
     text-decoration: none;
 }
+
 .textAndButton {
     width: 150%;
     display: flex;
@@ -59,6 +62,7 @@ a:hover {
     display: flex;
     justify-content: space-evenly;
 }
+
 .text a, .burgerLink a {
     font-family: Arial, sans-serif;
     font-weight: 700;
@@ -87,6 +91,10 @@ a:hover {
     line-height: 21px;
     cursor: pointer;
 }
+.burgerLinks li{
+    justify-content: center;
+    align-items: center;
+}
 
 @media (max-width: 768px) {
     .menu {
@@ -109,9 +117,6 @@ a:hover {
         font-size: 18px;
         line-height: 21px;
         margin-right: 1px;
-    }
-    .buttonTrees {
-       margin-bottom: 25px;
     }
 }
 
