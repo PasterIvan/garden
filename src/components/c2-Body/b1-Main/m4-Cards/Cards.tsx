@@ -22,7 +22,7 @@ export const Cards = () => {
                     Выберите растение
                 </div>
                 <div className={style.text}>
-                    {zoneTexts.cardText}
+                    Временная заглушка
                 </div>
             </div>
             <div className={style.card}>
