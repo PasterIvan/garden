@@ -12,6 +12,8 @@ export const Cards = () => {
     const cards = useSelector<AppStateType, CardsType>(state => state.cards)
     const zones = useSelector<AppStateType, ZoneType[]>(state => state.zones)
 
+
+
     const zoneTexts = zones.filter(z => z.idZone === theme)[0]
     let zoneCards = cards[theme]
 
@@ -22,7 +24,7 @@ export const Cards = () => {
                     Выберите растение
                 </div>
                 <div className={style.text}>
-                    заглушка
+                    {zoneTexts && zoneTexts.cardText}
                 </div>
             </div>
             <div className={style.card}>
