@@ -22,12 +22,12 @@ export const Cards = () => {
                     Выберите растение
                 </div>
                 <div className={style.text}>
-                    Временная заглушка
+                    {zoneTexts.cardText}
                 </div>
             </div>
             <div className={style.card}>
                 {
-                    zoneCards.map(z => {
+                    zoneCards && zoneCards.map(z => {
                         return <Card key={z.idCard}
                                      idCard={z.idCard}
                                      title={z.title}
