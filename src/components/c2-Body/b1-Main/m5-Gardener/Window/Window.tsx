@@ -1,6 +1,5 @@
 import React from "react";
 import InputText from "../../../../../common/InputText/InputText";
-import Button from "../../../../../common/Button/Button";
 import style from "./Window.module.css"
 
 export const Window = () => {
@@ -13,7 +12,7 @@ export const Window = () => {
                     <InputText placeholder={'Ваше имя'}/>
                     <InputText placeholder={'Номер вашего телефона'}/>
                     <InputText placeholder={'E-mail для обратной связи'}/>
-                    <Button>Оплатить</Button>
+                    <button>Оплатить</button>
                 </form>
                 <div className={style.text1}>
                     Нажимая кнопку «Отправить» вы соглашаетесь с <a>Политикой конфиденциальности</a>

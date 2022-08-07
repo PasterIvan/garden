@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../../../../../common/Button/Button";
 import style from "./Card.module.css"
 import {useDispatch} from "react-redux";
 import {choosePlantAC} from "../../../../../bll/cardsReducer";
@@ -27,7 +26,7 @@ export const Card: React.FC<CardCT> = ({idZone, idCard, img, title, isDone}) => 
                     <img src={img}/>
                 </div>
                 <div style={isDone?{display:'none'}:{}}>{title}</div>
-                <Button onClick={()=>onChangeCard(idZone, idCard)}>Выбрать</Button>
+                <button onClick={()=>onChangeCard(idZone, idCard)}>Выбрать</button>
             </div>
         </div>
     );
