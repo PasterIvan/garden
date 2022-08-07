@@ -1,5 +1,4 @@
 import React from "react";
-import InputText from "../../../../../common/InputText/InputText";
 import style from "./Window.module.css"
 
 export const Window = () => {
@@ -9,9 +8,9 @@ export const Window = () => {
             <div className={style.body}>
                 <div>1200р</div>
                 <form className={style.form}>
-                    <InputText placeholder={'Ваше имя'}/>
-                    <InputText placeholder={'Номер вашего телефона'}/>
-                    <InputText placeholder={'E-mail для обратной связи'}/>
+                    <input placeholder={'Ваше имя'}/>
+                    <input placeholder={'Номер вашего телефона'}/>
+                    <input placeholder={'E-mail для обратной связи'}/>
                     <button>Оплатить</button>
                 </form>
                 <div className={style.text1}>
