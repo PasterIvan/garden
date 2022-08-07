@@ -1,6 +1,5 @@
 import {NavLink} from "react-router-dom";
 import React from "react";
-import Button from "../../../common/Button/Button";
 import style from "./HeaderMenu.module.css"
 import logo from "./img/logo.svg";
 import Menu from "@mui/material/Menu";
@@ -40,10 +39,10 @@ export const HeaderMenu = () => {
                 <NavLink onClick={scrollUp} to={'/main'}>Наш сад</NavLink>
             </div>
             <div className={style.burger}>
-                <Button className={style.buttonMenu}
+                <button className={style.buttonMenu}
                         onClick={handleClick}>
                     меню
-                </Button>
+                </button>
                 <Menu className={style.burgerLinks}
                     id="basic-menu"
                     anchorEl={anchorEl}
@@ -67,8 +66,8 @@ export const HeaderMenu = () => {
                         <NavLink to={'/about_festival'}>О фестивале</NavLink>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                        <Button className={style.buttonTrees}
-                                onClick={scrollGardenPlan}>деревья</Button>
+                        <button className={style.buttonTrees}
+                                onClick={scrollGardenPlan}>деревья</button>
                     </MenuItem>
                 </Menu>
             </div>
@@ -79,8 +78,8 @@ export const HeaderMenu = () => {
                     <NavLink onClick={scrollUp} to={'/concurs'}>Конкурсные работы</NavLink>
                     <NavLink onClick={scrollUp} to={'/about_festival'}>О фестивале</NavLink>
                 </div>
-                <Button className={style.buttonTrees}
-                        onClick={scrollGardenPlan}>деревья</Button>
+                <button className={style.buttonTrees}
+                        onClick={scrollGardenPlan}>деревья</button>
             </div>
         </div>
 )
