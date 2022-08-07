@@ -1,8 +1,8 @@
-import {zones, ZonesType, ZoneType} from "../store/state";
+import {zones, ZoneType} from "../store/state";
 
-type ChangeZoneAT = ReturnType<typeof changeThemeAC>
+type SetZoneAT = ReturnType<typeof setZonesAC>
 
-type ZoneActionsType =  ChangeZoneAT
+type ZoneActionsType =  SetZoneAT
 
 type InitialStateType = typeof initState
 
@@ -10,12 +10,12 @@ const initState: Array<ZoneType> = zones;
 
 export const zonesReducer = (state: Array<ZoneType>= initState, action: ZoneActionsType): InitialStateType => {
     switch (action.type) {
+        case 'SET-ZONES':
+            return action.zones.map(zone => ({...zone}))
         default:
             return state;
     }
 };
 
 //AC
-export const changeThemeAC = (theme: ZonesType) => {
-    return {type: "CHANGE-ZONE", theme} as const
-};
+export const setZonesAC = (zones: Array<ZoneType>) => ({type: 'SET-ZONES', zones} as const);

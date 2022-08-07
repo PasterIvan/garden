@@ -2,11 +2,10 @@ import React from "react";
 import style from "./GardenPlan.module.css"
 import {useDispatch, useSelector} from "react-redux";
 import {AppStateType} from "../../../../store/store";
-import {changeThemeAC} from "../../../../bll/zonesReducer";
 import SuperRadio from "./Radio/SuperRadio";
 import plan from "./img/planNew.svg"
 import {themes, zones, ZonesType} from "../../../../store/state";
-
+import {changeThemeAC} from "../../../../bll/themeReducer";
 
 export const GardenPlan = () => {
 
