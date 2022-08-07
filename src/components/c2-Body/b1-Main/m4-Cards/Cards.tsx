@@ -10,18 +10,13 @@ export const Cards = () => {
 
     const dispatch = useDispatch()
 
-
     const theme = useSelector<AppStateType, string>(state => state.theme.startTheme);
     const cards = useSelector<AppStateType, CardsType>(state => state.cards)
     const zones = useSelector<AppStateType, ZoneType[]>(state => state.zones)
 
-    useEffect(() => {
-        dispatch(setZonesAC(zones))
-    })
-
     const zoneTexts = zones.filter(z => z.idZone === theme)[0]
     let zoneCards = cards[theme]
-
+debugger
     return (
         <div className={style.cards}>
             <div className={style.header}>

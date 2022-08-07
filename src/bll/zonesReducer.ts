@@ -10,8 +10,6 @@ const initState: Array<ZoneType> = zones;
 
 export const zonesReducer = (state: Array<ZoneType>= initState, action: ZoneActionsType): InitialStateType => {
     switch (action.type) {
-        case 'SET-ZONES':
-            return action.zones.map(zone => ({...zone}))
         default:
             return state;
     }
