@@ -8,9 +8,10 @@ export const AboutFestival = () => {
             <HeaderBlock title={'О ФЕСТИВАЛЕ'}
                          text={'Узнайте про фестиваль подробнее'}/>
             <div className={style.aboutFestivalVideo}>
-                <iframe width="100%" height="519px" src="https://www.youtube.com/embed/H2DkW7olpeM"
+                <iframe width="100%" height="519" src="https://www.youtube.com/embed/H2DkW7olpeM"
                         title="YouTube video player" frameBorder="0"
-                >
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen>
                 </iframe>
             </div>
             <div className={style.aboutFestivalBody}>
