@@ -4,6 +4,7 @@ import {useSelector} from "react-redux";
 import {AppStateType} from "../../../../store/store";
 import {CardsType, ZoneType} from "../../../../store/state";
 import {Card} from "./Card/Card";
+import {HeaderBlock} from "../../../common/HeaderBlock";
 
 export const Cards = () => {
 
@@ -16,14 +17,8 @@ export const Cards = () => {
 
     return (
         <div className={style.cards}>
-            <div className={style.header}>
-                <div className={style.title}>
-                    Выберите растение
-                </div>
-                <div className={style.text}>
-                    {zoneTexts && zoneTexts.cardText}
-                </div>
-            </div>
+            <HeaderBlock title={'Выберите растение'}
+                         text={zoneTexts && zoneTexts.cardText}/>
             <div className={style.card}>
                 {
                     zoneCards && zoneCards.map(z => {

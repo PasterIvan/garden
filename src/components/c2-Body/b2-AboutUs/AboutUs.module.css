@@ -1,43 +1,16 @@
 .aboutUs {
-    padding-top: 200px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-}
-
-.aboutUsHeader {
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    width: 75%;
-    margin: 0 auto;
-}
-.aboutUsHeaderTitle {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 46px;
-    line-height: 40px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #219653;
-}
-.aboutUsHeaderText {
-    width: 100%;
-    height: 100%;
-    margin-top: 20px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 140%;
-    text-align: center;
-    color: #402B2B;
 }
 .aboutUsBody {
     width: 87.5%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 64px auto 0 0;
+    margin: 0px auto 0 0;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -54,15 +27,14 @@
     padding: 0;
 }
 .aboutUsBodyText {
-    width: 100%;
-    padding: 34px 34px 0 34px;
+    width: 95%;
 }
 .aboutUsBodyTextGreen {
     color: #588535;
 }
 @media (max-width: 1023px) {
     .aboutUs {
-        padding-top: 85px;
+        padding-top: 70px;
     }
     .aboutUsBody {
         width:100%;

@@ -3,17 +3,6 @@
     margin: 0 auto;
 }
 
-.header {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 46px;
-    line-height: 100%;
-    color: #0CA941;
-    padding: 120px 0 63px 0;
-    text-align: center;
-}
-
 .festivalPicture {
     width: 58%;
     margin: 0 auto;
@@ -44,9 +33,6 @@
 }
 
 @media (max-width: 768px) {
-    .header {
-        padding: 54px 0 30px 0;
-    }
     .text {
         padding: 14px;
     }

@@ -1,13 +1,12 @@
 import React from "react";
 import style from "./AboutFestival.module.css";
+import {HeaderBlock} from "../../common/HeaderBlock";
 
 export const AboutFestival = () => {
     return (
         <div className={style.aboutFestival}>
-            <div className={style.aboutFestivalHeader}>
-                <div className={style.aboutFestivalHeaderTitle}>О ФЕСТИВАЛЕ</div>
-                <div className={style.aboutFestivalHeaderText}>Узнайте про фестиваль подробнее</div>
-            </div>
+            <HeaderBlock title={'О ФЕСТИВАЛЕ'}
+                         text={'Узнайте про фестиваль подробнее'}/>
             <div className={style.aboutFestivalVideo}>
                 <iframe width="100%" height="519px" src="https://www.youtube.com/embed/H2DkW7olpeM"
                         title="YouTube video player" frameBorder="0"

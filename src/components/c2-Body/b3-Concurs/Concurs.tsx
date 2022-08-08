@@ -4,14 +4,13 @@ import aboutConcurs from "./img/aboutConcurs.svg";
 import page1 from "../b1-Main/m7-Gallery/img/Rectangle 7911.svg";
 import page2 from "../b1-Main/m7-Gallery/img/Rectangle 7912.svg";
 import page3 from "../b1-Main/m7-Gallery/img/Rectangle 7913.svg";
+import {HeaderBlock} from "../../common/HeaderBlock";
 
 export const Concurs = () => {
     return (
         <div className={style.aboutConcurs}>
-            <div className={style.aboutConcursHeader}>
-                <div className={style.aboutConcursHeaderTitle}>КОНКУРС</div>
-                <div className={style.aboutConcursHeaderText}>Ознакомьтесь с работами финалистов</div>
-            </div>
+            <HeaderBlock title={'КОНКУРС'}
+                         text={'Ознакомьтесь с работами финалистов'}/>
             <div className={style.aboutConcursBody}>
 
                 <div className={style.aboutConcursBodyPicture}>

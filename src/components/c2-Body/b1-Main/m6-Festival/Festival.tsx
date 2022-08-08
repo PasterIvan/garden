@@ -1,14 +1,13 @@
 import React from "react";
 import style from "./Festival.module.css"
 import festival from "./img/festival.svg"
+import {HeaderBlock} from "../../../common/HeaderBlock";
 
 export const Festival = () => {
 
     return (
         <div className={style.festival}>
-            <div className={style.header}>
-                ФЕСТИВАЛЬ
-            </div>
+            <HeaderBlock title={'ФЕСТИВАЛЬ'}/>
             <div className={style.festivalPicture}>
                 <img src={festival}/>
             </div>

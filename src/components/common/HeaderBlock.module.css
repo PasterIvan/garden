@@ -1,0 +1,38 @@
+.header {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0 46px 0;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #0CA941;
+}
+
+.text {
+    max-width: 700px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #678570;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 39px 0 30px 0;
+    }
+    .title {
+        font-size: 40px;
+    }
+}
