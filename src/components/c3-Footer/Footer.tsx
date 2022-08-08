@@ -8,12 +8,20 @@ import {scrollUp} from "../c1-Header/h1-Menu/HeaderMenu";
 
 export const Footer = () => {
 
+    const scrollDocuments = () => {
+        document.location.href = '#/contacts';
+        setTimeout(function () {
+            const divElement = document.getElementById('documents');
+            divElement && divElement.scrollIntoView({behavior: 'smooth'});
+        }, 100)
+    }
+
     return (
         <div className={style.background}>
             <div className={style.footer}>
                 <div className={style.documents}>
                     <div >
-                        документы
+                        <NavLink onClick={scrollDocuments} to={'/contacts'}>документы</NavLink>
                     </div>
                     <div>
                         <NavLink onClick={scrollUp} to={'/contacts'}>контакты</NavLink>

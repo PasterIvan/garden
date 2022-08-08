@@ -26,6 +26,9 @@
 .footer a {
     cursor: pointer;
 }
+.footer a:hover {
+    color: #0CA941;
+}
 
 .socialNetworks {
     width: 15%;

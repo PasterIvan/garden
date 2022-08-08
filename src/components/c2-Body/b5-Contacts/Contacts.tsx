@@ -3,6 +3,7 @@ import style from './Contacts.module.css'
 import {HeaderBlock} from "../../common/HeaderBlock";
 
 export const Contacts = () => {
+
     return (
         <div className={style.contacts}>
             <HeaderBlock title={'НАШИ КОНТАКТЫ'}/>
@@ -13,8 +14,8 @@ export const Contacts = () => {
 
                 <p><b>Телефон</b>: 8-910-348-28-09</p>
             </div>
-            <HeaderBlock title={'ДОКУМЕНТЫ'}/>
-            <div className={style.documents}>
+            <HeaderBlock title={'ДОКУМЕНТЫ'}  />
+            <div className={style.documents} id={'documents'}>
                 <div>Приложение</div>
                 <div>ТЗ</div>
                 <div>Топосъемка места</div>

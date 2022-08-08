@@ -48,7 +48,9 @@ a:hover {
 
 .buttonMenu {
     display: none;
+    cursor: pointer;
 }
+
 
 .text {
     width: 100%;
@@ -90,6 +92,12 @@ a:hover {
     font-size: 18px;
     line-height: 21px;
     cursor: pointer;
+}
+.buttonTrees:hover, .buttonMenu:hover {
+    background: #FFFFFF;
+    border: 1px solid #0CA941;
+    border-radius: 6px;
+    color: #0CA941;
 }
 .burgerLinks li{
     justify-content: center;
