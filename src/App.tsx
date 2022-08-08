@@ -10,7 +10,6 @@ import {Footer} from "./components/c3-Footer/Footer";
 import {Contacts} from "./components/c2-Body/b5-Contacts/Contacts";
 
 export const App = () => {
-
     return (
         <div className={style.App}>
             <Header/>
