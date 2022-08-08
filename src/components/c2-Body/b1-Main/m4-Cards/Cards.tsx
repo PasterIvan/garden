@@ -1,14 +1,11 @@
-import React, {useEffect} from "react";
+import React from "react";
 import style from "./Cards.module.css"
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 import {AppStateType} from "../../../../store/store";
 import {CardsType, ZoneType} from "../../../../store/state";
 import {Card} from "./Card/Card";
-import {setZonesAC} from "../../../../bll/zonesReducer";
 
 export const Cards = () => {
-
-    const dispatch = useDispatch()
 
     const theme = useSelector<AppStateType, string>(state => state.theme.startTheme);
     const cards = useSelector<AppStateType, CardsType>(state => state.cards)
@@ -16,7 +13,7 @@ export const Cards = () => {
 
     const zoneTexts = zones.filter(z => z.idZone === theme)[0]
     let zoneCards = cards[theme]
-debugger
+
     return (
         <div className={style.cards}>
             <div className={style.header}>
