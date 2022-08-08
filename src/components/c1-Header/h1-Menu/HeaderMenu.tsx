@@ -5,11 +5,11 @@ import logo from "./img/logo.svg";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 
-export const HeaderMenu = () => {
+export const scrollUp = () => {
+    window.scrollTo(0, 0);
+}
 
-    const scrollUp = () => {
-        window.scrollTo(0, 0);
-    }
+export const HeaderMenu = () => {
 
     const scrollGardenPlan = () => {
         document.location.href = '#/main';
