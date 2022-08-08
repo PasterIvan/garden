@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import {IconInfo} from "./Icon/IconInfo";
+import React from "react";
+import {IconInfoToMain} from "./Icon/IconInfo";
 import logo1 from './img/logo1.svg'
 import logo2 from './img/logo2.svg'
 import logo3 from './img/logo3.svg'
@@ -19,10 +19,9 @@ export const Icons = () => {
             {id: 6, logo: logo6, text: 'Аренда палаток'}
         ]
 
-
     return (
         <div className={style.icons}>
-            <IconInfo icons={icons} />
+            <IconInfoToMain icons={icons} />
         </div>
     )
 }

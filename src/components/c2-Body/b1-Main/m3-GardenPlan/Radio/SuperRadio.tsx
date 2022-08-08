@@ -24,11 +24,6 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
         onChangeOption && onChangeOption(e.currentTarget.value)
     }
 
-    const checked = (e: ChangeEvent<HTMLInputElement>) => {
-        onChange && onChange(e)
-        onChangeOption && onChangeOption(e.currentTarget.checked)
-    }
-
     const mappedOptions: any[] = options ? options.map((o, i) => (
 
             <label key={name + '-' + i} style={{cursor: 'pointer'}} className={style['button-' + o]}>

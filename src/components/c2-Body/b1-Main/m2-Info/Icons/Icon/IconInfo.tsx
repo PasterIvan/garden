@@ -10,7 +10,7 @@ type IconsInfo = {
     icons: IconInfo[]
 }
 
-export const IconInfo: React.FC<IconsInfo> = ({icons}) => {
+export const IconInfoToMain: React.FC<IconsInfo> = ({icons}) => {
 
     return (
         <>
