@@ -1,7 +1,6 @@
 {
   "name": "garden",
   "version": "0.1.0",
-  "homepage": "https://PasterIvan.github.io/garden",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.0",
