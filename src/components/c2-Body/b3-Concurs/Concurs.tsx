@@ -38,7 +38,7 @@ export const Concurs = () => {
                         Получит премию — 50 000 рублей. Всех финалистов жду поощрительные призы.
                     </p>
                 </div>
-                <iframe width="100%" height="519px" src="https://www.youtube.com/embed/evSn0cGIxfs"
+                <iframe width="100%" height="519px" src="https://www.youtube.com/embed/AMy9lDbXEK8"
                         style={{borderRadius: "28px", margin: "0 auto"}}
                         title="YouTube video player" frameBorder="0"
                 >

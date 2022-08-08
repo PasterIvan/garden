@@ -8,7 +8,7 @@ export const Gallery = () => {
 
     return (
         <div className={style.gallery}>
-            <iframe width="100%" height="519px" src="https://www.youtube.com/embed/evSn0cGIxfs"
+            <iframe width="100%" height="519px" src="https://www.youtube.com/embed/H2DkW7olpeM"
                     style={{borderRadius: "28px"}}
                     title="YouTube video player" frameBorder="0"
                    >
