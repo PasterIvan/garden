@@ -6,6 +6,7 @@ import SuperRadio from "./Radio/SuperRadio";
 import plan from "./img/planNew.svg"
 import {themes, zones, ZonesType} from "../../../../store/state";
 import {changeThemeAC} from "../../../../bll/themeReducer";
+import {setIsInitializedAC} from "../../../../bll/appReducer";
 
 export const GardenPlan = () => {
 
@@ -14,7 +15,9 @@ export const GardenPlan = () => {
     const dispatch = useDispatch()
 
     const onChangeTheme = (zone: ZonesType) => {
+        dispatch(setIsInitializedAC(false))
         dispatch(changeThemeAC(zone));
+        dispatch(setIsInitializedAC(true))
     }
 
     const zoneTexts = zones.filter(z => z.idZone === theme)[0]
