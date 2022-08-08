@@ -14,10 +14,10 @@ export const Gallery = () => {
                    >
             </iframe>
             <div className={style.picture}>
-                <img src={page1}/>
-                <img src={page2}/>
-                <img src={page3}/>
-                <img src={page1}/>
+                <img src={page1} alt=''/>
+                <img src={page2} alt=''/>
+                <img src={page3} alt=''/>
+                <img src={page1} alt=''/>
             </div>
         </div>
     );

@@ -35,7 +35,7 @@ export const HeaderMenu = () => {
     return (
         <div className={style.menu}>
             <div className={style.logo}>
-                <img src={logo}/>
+                <img src={logo} alt=''/>
                 <NavLink onClick={scrollUp} to={'/main'}>Наш сад</NavLink>
             </div>
             <div className={style.burger}>

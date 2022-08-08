@@ -14,7 +14,7 @@ export const Concurs = () => {
             <div className={style.aboutConcursBody}>
 
                 <div className={style.aboutConcursBodyPicture}>
-                    <img src={aboutConcurs}/>
+                    <img src={aboutConcurs} alt=''/>
                 </div>
 
                 <div className={style.aboutConcursBodyText}>
@@ -45,18 +45,18 @@ export const Concurs = () => {
 
             </div>
             <div className={style.aboutConcursGallery}>
-                <img src={page1}/>
-                <img src={page2}/>
-                <img src={page3}/>
-                <img src={page1}/>
-                <img src={page2}/>
-                <img src={page3}/>
-                <img src={page1}/>
-                <img src={page2}/>
-                <img src={page3}/>
-                <img src={page1}/>
-                <img src={page2}/>
-                <img src={page3}/>
+                <img src={page1} alt=''/>
+                <img src={page2} alt=''/>
+                <img src={page3} alt=''/>
+                <img src={page1} alt=''/>
+                <img src={page2} alt=''/>
+                <img src={page3} alt=''/>
+                <img src={page1} alt=''/>
+                <img src={page2} alt=''/>
+                <img src={page3} alt=''/>
+                <img src={page1} alt=''/>
+                <img src={page2} alt=''/>
+                <img src={page3} alt=''/>
             </div>
         </div>
     )

@@ -18,7 +18,7 @@ export const Picture = () => {
                 <div className={style.button}
                      onClick={scrollGardenPlan}>
                     Выбрать дерево
-                    <img src={Group333553}/>
+                    <img src={Group333553} alt=''/>
                 </div>
             </div>
         </div>

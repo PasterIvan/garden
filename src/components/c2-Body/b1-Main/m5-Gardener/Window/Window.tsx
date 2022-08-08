@@ -14,7 +14,7 @@ export const Window = () => {
                     <button>Оплатить</button>
                 </form>
                 <div className={style.text1}>
-                    Нажимая кнопку «Отправить» вы соглашаетесь с <a>Политикой конфиденциальности</a>
+                    Нажимая кнопку «Отправить» вы соглашаетесь с <a href={'#'}>Политикой конфиденциальности</a>
                 </div>
             </div>
             <div className={style.additional}>

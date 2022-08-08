@@ -11,7 +11,7 @@ export const AboutUs = () => {
 
             <div className={style.aboutUsBody}>
                 <div className={style.aboutUsBodyPicture}>
-                    <img src={aboutUs}/>
+                    <img src={aboutUs} alt=''/>
                 </div>
                 <div className={style.aboutUsBodyText}>
                     <p>

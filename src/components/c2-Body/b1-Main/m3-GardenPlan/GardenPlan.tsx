@@ -62,7 +62,7 @@ export const GardenPlan = () => {
                 </div>
             </div>
             <div className={style.picture}>
-                <img src= {plan} />
+                <img src= {plan} alt=''/>
             </div>
         </div>
     );

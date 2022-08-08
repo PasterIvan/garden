@@ -1,23 +1,23 @@
 import React from "react";
 import style from "./Icon.module.css"
 
-type Icon = {
+type IconInfo = {
     id: number
     logo: string
     text: string
 }
-type Icons = {
-    icons: Icon[]
+type IconsInfo = {
+    icons: IconInfo[]
 }
 
-export const Icon: React.FC<Icons> = ({icons}) => {
+export const IconInfo: React.FC<IconsInfo> = ({icons}) => {
 
     return (
         <>
             {icons.map(icon => {
                 return (
                     <div key={icon.id} className={style.icon}>
-                            <img src={icon.logo}/>
+                            <img src={icon.logo} alt=''/>
                         <div className={style.text}>{icon.text}</div>
                     </div>
                 )

@@ -21,9 +21,9 @@ export const Footer = () => {
                 </div>
                 <div></div>
                 <div className={style.socialNetworks}>
-                    <img src={f}/>
-                    <img src={t}/>
-                    <img src={i}/>
+                    <img src={f} alt=''/>
+                    <img src={t} alt=''/>
+                    <img src={i} alt=''/>
                 </div>
             </div>
         </div>

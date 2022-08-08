@@ -23,7 +23,7 @@ export const Card: React.FC<CardCT> = ({idZone, idCard, img, title, isDone}) => 
         <div className={style.card}>
             <div className={isDone ? style.selectedBox : style.box}>
                 <div className={style.img}>
-                    <img src={img}/>
+                    <img src={img} alt=''/>
                 </div>
                 <div style={isDone?{display:'none'}:{}}>{title}</div>
                 <button onClick={()=>onChangeCard(idZone, idCard)}>Выбрать</button>

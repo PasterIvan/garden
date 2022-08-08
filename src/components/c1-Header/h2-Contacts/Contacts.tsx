@@ -10,12 +10,12 @@ import style from "./Contacts.module.css"
 export const Contacts = () => {
     return (
             <div className={style.contacts}>
-                <img src={phone}/>
-                <img src={whatsapp} />
-                <img src={telegram} />
-                <img src={vk} />
-                <img src={fb} />
-                <img src={instagram} />
+                <img src={phone} alt=''/>
+                <img src={whatsapp} alt=''/>
+                <img src={telegram} alt=''/>
+                <img src={vk} alt=''/>
+                <img src={fb} alt=''/>
+                <img src={instagram} alt=''/>
             </div>
     )
 }
