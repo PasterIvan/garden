@@ -1,6 +1,6 @@
 import {formAPI, FormParamsType} from "../api/api";
-import {AppThunkType} from "../store/store";
 import {CardsType} from "../store/state";
+import {AppThunkType} from "../store/store";
 
 const initialState = {}
 
@@ -14,12 +14,19 @@ export const formReducer = (state: InitialStateType = initialState, action: Acti
             let greenPlant = action.cards['green'].filter(card => card.isDone).map(c => c.title)
             let bluePlant = action.cards['blue'].filter(card => card.isDone).map(c => c.title)
             let violetPlant = action.cards['violet'].filter(card => card.isDone).map(c => c.title)
-            return {...state,
+            return {
+                ...state,
                 redZone: redPlant,
                 orangeZone: orangePlant,
                 greenZone: greenPlant,
                 blueZone: bluePlant,
                 violetZone: violetPlant
+            }
+        }
+        case 'ADD-FORM': {
+            return {
+                ...state,
+                contacts: action.contacts
             }
         }
         default:
@@ -30,11 +37,15 @@ export const formReducer = (state: InitialStateType = initialState, action: Acti
 export const addPlantAC = (cards: CardsType) => {
     return {type: 'ADD-PLANT', cards} as const
 }
+export const addFormAC = (contacts: FormParamsType) => {
+    return {type: 'ADD-FORM', contacts} as const
+}
 
 // thunks
-export const postFormTC = (data: FormParamsType): AppThunkType => async (dispatch) => {
-    const res = await formAPI.postForm(data)
+
+export const postFormTC = (form: object): AppThunkType => async dispatch => {
+    const res = await formAPI.postForm(form)
 }
 
 // types
-export type ActionsTypeForAuthReducer = ReturnType<typeof addPlantAC>
+export type ActionsTypeForAuthReducer = ReturnType<typeof addPlantAC> | ReturnType<typeof addFormAC>

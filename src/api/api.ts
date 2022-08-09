@@ -5,8 +5,10 @@ const instance = axios.create({
 })
 
 export const formAPI = {
-    postForm(data: FormParamsType) {
-        return instance.post<FormParamsType, AxiosResponse<ResponseType<{ userId: number }>>>('auth/login', data);
+
+    postForm(form: object) {
+        debugger
+        return instance.post<{ form: object }, AxiosResponse<ResponseType<{ form: object }>>>('auth/login', form);
     }
 }
 
@@ -14,6 +16,7 @@ export type FormParamsType = {
     name: string
     phone: string
     email: string
+    captcha?: string
 }
 export type ResponseType<D = {}> = {
     resultCode: number

@@ -1,11 +1,10 @@
 import {useFormik} from "formik";
 import React from "react";
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 import style from "./Window.module.css"
-import {addPlantAC, postFormTC} from "../../../../../bll/formReduser";
-import {useAppDispatch, useAppSelector} from "../../../../../hooks/hooks";
-import {choosePlantAC} from "../../../../../bll/cardsReducer";
-import {CardsType, CardType} from "../../../../../store/state";
+import {addFormAC, addPlantAC, postFormTC} from "../../../../../bll/formReduser";
+import {useAppDispatch} from "../../../../../hooks/hooks";
+import {CardsType} from "../../../../../store/state";
 import {AppStateType} from "../../../../../store/store";
 
 type FormikErrorType = {
@@ -18,6 +17,7 @@ export const Window = () => {
 
     const dispatch = useAppDispatch()
     const cards = useSelector<AppStateType, CardsType>(state => state.cards)
+    const form = useSelector<AppStateType, object>(state => state.form)
 
     const formik = useFormik({
         initialValues: {
@@ -25,36 +25,37 @@ export const Window = () => {
             phone: '',
             email: ''
         },
-        validate: (values) => {
+        validate: (contacts) => {
             const errors: FormikErrorType = {}
 
-            if (!values.name) {
+            if (!contacts.name) {
                 errors.name = 'Укажите Ваше имя'
-            } else if (values.name.length < 1) {
+            } else if (contacts.name.length < 1) {
                 errors.name = 'Некорректное имя'
             }
 
-            if (!values.phone) {
+            if (!contacts.phone) {
                 errors.phone = 'Укажите номер вашего телефона'
-            } else if (values.phone.length < 12) {
+            } else if (contacts.phone.length < 12) {
                 errors.phone = 'Некорректный номер телефона'
             }
 
-            if (!values.email) {
+            if (!contacts.email) {
                 errors.email = 'Укажите e-mail для обратной связи'
-            } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+            } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(contacts.email)) {
                 errors.email = 'Некорректный E-mail адрес'
             }
             return errors
         },
-        onSubmit: values => {
-            dispatch(postFormTC(values))
+        onSubmit: contacts => {
+            dispatch(addFormAC(contacts))
+            dispatch(addPlantAC(cards))
             formik.resetForm()
         },
     })
 
-    const addCardInForm = (cards: CardsType) => {
-        dispatch(addPlantAC(cards));
+    const pay = () => {
+        dispatch(postFormTC(form))
     }
 
     return (
@@ -84,8 +85,9 @@ export const Window = () => {
                         <div style={{color: 'red', fontSize: '14px', fontWeight: '400', height: '16px', textAlign: 'center'}}>
                             {formik.errors.email}
                         </div>}
-                    <button type={'submit'} onClick={()=>addCardInForm(cards)}>Оплатить</button>
+                    <button type={'submit'}>Оплатить</button>
                 </form>
+                <button onClick={pay}>pay</button>
                 <div className={style.text1}>
                     Нажимая кнопку «Отправить» вы соглашаетесь с <a href='/main'>Политикой конфиденциальности</a>
                 </div>
