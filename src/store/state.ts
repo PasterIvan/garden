@@ -51,7 +51,7 @@ export const cards: CardsType = {
         {idCard: 'g7', img: plant2, title: 'Цветок 7', isDone: false},
     ],
     [zoneBlue]: [
-        {idCard: 'b1', img: plant1, title: 'Ягода 1', isDone: false},
+        {idCard: 'b1', img: plant1, title: 'Wdcsdvs 1', isDone: false},
         {idCard: 'b2', img: plant1, title: 'Ягода 2', isDone: false},
         {idCard: 'b3', img: plant1, title: 'Ягода 3', isDone: false},
         {idCard: 'b4', img: plant1, title: 'Ягода 4', isDone: false},
