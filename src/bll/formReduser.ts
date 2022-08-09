@@ -19,7 +19,7 @@ export const setIsLoggedInAC = (value: boolean) =>
 
 // thunks
 export const postFormTC = (data: FormParamsType): AppThunkType => async (dispatch) => {
-
+alert()
     const res = await formAPI.postForm(data)
 
 }

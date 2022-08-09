@@ -26,7 +26,7 @@ export const Card: React.FC<CardCT> = ({idZone, idCard, img, title, isDone}) => 
                     <img src={img} alt=''/>
                 </div>
                 <div style={isDone?{display:'none'}:{}}>{title}</div>
-                <button onClick={()=>onChangeCard(idZone, idCard)}>Выбрать</button>
+                <button onClick={()=>onChangeCard(idZone, idCard)}>{isDone?'Отменить':'Выбрать'}</button>
             </div>
         </div>
     );
