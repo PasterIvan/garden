@@ -1,9 +1,12 @@
 import {useFormik} from "formik";
 import React from "react";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import style from "./Window.module.css"
-import {postFormTC} from "../../../../../bll/formReduser";
-import {useAppDispatch} from "../../../../../hooks/hooks";
+import {addPlantAC, postFormTC} from "../../../../../bll/formReduser";
+import {useAppDispatch, useAppSelector} from "../../../../../hooks/hooks";
+import {choosePlantAC} from "../../../../../bll/cardsReducer";
+import {CardsType, CardType} from "../../../../../store/state";
+import {AppStateType} from "../../../../../store/store";
 
 type FormikErrorType = {
     name?: string
@@ -14,6 +17,7 @@ type FormikErrorType = {
 export const Window = () => {
 
     const dispatch = useAppDispatch()
+    const cards = useSelector<AppStateType, CardsType>(state => state.cards)
 
     const formik = useFormik({
         initialValues: {
@@ -49,6 +53,10 @@ export const Window = () => {
         },
     })
 
+    const addCardInForm = (cards: CardsType) => {
+        dispatch(addPlantAC(cards));
+    }
+
     return (
         <div className={style.border}>
             <div className={style.body}>
@@ -76,7 +84,7 @@ export const Window = () => {
                         <div style={{color: 'red', fontSize: '14px', fontWeight: '400', height: '16px', textAlign: 'center'}}>
                             {formik.errors.email}
                         </div>}
-                    <button type={'submit'}>Оплатить</button>
+                    <button type={'submit'} onClick={()=>addCardInForm(cards)}>Оплатить</button>
                 </form>
                 <div className={style.text1}>
                     Нажимая кнопку «Отправить» вы соглашаетесь с <a href='/main'>Политикой конфиденциальности</a>

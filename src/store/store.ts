@@ -20,7 +20,7 @@ store.subscribe(() => {
                 theme: store.getState().theme,
                 zones: store.getState().zones,
                 cards: store.getState().cards,
-                form: store.getState()
+                form: store.getState().form
         })
 })
 

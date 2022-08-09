@@ -2,6 +2,7 @@ import React from "react";
 import style from "./Card.module.css"
 import {useDispatch} from "react-redux";
 import {choosePlantAC} from "../../../../../bll/cardsReducer";
+import {addPlantAC} from "../../../../../bll/formReduser";
 
 type CardCT = {
     idZone: string
