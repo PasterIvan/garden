@@ -2,7 +2,7 @@ import {useFormik} from "formik";
 import React from "react";
 import {useSelector} from "react-redux";
 import style from "./Window.module.css"
-import {addFormAC, addPlantAC, clearFormAC, postFormTC} from "../../../../../bll/formReduser";
+import {addFormAC, addPlantAC, clearFormAC, FormStateType, postFormTC} from "../../../../../bll/formReduser";
 import {useAppDispatch} from "../../../../../hooks/hooks";
 import {CardsType} from "../../../../../store/state";
 import {AppStateType} from "../../../../../store/store";
@@ -23,7 +23,7 @@ export const Window = () => {
 
     const dispatch = useAppDispatch()
     const cards = useSelector<AppStateType, CardsType>(state => state.cards)
-    const form = useSelector<AppStateType, object>(state => state.form)
+    const form = useSelector<AppStateType, FormStateType>(state => state.form)
 
     const formik = useFormik({
         initialValues: {
@@ -88,12 +88,21 @@ export const Window = () => {
                     aria-labelledby="alert-dialog-title"
                     aria-describedby="alert-dialog-description"
                 >
-                    <DialogTitle id="alert-dialog-title">
+                    <DialogTitle id="alert-dialog-title" style={{color:'red'}}>
                         {"Проверьте информацию о заказе!"}
                     </DialogTitle>
                     <DialogContent>
                         <DialogContentText id="alert-dialog-description">
-
+                            <h1>Вы заказали:</h1>
+                            <p>В красной зоне: <b>{(form.redZone.length === 0) ? '—' : form.redZone.join(', ')}</b></p>
+                            <p>В оранжевой зоне: <b>{(form.orangeZone.length === 0) ? '—' : form.orangeZone.join(', ')}</b></p>
+                            <p>В зеленой зоне: <b>{(form.greenZone.length) === 0 ? '—' : form.greenZone.join(', ')}</b></p>
+                            <p>В синей зоне: <b>{(form.blueZone.length === 0) ? '—' : form.blueZone.join(', ')}</b></p>
+                            <p>В фиолетовой зоне: <b>{(form.violetZone.length === 0) ? '—' : form.violetZone.join(', ')}</b></p>
+                            <h1>Контактная информация:</h1>
+                            <p>Имя: <b>{form.contacts.name}</b></p>
+                            <p>Номер телефона: <b>{form.contacts.phone}</b></p>
+                            <p>E-mail для обратной связи: <b>{form.contacts.email}</b></p>
                         </DialogContentText>
                     </DialogContent>
                     <DialogActions>
@@ -130,7 +139,7 @@ export const Window = () => {
                         <div style={{color: 'red', fontSize: '14px', fontWeight: '400', height: '16px', textAlign: 'center'}}>
                             {formik.errors.email}
                         </div>}
-                    <button type={'submit'} >Оплатить</button>
+                    <button type={'submit'}>Оформить заказ</button>
                 </form>
                 <div className={style.text1}>
                     Нажимая кнопку «Отправить» вы соглашаетесь с <a href='/main'>Политикой конфиденциальности</a>

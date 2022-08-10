@@ -2,11 +2,18 @@ import {formAPI, FormParamsType} from "../api/api";
 import {CardsType} from "../store/state";
 import {AppThunkType} from "../store/store";
 
-const initialState = {}
+const initialState = {} as FormStateType
 
-type InitialStateType = typeof initialState
+export type FormStateType = {
+    redZone: Array<string>,
+    orangeZone: Array<string>,
+    greenZone: Array<string>,
+    blueZone: Array<string>,
+    violetZone: Array<string>
+    contacts: FormParamsType
+}
 
-export const formReducer = (state: InitialStateType = initialState, action: ActionsTypeForAuthReducer): InitialStateType => {
+export const formReducer = (state: FormStateType = initialState, action: ActionsTypeForAuthReducer): FormStateType => {
     switch (action.type) {
         case 'ADD-PLANT': {
             let redPlant = action.cards['red'].filter(card => card.isDone).map(c => c.title)
@@ -30,7 +37,18 @@ export const formReducer = (state: InitialStateType = initialState, action: Acti
             }
         }
         case 'CLEAR-FORM':
-            return state = {}
+            return state = {
+                redZone: [],
+                orangeZone: [],
+                greenZone: [],
+                blueZone: [],
+                violetZone: [],
+                contacts: {
+                    name: '',
+                    phone: '',
+                    email: ''
+                }
+            }
 
         default:
             return state
