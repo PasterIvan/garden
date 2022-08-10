@@ -66,7 +66,10 @@ export const clearFormAC = () => {
 }
 
 // thunks
-
+export const preparationFormTC = (contacts: FormParamsType, cards: CardsType): AppThunkType => async dispatch => {
+    dispatch(addFormAC(contacts))
+    dispatch(addPlantAC(cards))
+}
 export const postFormTC = (form: object): AppThunkType => async dispatch => {
     const res = await formAPI.postForm(form)
 }
