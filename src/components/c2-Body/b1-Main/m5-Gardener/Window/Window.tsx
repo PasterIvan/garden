@@ -2,10 +2,16 @@ import {useFormik} from "formik";
 import React from "react";
 import {useSelector} from "react-redux";
 import style from "./Window.module.css"
-import {addFormAC, addPlantAC, postFormTC} from "../../../../../bll/formReduser";
+import {addFormAC, addPlantAC, clearFormAC, postFormTC} from "../../../../../bll/formReduser";
 import {useAppDispatch} from "../../../../../hooks/hooks";
 import {CardsType} from "../../../../../store/state";
 import {AppStateType} from "../../../../../store/store";
+import Button from "@mui/material/Button";
+import Dialog from "@mui/material/Dialog";
+import DialogTitle from "@mui/material/DialogTitle";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogActions from "@mui/material/DialogActions";
 
 type FormikErrorType = {
     name?: string
@@ -50,16 +56,55 @@ export const Window = () => {
         onSubmit: contacts => {
             dispatch(addFormAC(contacts))
             dispatch(addPlantAC(cards))
+            handleClickOpen()
             formik.resetForm()
         },
+
     })
 
-    const pay = () => {
+    const [open, setOpen] = React.useState(false);
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+    const handleCloseAndPost = () => {
+        setOpen(false);
         dispatch(postFormTC(form))
-    }
+        dispatch(clearFormAC())
+    };
+
 
     return (
         <div className={style.border}>
+
+            <div>
+                <Dialog
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="alert-dialog-title"
+                    aria-describedby="alert-dialog-description"
+                >
+                    <DialogTitle id="alert-dialog-title">
+                        {"Проверьте информацию о заказе!"}
+                    </DialogTitle>
+                    <DialogContent>
+                        <DialogContentText id="alert-dialog-description">
+
+                        </DialogContentText>
+                    </DialogContent>
+                    <DialogActions>
+                        <Button onClick={handleClose}>Отмена</Button>
+                        <Button onClick={handleCloseAndPost} autoFocus>
+                            Оплатить
+                        </Button>
+                    </DialogActions>
+                </Dialog>
+            </div>
+
             <div className={style.body}>
                 <div>1200р</div>
                 <form className={style.form} onSubmit={formik.handleSubmit}>
@@ -85,9 +130,8 @@ export const Window = () => {
                         <div style={{color: 'red', fontSize: '14px', fontWeight: '400', height: '16px', textAlign: 'center'}}>
                             {formik.errors.email}
                         </div>}
-                    <button type={'submit'}>Оплатить</button>
+                    <button type={'submit'} >Оплатить</button>
                 </form>
-                <button onClick={pay}>pay</button>
                 <div className={style.text1}>
                     Нажимая кнопку «Отправить» вы соглашаетесь с <a href='/main'>Политикой конфиденциальности</a>
                 </div>

@@ -1,6 +1,7 @@
 import {cards, CardsType} from "../store/state";
+import {clearFormAC} from "./formReduser";
 
-type ChangeThemeAT = ReturnType<typeof choosePlantAC>
+type ChangeThemeAT = ReturnType<typeof choosePlantAC> | ReturnType<typeof clearFormAC>
 
 type CardsActionsType = ChangeThemeAT
 
@@ -19,6 +20,9 @@ export const cardsReducer = (state: CardsType = initState, action: CardsActionsT
                         } : card)
                 }
             }
+            case 'CLEAR-FORM':
+                return state = cards
+
             default:
                 return state;
         }

@@ -7,7 +7,6 @@ const instance = axios.create({
 export const formAPI = {
 
     postForm(form: object) {
-        debugger
         return instance.post<{ form: object }, AxiosResponse<ResponseType<{ form: object }>>>('auth/login', form);
     }
 }

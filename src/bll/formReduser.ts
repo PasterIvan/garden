@@ -29,6 +29,9 @@ export const formReducer = (state: InitialStateType = initialState, action: Acti
                 contacts: action.contacts
             }
         }
+        case 'CLEAR-FORM':
+            return state = {}
+
         default:
             return state
     }
@@ -40,6 +43,9 @@ export const addPlantAC = (cards: CardsType) => {
 export const addFormAC = (contacts: FormParamsType) => {
     return {type: 'ADD-FORM', contacts} as const
 }
+export const clearFormAC = () => {
+    return {type: 'CLEAR-FORM'} as const
+}
 
 // thunks
 
@@ -48,4 +54,7 @@ export const postFormTC = (form: object): AppThunkType => async dispatch => {
 }
 
 // types
-export type ActionsTypeForAuthReducer = ReturnType<typeof addPlantAC> | ReturnType<typeof addFormAC>
+export type ActionsTypeForAuthReducer =
+    ReturnType<typeof addPlantAC>
+    | ReturnType<typeof addFormAC>
+    | ReturnType<typeof clearFormAC>
