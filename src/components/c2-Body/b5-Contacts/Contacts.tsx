@@ -8,7 +8,7 @@ export const Contacts = () => {
         <div className={style.contacts}>
             <HeaderBlock title={'НАШИ КОНТАКТЫ'}/>
             <div className={style.contactsBodyText}>
-                <p><b>Адрес</b>: Воронежская область Рамонский район пос. Горожанка</p>
+                <p><b>Адрес</b>: Воронежская область, Рамонский район, пос. Горожанка</p>
 
                 <p><b>Почта</b>: h.stepnoi@yandex.ru</p>
 

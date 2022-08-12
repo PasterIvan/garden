@@ -31,7 +31,7 @@
 }
 
 .text2 {
-    font-family: Arial, sans-serif;
+    font-family: Rubik, sans-serif;
     font-weight: 700;
     font-size: 38px;
     line-height: 32px;
@@ -42,6 +42,7 @@
     width: 234px;
     height: 68px;
     background: url("img/button/Ellipse.svg");
+    font-family: Rubik, sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;

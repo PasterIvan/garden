@@ -2,14 +2,7 @@ import {useFormik} from "formik";
 import React from "react";
 import {useSelector} from "react-redux";
 import style from "./Window.module.css"
-import {
-    addFormAC,
-    addPlantAC,
-    clearFormAC,
-    FormStateType,
-    postFormTC,
-    preparationFormTC
-} from "../../../../../bll/formReduser";
+import {clearFormAC, FormStateType, postFormTC, preparationFormTC} from "../../../../../bll/formReduser";
 import {useAppDispatch} from "../../../../../hooks/hooks";
 import {CardsType} from "../../../../../store/state";
 import {AppStateType} from "../../../../../store/store";
@@ -38,6 +31,7 @@ export const Window = () => {
             phone: '',
             email: ''
         },
+
         validate: (contacts) => {
             const errors: FormikErrorType = {}
 
@@ -65,7 +59,6 @@ export const Window = () => {
             handleClickOpen()
             formik.resetForm()
         },
-
     })
 
     const [open, setOpen] = React.useState(false);
@@ -77,23 +70,20 @@ export const Window = () => {
     const handleClose = () => {
         setOpen(false);
     };
+
     const handleCloseAndPost = () => {
         setOpen(false);
         dispatch(postFormTC(form))
         dispatch(clearFormAC())
     };
 
-
     return (
         <div className={style.border}>
-
             <div>
-                <Dialog
-                    open={open}
-                    onClose={handleClose}
-                    aria-labelledby="alert-dialog-title"
-                    aria-describedby="alert-dialog-description"
-                >
+                <Dialog open={open}
+                        onClose={handleClose}
+                        aria-labelledby="alert-dialog-title"
+                        aria-describedby="alert-dialog-description">
                     <DialogTitle id="alert-dialog-title" style={{color: 'red'}}>
                         {"Проверьте информацию о заказе!"}
                     </DialogTitle>
@@ -116,19 +106,15 @@ export const Window = () => {
                     </DialogContent>
                     <DialogActions>
                         <Button onClick={handleClose}>Отмена</Button>
-                        <Button onClick={handleCloseAndPost} autoFocus>
-                            Оплатить
-                        </Button>
+                        <Button onClick={handleCloseAndPost} autoFocus>Оплатить</Button>
                     </DialogActions>
                 </Dialog>
             </div>
-
             <div className={style.body}>
-                <div>1200р</div>
+                <div>1200₽</div>
                 <form className={style.form} onSubmit={formik.handleSubmit}>
                     <input placeholder={'Ваше имя'}
-                           {...formik.getFieldProps('name')}
-                    />
+                           {...formik.getFieldProps('name')}/>
                     <input placeholder={'Номер вашего телефона'}
                            {...formik.getFieldProps('phone')}/>
                     <input placeholder={'E-mail для обратной связи'}

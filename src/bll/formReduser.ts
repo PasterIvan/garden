@@ -70,7 +70,7 @@ export const preparationFormTC = (contacts: FormParamsType, cards: CardsType): A
     dispatch(addFormAC(contacts))
     dispatch(addPlantAC(cards))
 }
-export const postFormTC = (form: object): AppThunkType => async dispatch => {
+export const postFormTC = (form: FormStateType): AppThunkType => async dispatch => {
     const res = await formAPI.postForm(form)
 }
 
