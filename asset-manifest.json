@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/garden/static/css/main.a48b814e.css",
-    "main.js": "/garden/static/js/main.ca4a842f.js",
+    "main.css": "/garden/static/css/main.a2aa32eb.css",
+    "main.js": "/garden/static/js/main.7a3770ed.js",
     "static/js/787.226f672d.chunk.js": "/garden/static/js/787.226f672d.chunk.js",
     "static/media/planNew.svg": "/garden/static/media/planNew.adb5c79c41f501527e9528a735f3c8a7.svg",
     "static/media/aboutUsNew.svg": "/garden/static/media/aboutUsNew.3744389dc7577faf34f9067a53fecc46.svg",
@@ -13,6 +13,8 @@
     "static/media/Poppins-SemiBold.ttf": "/garden/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
     "static/media/Poppins-Bold.ttf": "/garden/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "static/media/Poppins-Black.ttf": "/garden/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
+    "static/media/Nunito-SemiBold.ttf": "/garden/static/media/Nunito-SemiBold.77c1e330694154d3efed.ttf",
+    "static/media/Nunito-Black.ttf": "/garden/static/media/Nunito-Black.969e95ce4a719e43f654.ttf",
     "static/media/Rectangle 7912.svg": "/garden/static/media/Rectangle 7912.4ce77ff44702f32fdea3e13ca05445e4.svg",
     "static/media/Rubik-Regular.ttf": "/garden/static/media/Rubik-Regular.974ab100afa4538622da.ttf",
     "static/media/Rubik-Medium.ttf": "/garden/static/media/Rubik-Medium.9eca2a21c16a15364ea0.ttf",
@@ -32,7 +34,6 @@
     "static/media/logo4.svg": "/garden/static/media/logo4.812aca8a2750f4bff8fd64ce05e97584.svg",
     "static/media/logo6.svg": "/garden/static/media/logo6.812aca8a2750f4bff8fd64ce05e97584.svg",
     "static/media/phone.svg": "/garden/static/media/phone.6d470734d974716a5fbf9b2d8c78c0fd.svg",
-    "static/media/instagram.svg": "/garden/static/media/instagram.261aa8538b699aba06c7497d6d3d2e62.svg",
     "static/media/Group33553.svg": "/garden/static/media/Group33553.59bbc16bfecce53e4d5103ba354725cc.svg",
     "static/media/i.svg": "/garden/static/media/i.4bac23b9cb7977d98c7a5b2d3f2f9879.svg",
     "static/media/logo2.svg": "/garden/static/media/logo2.de3d5e3ea0ca662b0c6f9bc86458b6f1.svg",
@@ -57,12 +58,12 @@
     "static/media/lineOrange.svg": "/garden/static/media/lineOrange.459fc2b08dcbe709e06c.svg",
     "static/media/lineRed.svg": "/garden/static/media/lineRed.53cb78cf8588a6433991.svg",
     "static/media/lineViolet.svg": "/garden/static/media/lineViolet.841b7f4187ad4608202e.svg",
-    "main.a48b814e.css.map": "/garden/static/css/main.a48b814e.css.map",
-    "main.ca4a842f.js.map": "/garden/static/js/main.ca4a842f.js.map",
+    "main.a2aa32eb.css.map": "/garden/static/css/main.a2aa32eb.css.map",
+    "main.7a3770ed.js.map": "/garden/static/js/main.7a3770ed.js.map",
     "787.226f672d.chunk.js.map": "/garden/static/js/787.226f672d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a48b814e.css",
-    "static/js/main.ca4a842f.js"
+    "static/css/main.a2aa32eb.css",
+    "static/js/main.7a3770ed.js"
   ]
 }
