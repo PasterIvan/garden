@@ -4,13 +4,15 @@ import {cardsReducer} from "../bll/cardsReducer";
 import {themeReducer} from "../bll/themeReducer";
 import thunk, {ThunkAction, ThunkDispatch} from 'redux-thunk'
 import {loadState, saveState} from "../utils/localStorage-utils";
-import {ActionsTypeForAuthReducer, formReducer} from "../bll/formReduser";
+import {ActionsTypeForFormReducer, formReducer} from "../bll/formReduser";
+import {aboutUsReducer, ActionsTypeForAboutUsReducer} from "../bll/admin/aboutUsReducer";
 
 const rootReducer = combineReducers({
         theme: themeReducer,
         zones: zonesReducer,
         cards: cardsReducer,
-        form: formReducer
+        form: formReducer,
+        aboutUs: aboutUsReducer
 })
 
 export const store = createStore(rootReducer, loadState(), applyMiddleware(thunk))
@@ -20,7 +22,8 @@ store.subscribe(() => {
                 theme: store.getState().theme,
                 zones: store.getState().zones,
                 cards: store.getState().cards,
-                form: store.getState().form
+                form: store.getState().form,
+                aboutUs: store.getState().aboutUs
         })
 })
 
@@ -28,7 +31,7 @@ export type AppThunkType<ReturnType = void> = ThunkAction<ReturnType, AppStateTy
 
 export type AppDispatch = ThunkDispatch<AppStateType, unknown, ActionsType>
 
-export type ActionsType = ActionsTypeForAuthReducer
+export type ActionsType = ActionsTypeForFormReducer | ActionsTypeForAboutUsReducer
 export type AppStateType = ReturnType<typeof rootReducer>
 export type AppStoreType = typeof store
 // @ts-ignore

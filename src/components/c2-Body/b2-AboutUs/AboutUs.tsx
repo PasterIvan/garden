@@ -3,8 +3,16 @@ import style from "./AboutUs.module.css"
 import {Gallery} from "../b1-Main/m7-Gallery/Gallery";
 import aboutUs from "./img/aboutUsNew.svg"
 import {HeaderBlock} from "../../common/HeaderBlock";
+import {useAppDispatch} from "../../../hooks/hooks";
+import {setAboutUsTC} from "../../../bll/admin/aboutUsReducer";
 
 export const AboutUs = () => {
+
+    const dispatch = useAppDispatch()
+    const contecst = () => {
+       return  dispatch(setAboutUsTC())
+    }
+  debugger
     return (
         <div className={style.aboutUs}>
             <HeaderBlock title={'О НАС'}/>

@@ -13,7 +13,7 @@ export type FormStateType = {
     contacts: FormParamsType
 }
 
-export const formReducer = (state: FormStateType = initialState, action: ActionsTypeForAuthReducer): FormStateType => {
+export const formReducer = (state: FormStateType = initialState, action: ActionsTypeForFormReducer): FormStateType => {
     switch (action.type) {
         case 'ADD-PLANT': {
             let redPlant = action.cards['red'].filter(card => card.isDone).map(c => c.title)
@@ -75,7 +75,7 @@ export const postFormTC = (form: FormStateType): AppThunkType => async dispatch 
 }
 
 // types
-export type ActionsTypeForAuthReducer =
+export type ActionsTypeForFormReducer =
     ReturnType<typeof addPlantAC>
     | ReturnType<typeof addFormAC>
     | ReturnType<typeof clearFormAC>
