@@ -7,7 +7,7 @@ import {AboutUs} from "./components/c2-Body/b2-AboutUs/AboutUs";
 import {Concurs} from "./components/c2-Body/b3-Concurs/Concurs";
 import {AboutFestival} from "./components/c2-Body/b4-AboutFestival/AboutFestival";
 import {Footer} from "./components/c3-Footer/Footer";
-import {Contacts} from "./components/c2-Body/b5-Contacts/Contacts";
+
 
 export const App = () => {
     return (
@@ -19,7 +19,6 @@ export const App = () => {
                 <Route path='/about_us' element={<AboutUs/>}/>
                 <Route path='/concurs' element={<Concurs/>}/>
                 <Route path='/about_festival' element={<AboutFestival/>}/>
-                <Route path='/contacts' element={<Contacts/>}/>
                 <Route path='404' element={<h1>404: PAGE NOT FOUND</h1>}/>
                 <Route path='*' element={<Navigate to={"404"}/>}/>
             </Routes>

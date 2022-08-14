@@ -1,9 +1,8 @@
 .background {
     padding: 51px 0;
-
 }
 
-.footer, .footer a {
+.footer {
     width: 75%;
     display: flex;
     justify-content: space-between;
@@ -14,30 +13,26 @@
     font-size: 30px;
     line-height: 36px;
     color: #FFFFFF;
-    text-decoration: none;
 }
-
-.documents {
-    width: 40%;
+.footer p {
+    font-weight: 300;
+    font-size: 24px;
+}
+.contacts, .documents {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-}
-.footer a {
-    cursor: pointer;
-}
-.footer a:hover {
-    color: #0CA941;
+    padding: 30px;
 }
 
 .socialNetworks {
-    width: 15%;
     display: flex;
     justify-content: space-between;
 }
 
 .socialNetworks img {
-    margin-left: 5px;
+    width: 36px;
+    margin-left: 31px;
     cursor: pointer;
 }
 
@@ -51,18 +46,16 @@
     .footer {
         display: block;
         font-size: 20px;
+        text-align: center
     }
-    .footer a {
-        font-size: 20px;
-    }
-    .documents {
+    .documents, .contacts {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         margin-bottom: 24px;
+        padding: 0;
     }
-
     .socialNetworks {
         width: 100%;
         display: flex;
