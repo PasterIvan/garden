@@ -9,10 +9,10 @@ import {setAboutUsTC} from "../../../bll/admin/aboutUsReducer";
 export const AboutUs = () => {
 
     const dispatch = useAppDispatch()
-    const contecst = () => {
+    const context = () => {
        return  dispatch(setAboutUsTC())
     }
-  debugger
+
     return (
         <div className={style.aboutUs}>
             <HeaderBlock title={'О НАС'}/>
