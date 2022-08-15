@@ -8,8 +8,8 @@ import {Concurs} from "./components/c2-Body/b3-Concurs/Concurs";
 import {AboutFestival} from "./components/c2-Body/b4-AboutFestival/AboutFestival";
 import {Footer} from "./components/c3-Footer/Footer";
 
-
 export const App = () => {
+
     return (
         <div className={style.App}>
             <Header/>

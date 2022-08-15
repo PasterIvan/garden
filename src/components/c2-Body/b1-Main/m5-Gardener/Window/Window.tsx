@@ -10,8 +10,8 @@ import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogTitle from "@mui/material/DialogTitle";
 import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
 import DialogActions from "@mui/material/DialogActions";
+import {DialogContentText} from "@mui/material";
 
 type FormikErrorType = {
     name?: string
@@ -57,7 +57,6 @@ export const Window = () => {
         onSubmit: contacts => {
             dispatch(preparationFormTC(contacts, cards))
             handleClickOpen()
-            formik.resetForm()
         },
     })
 
@@ -75,6 +74,7 @@ export const Window = () => {
         setOpen(false);
         dispatch(postFormTC(form))
         dispatch(clearFormAC())
+        formik.resetForm()
     };
 
     return (
@@ -88,20 +88,29 @@ export const Window = () => {
                         {"Проверьте информацию о заказе!"}
                     </DialogTitle>
                     <DialogContent>
-                        <DialogContentText id="alert-dialog-description">
-                            <h1>Вы заказали:</h1>
-                            <p>В красной зоне: <b>{(form.redZone.length === 0) ? '—' : form.redZone.join(', ')}</b></p>
-                            <p>В оранжевой
-                                зоне: <b>{(form.orangeZone.length === 0) ? '—' : form.orangeZone.join(', ')}</b></p>
-                            <p>В зеленой зоне: <b>{(form.greenZone.length) === 0 ? '—' : form.greenZone.join(', ')}</b>
-                            </p>
-                            <p>В синей зоне: <b>{(form.blueZone.length === 0) ? '—' : form.blueZone.join(', ')}</b></p>
-                            <p>В фиолетовой
-                                зоне: <b>{(form.violetZone.length === 0) ? '—' : form.violetZone.join(', ')}</b></p>
-                            <h1>Контактная информация:</h1>
-                            <p>Имя: <b>{form.contacts.name}</b></p>
-                            <p>Номер телефона: <b>{form.contacts.phone}</b></p>
-                            <p>E-mail для обратной связи: <b>{form.contacts.email}</b></p>
+                        <DialogContentText component={'div'} id="alert-dialog-description">
+                            <div>
+                                <h1>Вы заказали:</h1>
+                                <p>В красной зоне:
+                                    <b>{(form.redZone && form.redZone.length === 0) ? '—' : form.redZone && form.redZone.join(', ')}</b>
+                                </p>
+                                <p>В оранжевой зоне: <b>
+                                    {(form.orangeZone && form.orangeZone.length === 0) ? '—' : form.orangeZone && form.orangeZone.join(', ')}</b>
+                                </p>
+                                <p>В зеленой зоне: <b>
+                                    {(form.greenZone && form.greenZone.length === 0) ? '—' : form.greenZone && form.greenZone.join(', ')}</b>
+                                </p>
+                                <p>В синей зоне: <b>
+                                    {(form.blueZone && form.blueZone.length === 0) ? '—' : form.blueZone && form.blueZone.join(', ')}</b>
+                                </p>
+                                <p>В фиолетовой зоне: <b>
+                                    {(form.violetZone && form.violetZone.length === 0) ? '—' : form.violetZone && form.violetZone.join(', ')}</b>
+                                </p>
+                                <h1>Контактная информация:</h1>
+                                <p>Имя: <b>{form.contacts && form.contacts.name}</b></p>
+                                <p>Номер телефона: <b>{form.contacts && form.contacts.phone}</b></p>
+                                <p>E-mail для обратной связи: <b>{form.contacts && form.contacts.email}</b></p>
+                            </div>
                         </DialogContentText>
                     </DialogContent>
                     <DialogActions>

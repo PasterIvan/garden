@@ -8,7 +8,7 @@ const initState = {
     startTheme: 'green'
 };
 
-export const themeReducer = (state= initState, action: ChangeThemeAT): InitialStateType => {
+export const themeReducer = (state: InitialStateType= initState, action: ChangeThemeAT): InitialStateType => {
     switch (action.type) {
         case "CHANGE-ZONE": {
             return {...state, startTheme: action.theme}

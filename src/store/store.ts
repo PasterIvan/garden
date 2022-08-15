@@ -1,4 +1,4 @@
-import {applyMiddleware, combineReducers, createStore} from "redux";
+import {applyMiddleware, combineReducers, legacy_createStore} from "redux";
 import {zonesReducer} from "../bll/zonesReducer";
 import {cardsReducer} from "../bll/cardsReducer";
 import {themeReducer} from "../bll/themeReducer";
@@ -12,10 +12,10 @@ const rootReducer = combineReducers({
         zones: zonesReducer,
         cards: cardsReducer,
         form: formReducer,
-        aboutUs: aboutUsReducer
+        // aboutUs: aboutUsReducer
 })
 
-export const store = createStore(rootReducer, loadState(), applyMiddleware(thunk))
+export const store = legacy_createStore(rootReducer, loadState(), applyMiddleware(thunk))
 
 store.subscribe(() => {
         saveState({
@@ -23,7 +23,7 @@ store.subscribe(() => {
                 zones: store.getState().zones,
                 cards: store.getState().cards,
                 form: store.getState().form,
-                aboutUs: store.getState().aboutUs
+                // aboutUs: store.getState().aboutUs
         })
 })
 
