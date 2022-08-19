@@ -1,36 +1,36 @@
-import {cards, CardsType} from "../store/state";
-import {clearFormAC} from "./formReduser";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-type ChangeThemeAT = ReturnType<typeof choosePlantAC> | ReturnType<typeof clearFormAC>
+import { cards } from "../store/state";
 
-type CardsActionsType = ChangeThemeAT
+import { clearFormAC } from "./formReduser";
 
-type InitialStateType = typeof initState
-
-const initState: CardsType = cards
-
-export const cardsReducer = (state: CardsType = initState, action: CardsActionsType): InitialStateType => {
-        switch (action.type) {
-            case 'CHOOSE-PLANT': {
-                return {
-                    ...state, [action.idZone]:
-                        state[action.idZone].map(card => card.idCard === action.idCard ? {
-                            ...card,
-                            isDone: !card.isDone
-                        } : card)
-                }
+const slice = createSlice({
+  name: "cards",
+  initialState: cards,
+  reducers: {
+    choosePlantAC(
+      state,
+      action: PayloadAction<{ idZone: string; idCard: string }>
+    ) {
+      state[action.payload.idZone] = state[action.payload.idZone].map((card) =>
+        card.idCard === action.payload.idCard
+          ? {
+              ...card,
+              isDone: !card.isDone,
             }
-            case 'CLEAR-FORM':
-                return state = cards
+          : card
+      );
+    },
+  },
+  extraReducers: {
+    [clearFormAC.type]: () => cards,
+  },
+});
 
-            default:
-                return state;
-        }
-    }
-;
-//AC
-export const choosePlantAC = (idZone: string, idCard: string) => {
-    return {type: "CHOOSE-PLANT", idZone, idCard} as const
-};
+export const cardsReducer = slice.reducer;
 
-
+export const { choosePlantAC } = slice.actions;
+//
+//     case 'CLEAR-FORM':
+//       return (state = cards);
+//

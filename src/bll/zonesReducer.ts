@@ -1,19 +1,17 @@
-import {zones, ZoneType} from "../store/state";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-type SetZoneAT = ReturnType<typeof setZonesAC>
+import { zones, ZonesType } from "store/state";
 
-type ZoneActionsType =  SetZoneAT
+const slice = createSlice({
+  name: "zones",
+  initialState: zones,
+  reducers: {
+    setZoneAC(state, action: PayloadAction<{ zone: ZonesType }>) {
+      state.filter((zone) => zone.idZone === action.payload.zone);
+    },
+  },
+});
 
-type InitialStateType = typeof initState
+export const zonesReducer = slice.reducer;
 
-const initState: Array<ZoneType> = zones;
-
-export const zonesReducer = (state: Array<ZoneType>= initState, action: ZoneActionsType): InitialStateType => {
-    switch (action.type) {
-        default:
-            return state;
-    }
-};
-
-//AC
-export const setZonesAC = (zones: Array<ZoneType>) => ({type: 'SET-ZONES', zones} as const);
+export const { setZoneAC } = slice.actions;

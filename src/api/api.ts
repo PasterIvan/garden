@@ -1,39 +1,26 @@
 import axios from "axios";
-import {FormStateType} from "../bll/formReduser";
-import {aboutUsType} from "../bll/admin/aboutUsReducer";
 
 const instance = axios.create({
-    baseURL: 'http://',
-})
+  baseURL: "http://2.56.213.189:8083/api/",
+});
 
-export const formAPI = {
-    postForm(form: FormStateType) {
-        return instance.post<{ form: FormStateType }>('server', form);
-    }
-}
-export const aboutUsAPI = {
-    get() {
-        return instance.get<aboutUsType>('/about_us/');
-    }
-}
-export const galleryAPI = {
-    getGallery() {
-        return instance.get<string>('/gallery/');
-    }
-}
-export const festivalAPI = {
-    getFestival() {
-        return instance.get<string>('/festival/');
-    }
-}
-export const participantsAPI = {
-    getParticipants() {
-        return instance.get<string>('/participants/');
-    }
-}
+export const formAPI: any = {
+  postForm(form: FormStateType) {
+    return instance.post("orders/submit", form);
+  },
+};
 
-export type FormParamsType = {
-    name: string
-    phone: string
-    email: string
-}
+export type FormContactsType = {
+  name: string;
+  phone: string;
+  email: string;
+};
+
+export type FormStateType = {
+  redZone: string[];
+  orangeZone: string[];
+  greenZone: string[];
+  blueZone: string[];
+  violetZone: string[];
+  contacts: FormContactsType;
+};

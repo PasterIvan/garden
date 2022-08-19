@@ -1,81 +1,71 @@
-import {formAPI, FormParamsType} from "../api/api";
-import {CardsType} from "../store/state";
-import {AppThunkType} from "../store/store";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-const initialState = {} as FormStateType
+import { formAPI, FormContactsType, FormStateType } from "api/api";
+import { CardsType } from "store/state";
+import { AppThunkType } from "store/store";
 
-export type FormStateType = {
-    redZone: Array<string>,
-    orangeZone: Array<string>,
-    greenZone: Array<string>,
-    blueZone: Array<string>,
-    violetZone: Array<string>
-    contacts: FormParamsType
-}
+const initState = {
+  redZone: [""],
+  orangeZone: [""],
+  greenZone: [""],
+  blueZone: [""],
+  violetZone: [""],
+  contacts: {
+    name: "",
+    phone: "",
+    email: "",
+  },
+};
 
-export const formReducer = (state: FormStateType = initialState, action: ActionsTypeForFormReducer): FormStateType => {
-    switch (action.type) {
-        case 'ADD-PLANT': {
-            let redPlant = action.cards['red'].filter(card => card.isDone).map(c => c.title)
-            let orangePlant = action.cards['orange'].filter(card => card.isDone).map(c => c.title)
-            let greenPlant = action.cards['green'].filter(card => card.isDone).map(c => c.title)
-            let bluePlant = action.cards['blue'].filter(card => card.isDone).map(c => c.title)
-            let violetPlant = action.cards['violet'].filter(card => card.isDone).map(c => c.title)
-            return {
-                ...state,
-                redZone: redPlant,
-                orangeZone: orangePlant,
-                greenZone: greenPlant,
-                blueZone: bluePlant,
-                violetZone: violetPlant
-            }
-        }
-        case 'ADD-FORM': {
-            return {
-                ...state,
-                contacts: action.contacts
-            }
-        }
-        case 'CLEAR-FORM':
-            return state = {
-                redZone: [],
-                orangeZone: [],
-                greenZone: [],
-                blueZone: [],
-                violetZone: [],
-                contacts: {
-                    name: '',
-                    phone: '',
-                    email: ''
-                }
-            }
+const slice = createSlice({
+  name: "form",
+  initialState: initState,
+  reducers: {
+    addPlantAC(state, action: PayloadAction<{ cards: CardsType }>) {
+      const redPlant = action.payload.cards.red
+        .filter((card) => card.isDone)
+        .map((c) => c.title);
+      const orangePlant = action.payload.cards.orange
+        .filter((card) => card.isDone)
+        .map((c) => c.title);
+      const greenPlant = action.payload.cards.green
+        .filter((card) => card.isDone)
+        .map((c) => c.title);
+      const bluePlant = action.payload.cards.blue
+        .filter((card) => card.isDone)
+        .map((c) => c.title);
+      const violetPlant = action.payload.cards.violet
+        .filter((card) => card.isDone)
+        .map((c) => c.title);
 
-        default:
-            return state
-    }
-}
-// actions
-export const addPlantAC = (cards: CardsType) => {
-    return {type: 'ADD-PLANT', cards} as const
-}
-export const addFormAC = (contacts: FormParamsType) => {
-    return {type: 'ADD-FORM', contacts} as const
-}
-export const clearFormAC = () => {
-    return {type: 'CLEAR-FORM'} as const
-}
+      state.redZone = redPlant;
+      state.orangeZone = orangePlant;
+      state.greenZone = greenPlant;
+      state.blueZone = bluePlant;
+      state.violetZone = violetPlant;
+    },
+    addFormAC(state, action: PayloadAction<{ contacts: FormContactsType }>) {
+      state.contacts = action.payload.contacts;
+    },
+    clearFormAC() {
+      return initState;
+    },
+  },
+});
+
+export const formReducer = slice.reducer;
+
+export const { addPlantAC, addFormAC, clearFormAC } = slice.actions;
 
 // thunks
-export const preparationFormTC = (contacts: FormParamsType, cards: CardsType): AppThunkType => async dispatch => {
-    dispatch(addFormAC(contacts))
-    dispatch(addPlantAC(cards))
-}
-export const postFormTC = (form: FormStateType): AppThunkType => async dispatch => {
-    const res = await formAPI.postForm(form)
-}
-
-// types
-export type ActionsTypeForFormReducer =
-    ReturnType<typeof addPlantAC>
-    | ReturnType<typeof addFormAC>
-    | ReturnType<typeof clearFormAC>
+export const preparationFormTC =
+  (contacts: FormContactsType, cards: CardsType): AppThunkType =>
+  async (dispatch) => {
+    dispatch(addFormAC({ contacts }));
+    dispatch(addPlantAC({ cards }));
+  };
+export const postFormTC =
+  (form: FormStateType): AppThunkType =>
+  (dispatch) => {
+    dispatch(formAPI.postForm(form));
+  };

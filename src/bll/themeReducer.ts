@@ -1,24 +1,21 @@
-import {ZonesType} from "../store/state";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-type ChangeThemeAT = ReturnType<typeof changeThemeAC>
-
-type InitialStateType = typeof initState
+import { ZonesType } from "../store/state";
 
 const initState = {
-    startTheme: 'green'
+  startTheme: "green",
 };
 
-export const themeReducer = (state: InitialStateType= initState, action: ChangeThemeAT): InitialStateType => {
-    switch (action.type) {
-        case "CHANGE-ZONE": {
-            return {...state, startTheme: action.theme}
-        }
-        default:
-            return state;
-    }
-};
+const slice = createSlice({
+  name: "theme",
+  initialState: initState,
+  reducers: {
+    changeThemeAC(state, action: PayloadAction<{ theme: ZonesType }>) {
+      state.startTheme = action.payload.theme;
+    },
+  },
+});
 
-//AC
-export const changeThemeAC = (theme: ZonesType) => {
-    return {type: "CHANGE-ZONE", theme} as const
-};
+export const themeReducer = slice.reducer;
+
+export const { changeThemeAC } = slice.actions;
