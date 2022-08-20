@@ -1,30 +1,25 @@
-import React from "react";
+import React from 'react'
 
-import { useSelector } from "react-redux";
+import { useSelector } from 'react-redux'
 
-import { CardsType, ZoneType } from "../../../../store/state";
-import { AppStateType } from "../../../../store/store";
-import { HeaderBlock } from "../../../common/HeaderBlock";
+import { Card } from './Card/Card'
+import style from './Cards.module.css'
 
-import { Card } from "./Card/Card";
-import style from "./Cards.module.css";
+import { HeaderBlock } from 'components/common/HeaderBlock'
+import { CardsType, ZoneType } from 'store/state'
+import { AppStateType } from 'store/store'
 
 export const Cards: React.FC = () => {
-  const theme = useSelector<AppStateType, string>(
-    (state) => state.theme.startTheme
-  );
-  const cards = useSelector<AppStateType, CardsType>((state) => state.cards);
-  const zones = useSelector<AppStateType, ZoneType[]>((state) => state.zones);
+  const theme = useSelector<AppStateType, string>((state) => state.theme.startTheme)
+  const cards = useSelector<AppStateType, CardsType>((state) => state.cards)
+  const zones = useSelector<AppStateType, ZoneType[]>((state) => state.zones)
 
-  const zoneTexts = zones.filter((z) => z.idZone === theme)[0];
-  const zoneCards = cards[theme];
+  const zoneTexts = zones.filter((z) => z.idZone === theme)[0]
+  const zoneCards = cards[theme]
 
   return (
     <div className={style.cards}>
-      <HeaderBlock
-        title="Выберите растение"
-        text={zoneTexts && zoneTexts.cardText}
-      />
+      <HeaderBlock title="Выберите растение" text={zoneTexts && zoneTexts.cardText} />
       <div className={style.card}>
         {zoneCards &&
           zoneCards.map((z) => {
@@ -37,9 +32,9 @@ export const Cards: React.FC = () => {
                 isDone={z.isDone}
                 idZone={theme}
               />
-            );
+            )
           })}
       </div>
     </div>
-  );
-};
+  )
+}

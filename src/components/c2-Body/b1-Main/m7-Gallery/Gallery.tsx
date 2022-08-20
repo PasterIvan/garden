@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
-import style from "./Gallery.module.css";
-import page1 from "./img/Rectangle 7911.svg";
-import page2 from "./img/Rectangle 7912.svg";
-import page3 from "./img/Rectangle 7913.svg";
+import style from './Gallery.module.css'
+import page1 from './img/Rectangle 7911.svg'
+import page2 from './img/Rectangle 7912.svg'
+import page3 from './img/Rectangle 7913.svg'
 
 export const Gallery: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ export const Gallery: React.FC = () => {
         width="100%"
         height="519"
         src="https://www.youtube.com/embed/H2DkW7olpeM"
-        style={{ borderRadius: "28px" }}
+        style={{ borderRadius: '28px' }}
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -25,5 +25,5 @@ export const Gallery: React.FC = () => {
         <img src={page1} alt="" />
       </div>
     </div>
-  );
-};
+  )
+}

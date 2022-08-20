@@ -1,46 +1,44 @@
-import React from "react";
+import React from 'react'
 
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from 'react-redux'
 
-import style from "./GardenPlan.module.css";
-import plan from "./img/planNew.svg";
-import SuperRadio from "./Radio/SuperRadio";
+import style from './GardenPlan.module.css'
+import plan from './img/planNew.svg'
+import SuperRadio from './Radio/SuperRadio'
 
-import { changeThemeAC } from "bll/themeReducer";
-import { themes, zones, ZonesType } from "store/state";
-import { AppStateType } from "store/store";
+import { changeThemeAC } from 'bll/themeReducer'
+import { themes, zones, ZonesType } from 'store/state'
+import { AppStateType } from 'store/store'
 
 export const GardenPlan: React.FC = () => {
-  const theme = useSelector<AppStateType, string>(
-    (state) => state.theme.startTheme
-  );
+  const theme = useSelector<AppStateType, string>((state) => state.theme.startTheme)
 
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
 
   const onChangeTheme = (zone: ZonesType): void => {
-    dispatch(changeThemeAC({ theme: zone }));
-  };
+    dispatch(changeThemeAC({ theme: zone }))
+  }
 
-  const zoneTexts = zones.filter((zone) => zone.idZone === theme)[0];
+  const zoneTexts = zones.filter((zone) => zone.idZone === theme)[0]
 
   return (
     <div id="gardenPlan" className={style.plan}>
       <div className={style.column}>
         <div
           style={{
-            width: "100%",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            marginRight: "24px",
-            padding: "24px 0",
+            width: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            marginRight: '24px',
+            padding: '24px 0',
           }}
         >
           <div className={style.header}>
             <div className={style.headerTitle}>ПЛАН САДА</div>
             <div className={style.headerText}>
-              Парк разделен на 2 зоны : открытую, для активного отдыха и
-              закрытую в тени садовых деревьев.
+              Парк разделен на 2 зоны : открытую, для активного отдыха и закрытую в тени садовых
+              деревьев.
             </div>
           </div>
           <div className={style.buttons}>
@@ -52,10 +50,7 @@ export const GardenPlan: React.FC = () => {
                 onChangeOption={onChangeTheme}
               />
             </span>
-
-            <div className={style[`buttonsInfo-${theme}`]}>
-              {zoneTexts.textButton}
-            </div>
+            <div className={style[`buttonsInfo-${theme}`]}>{zoneTexts.textButton}</div>
           </div>
         </div>
         <div className={style[`planBody-${theme}`]}>
@@ -69,5 +64,5 @@ export const GardenPlan: React.FC = () => {
         <img src={plan} alt="" />
       </div>
     </div>
-  );
-};
+  )
+}

@@ -1,82 +1,109 @@
-.button-red {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 34px;
-    height: 34px;
-    border-radius: 7px;
-    border: 3px solid #E53F3F;
+.buttons {
+  display: flex;
+  justify-content: start;
 
-    position: relative;
+  width: 100%;
+}
+.buttons:before {
+  display: none;
+}
+.button-red {
+  position: relative;
+
+  display: inline-block;
+
+  box-sizing: border-box;
+  width: 34px;
+  height: 34px;
+
+  border: 3px solid #e53f3f;
+  border-radius: 7px;
 }
 
 .button-orange {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 34px;
-    height: 34px;
-    border-radius: 7px;
-    border: 3px solid #F38A2A;
-    position: relative;
+  position: relative;
+
+  display: inline-block;
+
+  box-sizing: border-box;
+  width: 34px;
+  height: 34px;
+
+  border: 3px solid #f38a2a;
+  border-radius: 7px;
 }
 
 .button-green {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 34px;
-    height: 34px;
-    border-radius: 7px;
-    border: 3px solid #76CC67;
-    position: relative;
+  position: relative;
+
+  display: inline-block;
+
+  box-sizing: border-box;
+  width: 34px;
+  height: 34px;
+
+  border: 3px solid #76cc67;
+  border-radius: 7px;
 }
 
 .button-blue {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 34px;
-    height: 34px;
-    border-radius: 7px;
-    border: 3px solid #3FBEE5;
-    position: relative;
+  position: relative;
+
+  display: inline-block;
+
+  box-sizing: border-box;
+  width: 34px;
+  height: 34px;
+
+  border: 3px solid #3fbee5;
+  border-radius: 7px;
 }
 
 .button-violet {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 34px;
-    height: 34px;
-    border-radius: 7px;
-    border: 3px solid #5056B5;
-    position: relative;
+  position: relative;
+
+  display: inline-block;
+
+  box-sizing: border-box;
+  width: 34px;
+  height: 34px;
+
+  border: 3px solid #5056b5;
+  border-radius: 7px;
 }
 
 .red-block {
-    width: 17px;
-    height: 17px;
-    border-radius: 2px;
-    background-color: #E53F3F;
+  width: 17px;
+  height: 17px;
+
+  background-color: #e53f3f;
+  border-radius: 2px;
 }
 .orange {
-    width: 17px;
-    height: 17px;
-    border-radius: 2px;
-    background-color: #F38A2A;
+  width: 17px;
+  height: 17px;
+
+  background-color: #f38a2a;
+  border-radius: 2px;
 }
 .green {
-    width: 17px;
-    height: 17px;
-    border-radius: 2px;
-    background-color: #76CC67;
+  width: 17px;
+  height: 17px;
+
+  background-color: #76cc67;
+  border-radius: 2px;
 }
 .blue {
-    width: 17px;
-    height: 17px;
-    border-radius: 2px;
-    background-color: #3FBEE5;
+  width: 17px;
+  height: 17px;
+
+  background-color: #3fbee5;
+  border-radius: 2px;
 }
 .violet {
-    width: 17px;
-    height: 17px;
-    border-radius: 2px;
-    background-color: #5056B5;
-}
+  width: 17px;
+  height: 17px;
 
+  background-color: #5056b5;
+  border-radius: 2px;
+}

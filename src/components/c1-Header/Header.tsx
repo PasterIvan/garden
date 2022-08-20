@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-import { HeaderMenu } from "./h1-Menu/HeaderMenu";
-import { Contacts } from "./h2-Contacts/Contacts";
-import style from "./Header.module.css";
+import { HeaderMenu } from './h1-Menu/HeaderMenu'
+import { Contacts } from './h2-Contacts/Contacts'
+import style from './Header.module.css'
 
 export const Header: React.FC = () => {
   return (
@@ -12,5 +12,5 @@ export const Header: React.FC = () => {
         <Contacts />
       </header>
     </div>
-  );
-};
+  )
+}

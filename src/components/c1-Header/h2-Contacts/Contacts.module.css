@@ -1,9 +1,10 @@
 .contacts {
-    width: 184px;
-    height: 18px;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+
+  width: 184px;
+  height: 18px;
 }
 .contacts img {
-    cursor: pointer;
+  cursor: pointer;
 }

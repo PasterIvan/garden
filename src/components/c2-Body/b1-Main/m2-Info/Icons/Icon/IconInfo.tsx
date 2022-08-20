@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react'
 
-import style from "./Icon.module.css";
+import style from './Icon.module.css'
 
 type IconInfo = {
-  id: number;
-  logo: string;
-  text: string;
-};
+  id: number
+  logo: string
+  text: string
+}
 type IconsInfo = {
-  icons: IconInfo[];
-};
+  icons: IconInfo[]
+}
 
 export const IconInfoToMain: React.FC<IconsInfo> = ({ icons }) => {
   return (
@@ -20,8 +20,8 @@ export const IconInfoToMain: React.FC<IconsInfo> = ({ icons }) => {
             <img src={icon.logo} alt="" />
             <div className={style.text}>{icon.text}</div>
           </div>
-        );
+        )
       })}
     </>
-  );
-};
+  )
+}

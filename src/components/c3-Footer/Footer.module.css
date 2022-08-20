@@ -1,64 +1,73 @@
 .background {
-    padding: 51px 0;
+  padding: 51px 0;
 }
 
 .footer {
-    width: 75%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 36px;
-    color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+
+  width: 75%;
+  margin: 0 auto;
+
+  font-family: 'Rubik', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 36px;
+  color: #ffffff;
 }
 .footer p {
-    font-weight: 300;
-    font-size: 24px;
+  font-size: 24px;
+  font-weight: 300;
 }
-.contacts, .documents {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 30px;
+.contacts,
+.documents {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 30px;
 }
 
 .socialNetworks {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .socialNetworks img {
-    width: 36px;
-    margin-left: 31px;
-    cursor: pointer;
+  cursor: pointer;
+
+  width: 36px;
+  margin-left: 31px;
 }
 
 @media (max-width: 1023px) {
-    .footer {
-        width: 95%;
-    }
+  .footer {
+    width: 95%;
+  }
 }
 
 @media (max-width: 768px) {
-    .footer {
-        display: block;
-        font-size: 20px;
-        text-align: center
-    }
-    .documents, .contacts {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-bottom: 24px;
-        padding: 0;
-    }
-    .socialNetworks {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-    }
+  .footer {
+    display: block;
+
+    font-size: 20px;
+    text-align: center;
+  }
+  .documents,
+  .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 0;
+  }
+  .socialNetworks {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 100%;
+  }
 }

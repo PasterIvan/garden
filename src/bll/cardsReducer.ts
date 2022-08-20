@@ -1,17 +1,14 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
-import { cards } from "../store/state";
+import { clearFormAC } from './formReduser'
 
-import { clearFormAC } from "./formReduser";
+import { cards } from 'store/state'
 
 const slice = createSlice({
-  name: "cards",
+  name: 'cards',
   initialState: cards,
   reducers: {
-    choosePlantAC(
-      state,
-      action: PayloadAction<{ idZone: string; idCard: string }>
-    ) {
+    choosePlantAC(state, action: PayloadAction<{ idZone: string; idCard: string }>) {
       state[action.payload.idZone] = state[action.payload.idZone].map((card) =>
         card.idCard === action.payload.idCard
           ? {
@@ -19,18 +16,14 @@ const slice = createSlice({
               isDone: !card.isDone,
             }
           : card
-      );
+      )
     },
   },
   extraReducers: {
     [clearFormAC.type]: () => cards,
   },
-});
+})
 
-export const cardsReducer = slice.reducer;
+export const cardsReducer = slice.reducer
 
-export const { choosePlantAC } = slice.actions;
-//
-//     case 'CLEAR-FORM':
-//       return (state = cards);
-//
+export const { choosePlantAC } = slice.actions

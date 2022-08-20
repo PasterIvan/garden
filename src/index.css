@@ -1,81 +1,92 @@
 /*Fredoka*/
+
 @font-face {
-    font-family: 'Fredoka';
-    src: url("./fonts/Fredoka/Nunito-SemiBold.ttf") format("truetype");
-    font-weight: 500;
+  font-family: 'Fredoka';
+  font-weight: 500;
+  src: url('./fonts/Fredoka/Nunito-SemiBold.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'Fredoka';
-    src: url("./fonts/Fredoka/Nunito-Black.ttf") format("truetype");
-    font-weight: 600;
+  font-family: 'Fredoka';
+  font-weight: 600;
+  src: url('./fonts/Fredoka/Nunito-Black.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'Fredoka';
-    src: url("./fonts/Fredoka/Nunito-Black.ttf") format("truetype");
-    font-weight: 700;
+  font-family: 'Fredoka';
+  font-weight: 700;
+  src: url('./fonts/Fredoka/Nunito-Black.ttf') format('truetype');
 }
 
 /*Poppins*/
+
 @font-face {
-    font-family: 'Poppins';
-    src: url("./fonts/Poppins/Poppins-Regular.ttf") format("truetype");
-    font-weight: normal;
+  font-family: 'Poppins';
+  font-weight: normal;
+  src: url('./fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'Poppins';
-    src: url("./fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
-    font-weight: 600;
+  font-family: 'Poppins';
+  font-weight: 600;
+  src: url('./fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'Poppins';
-    src: url("./fonts/Poppins/Poppins-Bold.ttf") format("truetype");
-    font-weight: 700;
+  font-family: 'Poppins';
+  font-weight: 700;
+  src: url('./fonts/Poppins/Poppins-Bold.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'Poppins';
-    src: url("./fonts/Poppins/Poppins-Black.ttf") format("truetype");
-    font-weight: 900;
+  font-family: 'Poppins';
+  font-weight: 900;
+  src: url('./fonts/Poppins/Poppins-Black.ttf') format('truetype');
 }
 /*Rubik*/
+
 @font-face {
-    font-family: 'Rubik';
-    src: url("./fonts/Rubic/Rubik-Regular.ttf") format("truetype");
-    font-weight: normal;
+  font-family: 'Rubik';
+  font-weight: normal;
+  src: url('./fonts/Rubic/Rubik-Regular.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'Rubik';
-    src: url("./fonts/Rubic/Rubik-Light.ttf") format("truetype");
-    font-weight: 300;
+  font-family: 'Rubik';
+  font-weight: 300;
+  src: url('./fonts/Rubic/Rubik-Light.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'Rubik';
-    src: url("./fonts/Rubic/Rubik-Medium.ttf") format("truetype");
-    font-weight: 500;
+  font-family: 'Rubik';
+  font-weight: 500;
+  src: url('./fonts/Rubic/Rubik-Medium.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'Rubik';
-    src: url("./fonts/Rubic/Rubik-Bold.ttf") format("truetype");
-    font-weight: 700;
+  font-family: 'Rubik';
+  font-weight: 700;
+  src: url('./fonts/Rubic/Rubik-Bold.ttf') format('truetype');
 }
 /*Inter*/
+
 @font-face {
-    font-family: 'Inter';
-    src: url("./fonts/Inter/Inter-Bold.ttf") format("truetype");
-    font-weight: 700;
+  font-family: 'Inter';
+  font-weight: 700;
+  src: url('./fonts/Inter/Inter-Bold.ttf') format('truetype');
 }
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Arial', 'Fredoka', 'Poppins', 'Rubik', 'Inter',
+  scroll-behavior: smooth;
+
+  margin: 0;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Arial', 'Fredoka', 'Poppins', 'Rubik', 'Inter',
     sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    scroll-behavior: smooth;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-
-
-

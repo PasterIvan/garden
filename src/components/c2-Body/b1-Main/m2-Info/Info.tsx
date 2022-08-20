@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-import { Icons } from "./Icons/Icons";
-import style from "./Info.module.css";
-import { Text } from "./Text/Text";
+import { Icons } from './Icons/Icons'
+import style from './Info.module.css'
+import { Text } from './Text/Text'
 
 export const Info: React.FC = () => {
   return (
@@ -12,5 +12,5 @@ export const Info: React.FC = () => {
         <Icons />
       </div>
     </div>
-  );
-};
+  )
+}

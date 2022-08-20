@@ -1,45 +1,49 @@
 .flower::before {
-    content: url("img/flower.svg");
-    position: fixed;
-    left: 2.06%;
-    right: 89.55%;
-    top: 0%;
-    bottom: 97.84%;
+  content: url('img/flower.svg');
+
+  position: fixed;
+  top: 0%;
+  right: 89.55%;
+  bottom: 97.84%;
+  left: 2.06%;
 }
 
 .flower {
-    width: 100%;
-    position: fixed;
-    background-color: #ffffff;
-    height: 125px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 50;
+  position: fixed;
+  z-index: 50;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 125px;
+
+  background-color: #ffffff;
 }
 
 header {
-    width: 75%;
-    height: 87px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  width: 75%;
+  height: 87px;
+
+  background-color: #ffffff;
 }
 
 @media (max-width: 1023px) {
-    .flower::before {
-        display: none;
-    }
-    .flower {
-        height: 80px;
-    }
+  .flower::before {
+    display: none;
+  }
+  .flower {
+    height: 80px;
+  }
 
-    header {
-        width: 95%;
-        height: 70px;
-    }
+  header {
+    width: 95%;
+    height: 70px;
+  }
 }
-
-

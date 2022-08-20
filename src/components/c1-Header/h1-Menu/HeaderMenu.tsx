@@ -1,38 +1,42 @@
-import React from "react";
+import React from 'react'
 
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import { NavLink } from "react-router-dom";
+import Menu from '@mui/material/Menu'
+import MenuItem from '@mui/material/MenuItem'
+import { NavLink } from 'react-router-dom'
 
-import style from "./HeaderMenu.module.css";
-import logo from "./img/logo.svg";
+import style from './HeaderMenu.module.css'
+import logo from './img/logo.svg'
 
 export const scrollUp = (): void => {
-  window.scrollTo(0, 0);
-};
+  window.scrollTo(0, 0)
+}
 
 export const HeaderMenu: React.FC = () => {
   const scrollGardenPlan = (): void => {
-    document.location.href = "#/main";
+    document.location.href = '#/main'
+    const timeout = 100
+
     setTimeout(() => {
-      const divElement = document.getElementById("gardenPlan");
+      const divElement = document.getElementById('gardenPlan')
 
-      divElement && divElement.scrollIntoView({ behavior: "smooth" });
-    }, 100);
-  };
+      if (divElement) {
+        divElement.scrollIntoView({ behavior: 'smooth' })
+      }
+    }, timeout)
+  }
 
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const open = Boolean(anchorEl);
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
+  const open = Boolean(anchorEl)
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>): void => {
-    setAnchorEl(event.currentTarget);
-  };
+    setAnchorEl(event.currentTarget)
+  }
   const handleClose = (): void => {
-    setAnchorEl(null);
-  };
+    setAnchorEl(null)
+  }
   const handleCloseAndScrollUp = (): void => {
-    setAnchorEl(null);
-    window.scrollTo(0, 0);
-  };
+    setAnchorEl(null)
+    window.scrollTo(0, 0)
+  }
 
   return (
     <div className={style.menu}>
@@ -43,11 +47,7 @@ export const HeaderMenu: React.FC = () => {
         </NavLink>
       </div>
       <div className={style.burger}>
-        <button
-          type="button"
-          className={style.buttonMenu}
-          onClick={handleClick}
-        >
+        <button type="button" className={style.buttonMenu} onClick={handleClick}>
           меню
         </button>
         <Menu
@@ -57,39 +57,23 @@ export const HeaderMenu: React.FC = () => {
           open={open}
           onClose={handleClose}
           MenuListProps={{
-            "aria-labelledby": "basic-button",
+            'aria-labelledby': 'basic-button',
           }}
         >
-          <MenuItem
-            className={style.burgerLink}
-            onClick={handleCloseAndScrollUp}
-          >
+          <MenuItem className={style.burgerLink} onClick={handleCloseAndScrollUp}>
             <NavLink to="/main">Наш сад</NavLink>
           </MenuItem>
-          <MenuItem
-            className={style.burgerLink}
-            onClick={handleCloseAndScrollUp}
-          >
+          <MenuItem className={style.burgerLink} onClick={handleCloseAndScrollUp}>
             <NavLink to="/about_us">О нас</NavLink>
           </MenuItem>
-          <MenuItem
-            className={style.burgerLink}
-            onClick={handleCloseAndScrollUp}
-          >
+          <MenuItem className={style.burgerLink} onClick={handleCloseAndScrollUp}>
             <NavLink to="/concurs">Конкурсные работы</NavLink>
           </MenuItem>
-          <MenuItem
-            className={style.burgerLink}
-            onClick={handleCloseAndScrollUp}
-          >
+          <MenuItem className={style.burgerLink} onClick={handleCloseAndScrollUp}>
             <NavLink to="/about_festival">О фестивале</NavLink>
           </MenuItem>
           <MenuItem onClick={handleClose}>
-            <button
-              type="button"
-              className={style.buttonTrees}
-              onClick={scrollGardenPlan}
-            >
+            <button type="button" className={style.buttonTrees} onClick={scrollGardenPlan}>
               деревья
             </button>
           </MenuItem>
@@ -110,14 +94,10 @@ export const HeaderMenu: React.FC = () => {
             О фестивале
           </NavLink>
         </div>
-        <button
-          type="button"
-          className={style.buttonTrees}
-          onClick={scrollGardenPlan}
-        >
+        <button type="button" className={style.buttonTrees} onClick={scrollGardenPlan}>
           деревья
         </button>
       </div>
     </div>
-  );
-};
+  )
+}

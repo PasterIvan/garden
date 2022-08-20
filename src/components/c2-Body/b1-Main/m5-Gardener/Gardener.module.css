@@ -1,13 +1,14 @@
 .gardener {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 75%;
+  margin: 0 auto;
 }
 
 @media (max-width: 1023px) {
-    .gardener {
-        width: 95%;
-    }
+  .gardener {
+    width: 95%;
+  }
 }

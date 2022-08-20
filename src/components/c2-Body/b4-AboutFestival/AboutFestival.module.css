@@ -1,58 +1,60 @@
 .aboutFestival {
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 
 .aboutFestivalBody {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .aboutFestivalVideo {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin-top: 54px;
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  margin-top: 54px;
 }
 
 .aboutFestivalBodyText {
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    width: 75%;
-    padding: 34px;
-    margin: 0 auto;
+  width: 75%;
+  margin: 0 auto;
+  padding: 34px;
+
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 140%;
 }
 
-
 .aboutFestivalBodyTextGreen {
-    color: #588535;
+  color: #588535;
 }
 
 @media (max-width: 768px) {
-    .aboutFestival {
-        padding-top: 70px;
-    }
+  .aboutFestival {
+    padding-top: 70px;
+  }
 
-    .aboutFestivalVideo {
-        margin-top: 30px;
-    }
+  .aboutFestivalVideo {
+    margin-top: 30px;
+  }
 
-    .aboutFestivalBodyText {
-        width: 95%;
-        padding: 0;
-        margin: 0;
-    }
+  .aboutFestivalBodyText {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media (max-width: 425px) {
-    .aboutFestivalHeaderTitle {
-        font-size: 38px;
-    }
+  .aboutFestivalHeaderTitle {
+    font-size: 38px;
+  }
 }

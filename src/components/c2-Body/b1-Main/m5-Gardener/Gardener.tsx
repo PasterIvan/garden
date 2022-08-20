@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
-import { HeaderBlock } from "../../../common/HeaderBlock";
+import style from './Gardener.module.css'
+import { Window } from './Window/Window'
 
-import style from "./Gardener.module.css";
-import { Window } from "./Window/Window";
+import { HeaderBlock } from 'components/common/HeaderBlock'
 
 export const Gardener: React.FC = () => {
   return (
@@ -14,5 +14,5 @@ export const Gardener: React.FC = () => {
       />
       <Window />
     </div>
-  );
-};
+  )
+}

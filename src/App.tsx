@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react'
 
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from 'react-router-dom'
 
-import style from "./App.module.css";
-import { Header } from "./components/c1-Header/Header";
-import { Main } from "./components/c2-Body/b1-Main/Main";
-import { AboutUs } from "./components/c2-Body/b2-AboutUs/AboutUs";
-import { Concurs } from "./components/c2-Body/b3-Concurs/Concurs";
-import { AboutFestival } from "./components/c2-Body/b4-AboutFestival/AboutFestival";
-import { Footer } from "./components/c3-Footer/Footer";
+import style from 'App.module.css'
+import { Header } from 'components/c1-Header/Header'
+import { Main } from 'components/c2-Body/b1-Main/Main'
+import { AboutUs } from 'components/c2-Body/b2-AboutUs/AboutUs'
+import { Concurs } from 'components/c2-Body/b3-Concurs/Concurs'
+import { AboutFestival } from 'components/c2-Body/b4-AboutFestival/AboutFestival'
+import { Footer } from 'components/c3-Footer/Footer'
 
 export const App: React.FC = () => {
   return (
@@ -25,5 +25,5 @@ export const App: React.FC = () => {
       </Routes>
       <Footer />
     </div>
-  );
-};
+  )
+}

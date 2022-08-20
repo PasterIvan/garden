@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
-import style from "./Contacts.module.css";
-import fb from "./img/fb.svg";
-import phone from "./img/phone.svg";
-import telegram from "./img/telegram.svg";
-import vk from "./img/vk.svg";
-import whatsapp from "./img/whatsapp.svg";
+import style from './Contacts.module.css'
+import fb from './img/fb.svg'
+import phone from './img/phone.svg'
+import telegram from './img/telegram.svg'
+import vk from './img/vk.svg'
+import whatsapp from './img/whatsapp.svg'
 
 export const Contacts: React.FC = () => {
   return (
@@ -20,5 +20,5 @@ export const Contacts: React.FC = () => {
         <img src={fb} alt="" />
       </a>
     </div>
-  );
-};
+  )
+}

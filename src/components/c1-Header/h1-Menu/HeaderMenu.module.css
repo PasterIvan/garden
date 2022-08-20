@@ -1,139 +1,155 @@
 .menu {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
 }
 
 .menu a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #0CA941;
-    text-decoration: underline;
+  color: #0ca941;
+  text-decoration: underline;
 }
 
 .logo {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    padding-bottom: 4px;
+  display: flex;
+  align-items: center;
+
+  width: 50%;
+  padding-bottom: 4px;
 }
 
-.logo img{
-    margin: 0 9px 0 0;
+.logo img {
+  margin: 0 9px 0 0;
 }
 
 .logo a {
-    font-family: Rubik, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 100%;
-    color: #374A3D;
+  font-family: Rubik, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 100%;
+  color: #374a3d;
 }
 
 .logo a:hover {
-    color: #0CA941;
-    text-decoration: none;
+  color: #0ca941;
+  text-decoration: none;
 }
 
 .textAndButton {
-    width: 150%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 150%;
 }
 
 .buttonMenu {
-    display: none;
-    cursor: pointer;
+  cursor: pointer;
+
+  display: none;
 }
 
-
 .text {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  text-align: center;
 }
 
 .text div {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
+
+  width: 100%;
 }
 
-.text a, .burgerLink a {
-    font-family: Rubik, sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    color: #1D3B53;
-    text-decoration: none;
+.text a,
+.burgerLink a {
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #1d3b53;
+  text-decoration: none;
 }
 
-.text a:hover, .burger a:hover {
-    color: #0CA941;
-    text-decoration: none;
+.text a:hover,
+.burger a:hover {
+  color: #0ca941;
+  text-decoration: none;
 }
 
 .buttonTrees {
-    width: 155px;
-    height: 45px;
-    background: #0CA941;
-    border: none;
-    border-radius: 6px;
-    color: #FFFFFF;
-    font-family: Rubik, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    cursor: pointer;
+  cursor: pointer;
+
+  width: 155px;
+  height: 45px;
+
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 21px;
+  color: #ffffff;
+
+  background: #0ca941;
+  border: none;
+  border-radius: 6px;
 }
-.buttonTrees:hover, .buttonMenu:hover {
-    background: #FFFFFF;
-    border: 1px solid #0CA941;
-    border-radius: 6px;
-    color: #0CA941;
+.buttonTrees:hover,
+.buttonMenu:hover {
+  color: #0ca941;
+
+  background: #ffffff;
+  border: 1px solid #0ca941;
+  border-radius: 6px;
 }
-.burgerLinks li{
-    justify-content: center;
-    align-items: center;
+.burgerLinks li {
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
-    .menu {
-        flex-wrap: wrap
-    }
-    .text {
-        display: none;
-    }
-    .buttonMenu  {
-        display: block;
-        width: 156px;
-        height: 45px;
-        background: #0CA941;
-        border: none;
-        border-radius: 6px;
-        color: #FFFFFF;
-        font-family: Rubik, sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 21px;
-        margin-right: 1px;
-    }
+  .menu {
+    flex-wrap: wrap;
+  }
+  .text {
+    display: none;
+  }
+  .buttonMenu {
+    display: block;
+
+    width: 156px;
+    height: 45px;
+    margin-right: 1px;
+
+    font-family: Rubik, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 21px;
+    color: #ffffff;
+
+    background: #0ca941;
+    border: none;
+    border-radius: 6px;
+  }
 }
 
 @media (max-width: 376px) {
-    .buttonMenu {
-        width: 90px;
-    }
-    .logo {
-        width: 65%;
-    }
+  .buttonMenu {
+    width: 90px;
+  }
+  .logo {
+    width: 65%;
+  }
 }

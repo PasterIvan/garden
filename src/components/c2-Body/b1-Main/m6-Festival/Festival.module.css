@@ -1,39 +1,41 @@
 .festival {
-    width: 75%;
-    margin: 0 auto;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .festivalPicture {
-    width: 58%;
-    margin: 0 auto;
+  width: 58%;
+  margin: 0 auto;
 }
 
 .festivalPicture svg {
-    padding: 0;
+  padding: 0;
 }
 
 .text {
-    background-color: #FFFFFF;
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    padding: 34px;
+  padding: 34px;
+
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 140%;
+
+  background-color: #ffffff;
 }
 
 .festivalBodyTextGreen {
-    color: #588535;
+  color: #588535;
 }
 
 @media (max-width: 1023px) {
-    .festival {
-        width: 95%;
-    }
+  .festival {
+    width: 95%;
+  }
 }
 
 @media (max-width: 768px) {
-    .text {
-        padding: 14px;
-    }
+  .text {
+    padding: 14px;
+  }
 }
