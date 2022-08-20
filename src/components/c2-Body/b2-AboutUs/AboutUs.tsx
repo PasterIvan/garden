@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
-import { HeaderBlock } from '../../common/HeaderBlock'
+import { HeaderBlock } from 'components/common/HeaderBlock'
 import { Gallery } from '../b1-Main/m7-Gallery/Gallery'
 
 import style from './AboutUs.module.css'
 import aboutUs from './img/aboutUsNew.svg'
+import { useAppDispatch, useAppSelector } from 'hooks/hooks'
+import { aboutUsTC } from 'bll/adminReduser'
 
 export const AboutUs: React.FC = () => {
+  const dispatch = useAppDispatch()
+
+  useEffect(() => {
+    dispatch(aboutUsTC())
+  })
+  const aboutUsContent = useAppSelector((state) => state.admin.aboutUs)
   return (
     <div className={style.aboutUs}>
       <HeaderBlock title="О НАС" />
+      <HeaderBlock title={aboutUsContent.title} />
 
       <div className={style.aboutUsBody}>
         <div className={style.aboutUsBodyPicture}>

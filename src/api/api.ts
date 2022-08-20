@@ -13,6 +13,9 @@ export const adminAPI = {
   getAboutUs() {
     return instance.get<{ aboutUs: { title: string; content: string } }>('aboutUs')
   },
+  getGallery() {
+    return instance.get<{ gallery: GalleryType }>('gallery')
+  },
 }
 
 export type FormContactsType = {
@@ -28,4 +31,18 @@ export type FormStateType = {
   blueZone: string[]
   violetZone: string[]
   contacts: FormContactsType
+}
+
+export type GalleryType = {
+  video_link: string
+  photo1: string
+  photo2: string
+  photo3: string
+  photo4: string
+  photo5: string
+  photo6: string
+  photo7: string
+  photo8: string
+  photo9: string
+  photo10: string
 }
