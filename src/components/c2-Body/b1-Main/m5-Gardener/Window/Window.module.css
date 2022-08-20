@@ -108,7 +108,10 @@
   line-height: 120%;
   color: #000000;
 }
-
+.additional a {
+  color: #000000;
+  text-decoration: underline;
+}
 .text2 {
   display: flex;
 
