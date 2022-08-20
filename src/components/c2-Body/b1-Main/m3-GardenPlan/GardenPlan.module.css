@@ -320,6 +320,8 @@
 
   .header {
     align-items: center;
+
+    text-align: center;
   }
 
   .headerText {
@@ -339,6 +341,6 @@
     padding: 0;
   }
   .buttons span {
-    padding: 22px 34px;
+    padding: 22px 0;
   }
 }
