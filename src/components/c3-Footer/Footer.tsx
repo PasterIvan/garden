@@ -10,9 +10,9 @@ export const Footer = () => {
       <div className={style.footer}>
         <div className={style.documents}>
           Документы
+          <p>Топосъемка места</p>
           <p>Приложение</p>
           <p>ТЗ</p>
-          <p>Топосъемка места</p>
         </div>
         <div className={style.contacts}>
           Контакты

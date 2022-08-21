@@ -29,6 +29,11 @@
   padding: 30px;
 }
 
+.contacts p,
+.documents p {
+  margin: 10px 0;
+}
+
 .socialNetworks {
   display: flex;
   justify-content: space-between;

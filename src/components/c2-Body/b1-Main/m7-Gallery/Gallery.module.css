@@ -15,12 +15,13 @@
 .picture img {
   display: inline-block;
 
-  max-width: 320px;
+  width: 320px;
+  height: 200px;
   margin: 0 20px 31px 0;
 
   vertical-align: top;
 
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .picture::-webkit-scrollbar {
