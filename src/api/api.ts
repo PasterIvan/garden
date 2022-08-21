@@ -11,10 +11,13 @@ export const formAPI = {
 }
 export const adminAPI = {
   getAboutUs() {
-    return instance.get<{ aboutUs: { title: string; content: string } }>('aboutUs')
+    return instance.get<{ title: string; content: string }>('aboutUs')
   },
   getGallery() {
-    return instance.get<{ gallery: GalleryType }>('gallery')
+    return instance.get<GalleryType>('gallery')
+  },
+  getFestival() {
+    return instance.get<{ video_link: string; content: string }>('festival')
   },
 }
 
