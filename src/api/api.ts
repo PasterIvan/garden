@@ -13,6 +13,9 @@ export const adminAPI = {
   getAboutUs() {
     return instance.get<{ title: string; content: string }>('aboutUs')
   },
+  getConcurs() {
+    return instance.get<{ video_link: string; content: string }>('participantsPage')
+  },
   getGallery() {
     return instance.get<GalleryType>('gallery')
   },

@@ -80,6 +80,8 @@
   min-width: 280px;
   max-width: 408px;
   margin: 24px auto;
+
+  border-radius: 8px;
 }
 
 @media (max-width: 1023px) {

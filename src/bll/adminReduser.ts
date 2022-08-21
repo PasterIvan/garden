@@ -8,6 +8,10 @@ const initState = {
     title: '',
     content: '',
   },
+  concurs: {
+    video_link: '',
+    content: '',
+  },
   gallery: {
     video_link: '',
     photo1: '',
@@ -34,6 +38,9 @@ const slice = createSlice({
     setAboutUs(state, action: PayloadAction<{ title: string; content: string }>) {
       state.aboutUs = action.payload
     },
+    setConcurs(state, action: PayloadAction<{ video_link: string; content: string }>) {
+      state.concurs = action.payload
+    },
     setGallery(state, action: PayloadAction<GalleryType>) {
       state.gallery = action.payload
     },
@@ -45,7 +52,7 @@ const slice = createSlice({
 
 export const adminReducer = slice.reducer
 
-export const { setAboutUs, setGallery, setFestival } = slice.actions
+export const { setAboutUs, setConcurs, setGallery, setFestival } = slice.actions
 
 // thunks
 export const aboutUsTC = (): AppThunkType => async (dispatch) => {
@@ -53,6 +60,16 @@ export const aboutUsTC = (): AppThunkType => async (dispatch) => {
     const res = await adminAPI.getAboutUs()
 
     dispatch(setAboutUs(res.data))
+  } catch (error) {
+    const typedError = error as AxiosError
+    //handleServerNetworkError(typedError, dispatch)
+  }
+}
+export const concursTC = (): AppThunkType => async (dispatch) => {
+  try {
+    const res = await adminAPI.getConcurs()
+
+    dispatch(setConcurs(res.data))
   } catch (error) {
     const typedError = error as AxiosError
     //handleServerNetworkError(typedError, dispatch)

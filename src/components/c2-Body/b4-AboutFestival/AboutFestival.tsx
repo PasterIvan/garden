@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-import { HeaderBlock } from '../../common/HeaderBlock'
+import { HeaderBlock } from 'components/common/HeaderBlock'
 
 import style from './AboutFestival.module.css'
 import { useAppDispatch, useAppSelector } from 'hooks/hooks'
@@ -21,7 +21,7 @@ export const AboutFestival: React.FC = () => {
         <iframe
           width="100%"
           height="519"
-          src="https://www.youtube.com/embed/H2DkW7olpeM"
+          src={festival.video_link}
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

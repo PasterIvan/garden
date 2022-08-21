@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { HeaderBlock } from '../../../common/HeaderBlock'
+import { HeaderBlock } from 'components/common/HeaderBlock'
 
 import style from './Festival.module.css'
 import festival from './img/festival.svg'
