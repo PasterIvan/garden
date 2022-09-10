@@ -5,6 +5,8 @@
 }
 
 .box {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,6 +27,7 @@
   border: 0.5px solid rgba(0, 0, 0, 0.36);
   border-radius: 37px;
 }
+
 .selectedBox {
   display: flex;
   flex-direction: column;
@@ -63,6 +66,7 @@
   border: 0.5px solid rgba(55, 74, 61, 0.36);
   border-radius: 10px;
 }
+
 .selectedBox button {
   cursor: pointer;
 
@@ -85,13 +89,11 @@
   align-content: center;
   align-items: center;
 
+  width: 181px;
   height: 253px;
-}
 
-.img img {
-  width: 80%;
-  margin: 0 auto;
-
+  background-position: center;
+  background-size: cover;
   border-radius: 10px;
 }
 
@@ -99,6 +101,7 @@
   .box {
     width: 300px;
   }
+
   .selectedBox {
     width: 300px;
   }

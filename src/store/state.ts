@@ -1,10 +1,18 @@
-import plant1 from '../components/c2-Body/b1-Main/m4-Cards/img/plant1.svg'
-import plant2 from '../components/c2-Body/b1-Main/m4-Cards/img/plant2.svg'
 import shalfei from './img/plants/shalfei.jpg'
-import жимолость from './img/plants/жимолость 1.jpg'
+import жимолость from 'store/img/plants/жимолость.jpg'
 import тимьян from './img/plants/Тимьян.jpg'
 import кровохлебка from './img/plants/Кровохлебка.jpg'
 import слива from './img/plants/слива2.jpg'
+import малина from './img/plants/малина.jpg'
+import рябина from './img/plants/Рябина.jpg'
+import вишня from './img/plants/виш.jpg'
+import яблоня from './img/plants/ябл.jpg'
+import липа from './img/plants/Липа.jpg'
+import жасмин from './img/plants/Жасмин.jpg'
+import черемуха from './img/plants/Черемуха.jpg'
+import крыжовник from './img/plants/крыжовник.jpg'
+import шелковица from './img/plants/Шелковица.jpg'
+import лен from './img/plants/лен.jpg'
 
 export type ZonesType = 'red' | 'orange' | 'green' | 'blue' | 'violet'
 
@@ -35,19 +43,20 @@ const zoneViolet = 'violet'
 
 export const cards: CardsType = {
   [zoneRed]: [
-    { idCard: 'r1', img: plant2, title: 'Малина', isDone: false },
-    { idCard: 'r2', img: plant1, title: 'Рябина', isDone: false },
-    { idCard: 'r3', img: plant1, title: 'Вишня', isDone: false },
+    { idCard: 'r1', img: малина, title: 'Малина', isDone: false },
+    { idCard: 'r2', img: рябина, title: 'Рябина', isDone: false },
+    { idCard: 'r3', img: вишня, title: 'Вишня', isDone: false },
   ],
   [zoneOrange]: [
-    { idCard: 'o1', img: plant2, title: 'Яблоня', isDone: false },
-    { idCard: 'o2', img: plant2, title: 'Липа', isDone: false },
-    { idCard: 'o3', img: plant1, title: 'Жасмин', isDone: false },
+    { idCard: 'o1', img: яблоня, title: 'Яблоня', isDone: false },
+    { idCard: 'o2', img: липа, title: 'Липа', isDone: false },
+    { idCard: 'o3', img: жасмин, title: 'Жасмин', isDone: false },
+    { idCard: 'o4', img: черемуха, title: 'Черемуха', isDone: false },
   ],
-  [zoneGreen]: [{ idCard: 'g1', img: plant2, title: 'Крыжовник', isDone: false }],
+  [zoneGreen]: [{ idCard: 'g1', img: крыжовник, title: 'Крыжовник', isDone: false }],
   [zoneBlue]: [
-    { idCard: 'b1', img: plant1, title: 'Шелковица', isDone: false },
-    { idCard: 'b2', img: plant1, title: 'Лен', isDone: false },
+    { idCard: 'b1', img: шелковица, title: 'Шелковица', isDone: false },
+    { idCard: 'b2', img: лен, title: 'Лен', isDone: false },
   ],
   [zoneViolet]: [
     { idCard: 'v1', img: слива, title: 'Слива', isDone: false },
