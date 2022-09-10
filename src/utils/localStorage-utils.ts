@@ -2,7 +2,7 @@ import { AppStateType } from 'store/store'
 
 export const loadState = () => {
   try {
-    const serializedState = localStorage.getItem('app-state')
+    const serializedState = sessionStorage.getItem('app-state')
 
     if (serializedState === null) {
       return undefined
@@ -18,7 +18,7 @@ export const saveState = (state: AppStateType) => {
   try {
     const serializedState = JSON.stringify(state)
 
-    localStorage.setItem('app-state', serializedState)
+    sessionStorage.setItem('app-state', serializedState)
   } catch {
     // ignore write errors
   }

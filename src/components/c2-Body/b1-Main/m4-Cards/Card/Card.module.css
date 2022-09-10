@@ -88,6 +88,13 @@
   height: 253px;
 }
 
+.img img {
+  width: 80%;
+  margin: 0 auto;
+
+  border-radius: 10px;
+}
+
 @media (max-width: 768px) {
   .box {
     width: 300px;

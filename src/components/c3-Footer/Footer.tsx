@@ -26,11 +26,6 @@ export const Footer = () => {
             <b>Телефон</b>: 8-910-348-28-09
           </p>
         </div>
-        <div className={style.socialNetworks}>
-          <img src={f} alt="" />
-          <img src={t} alt="" />
-          <img src={i} alt="" />
-        </div>
       </div>
     </div>
   )

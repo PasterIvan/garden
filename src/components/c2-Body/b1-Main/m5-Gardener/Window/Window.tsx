@@ -152,8 +152,10 @@ export const Window: React.FC = () => {
             </DialogContentText>
           </DialogContent>
           <DialogActions>
-            <Button onClick={handleClose}>Отмена</Button>
-            <Button onClick={handleCloseAndPost} autoFocus>
+            <Button onClick={handleClose} color={'error'}>
+              Отмена
+            </Button>
+            <Button onClick={handleCloseAndPost} color={'success'} autoFocus>
               Оплатить
             </Button>
           </DialogActions>
