@@ -2,7 +2,7 @@ import React from 'react'
 
 import { HeaderBlock } from 'components/common/HeaderBlock'
 
-import style from './Festival.module.css'
+import style from 'components/c2-Body/b1-Main/m6-Festival/Festival.module.scss'
 import festival from './img/festival.svg'
 
 export const Festival: React.FC = () => {

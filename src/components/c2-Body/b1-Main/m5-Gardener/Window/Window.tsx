@@ -9,7 +9,7 @@ import DialogTitle from '@mui/material/DialogTitle'
 import { useFormik } from 'formik'
 import { useSelector } from 'react-redux'
 
-import style from './Window.module.css'
+import style from 'components/c2-Body/b1-Main/m5-Gardener/Window/Window.module.scss'
 
 import { FormStateType } from 'api/api'
 import { clearFormAC, postFormTC, preparationFormTC } from 'bll/formReduser'
@@ -21,6 +21,9 @@ type FormikErrorType = {
   name?: string
   phone?: string
   email?: string
+}
+const styleModal = {
+  borderRadius: '10px',
 }
 
 export const Window: React.FC = () => {
@@ -37,7 +40,7 @@ export const Window: React.FC = () => {
 
     validate: (contacts) => {
       const errors: FormikErrorType = {}
-      const minLengthNumber = 12
+      const minLengthNumber = 10
 
       if (!contacts.name) {
         errors.name = 'Укажите Ваше имя'

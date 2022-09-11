@@ -1,3 +1,6 @@
+@import 'src/styles/mixin.scss';
+@import 'src/styles/variables.scss';
+
 .festival {
   width: 75%;
   margin: 0 auto;
@@ -13,14 +16,8 @@
 }
 
 .text {
+  @include text($textLinkFont, 16px, 400, 140%, none);
   padding: 34px;
-
-  font-family: 'Rubik', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 140%;
-
   background-color: #ffffff;
 }
 

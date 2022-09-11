@@ -1,9 +1,11 @@
+@import 'src/styles/mixin.scss';
+
+@import 'src/styles/variables.scss';
+
 .header {
-  display: flex;
-  flex-direction: column;
+  @include flexColumnJustify(space-between);
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
 
   padding: 100px 0 46px 0;
 
@@ -11,23 +13,14 @@
 }
 
 .title {
-  font-size: 46px;
-  font-weight: 900;
-  font-style: normal;
-  line-height: 60px;
-  color: #0ca941;
+  @include text($textTitleFont, 46px, 900, 60px, $textTitleColor);
   text-align: center;
   letter-spacing: 0.05em;
 }
 
 .text {
+  @include text($textTitleFont, 16px, 400, 160%, $textTitleSecondColor);
   max-width: 700px;
-
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 160%;
-  color: #678570;
   text-align: center;
 }
 

@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import { HeaderBlock } from 'components/common/HeaderBlock'
 import { Gallery } from '../b1-Main/m7-Gallery/Gallery'
 
-import style from './AboutUs.module.css'
+import style from 'components/c2-Body/b2-AboutUs/AboutUs.module.scss'
 import aboutUs from './img/aboutUsNew.svg'
 import { useAppDispatch, useAppSelector } from 'hooks/hooks'
 import { aboutUsTC } from 'bll/adminReduser'

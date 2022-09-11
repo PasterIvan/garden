@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 
 import { HeaderBlock } from 'components/common/HeaderBlock'
 
-import style from './Concurs.module.css'
+import style from 'components/c2-Body/b3-Concurs/Concurs.module.scss'
 import aboutConcurs from './img/aboutConcurs.svg'
 import { useAppDispatch, useAppSelector } from 'hooks/hooks'
 import { concursTC, galleryTC } from 'bll/adminReduser'

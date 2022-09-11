@@ -1,3 +1,6 @@
+@import 'src/styles/mixin.scss';
+@import 'src/styles/variables.scss';
+
 .aboutUs {
   display: flex;
   flex-direction: column;
@@ -7,18 +10,12 @@
   padding-top: 100px;
 }
 .aboutUsBody {
+  @include text($textLinkFont, 18px, 300, 140%, none);
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-
   width: 87.5%;
-  margin: 0px auto 0 0;
-
-  font-family: 'Rubik', sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 140%;
+  margin: 0 auto 0 0;
 }
 
 .aboutUsBodyPicture {
@@ -42,11 +39,8 @@
     padding-top: 70px;
   }
   .aboutUsBody {
-    display: flex;
-    flex-direction: column;
+    @include flexColumnJustify(space-between);
     align-items: center;
-    justify-content: space-between;
-
     width: 100%;
     margin: 30px auto 0;
   }

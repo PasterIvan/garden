@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Group333553 from './img/button/Group33553.svg'
-import style from './Picture.module.css'
+import style from 'components/c2-Body/b1-Main/m1-Picture/Picture.module.scss'
 import 'fonts/fonts.css'
 
 export const Picture: React.FC = () => {

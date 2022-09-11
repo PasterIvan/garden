@@ -1,8 +1,9 @@
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@import 'src/styles/mixin.scss';
 
+@import 'src/styles/variables.scss';
+
+.menu {
+  @include flexCenterJustify(space-between);
   width: 100%;
 }
 
@@ -11,7 +12,7 @@
 }
 
 a:hover {
-  color: #0ca941;
+  color: $textLinkColorHover;
   text-decoration: underline;
 }
 
@@ -28,24 +29,16 @@ a:hover {
 }
 
 .logo a {
-  font-family: Rubik, sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 100%;
-  color: #374a3d;
+  @include text($textLinkFont, 32px, 700, 100%, $textColor);
 }
 
 .logo a:hover {
-  color: #0ca941;
+  color: $textLinkColorHover;
   text-decoration: none;
 }
 
 .textAndButton {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
+  @include flexCenterJustify(space-between);
   width: 150%;
 }
 
@@ -56,10 +49,7 @@ a:hover {
 }
 
 .text {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
+  @include flexCenterJustify(space-between);
   width: 100%;
 
   text-align: center;
@@ -74,45 +64,31 @@ a:hover {
 
 .text a,
 .burgerLink a {
-  font-family: Rubik, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21px;
-  color: #1d3b53;
+  @include text($textLinkFont, 18px, 700, 21px, $textLinkColor);
   text-decoration: none;
 }
 
 .text a:hover,
 .burger a:hover {
-  color: #0ca941;
+  color: $textLinkColorHover;
   text-decoration: none;
 }
 
 .buttonTrees {
+  @include text($textLinkFont, 18px, 700, 21px, $textButtonColor);
+  @include button($textLinkColorHover, none, 6px);
   cursor: pointer;
 
   width: 155px;
   height: 45px;
-
-  font-family: Rubik, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 21px;
-  color: #ffffff;
-
-  background: #0ca941;
-  border: none;
-  border-radius: 6px;
 }
+
 .buttonTrees:hover,
 .buttonMenu:hover {
-  color: #0ca941;
-
-  background: #ffffff;
-  border: 1px solid #0ca941;
-  border-radius: 6px;
+  @include button($textButtonColor, $borderButton + $textLinkColorHover, 6px);
+  color: $textLinkColorHover;
 }
+
 .burgerLinks li {
   align-items: center;
   justify-content: center;
@@ -122,26 +98,19 @@ a:hover {
   .menu {
     flex-wrap: wrap;
   }
+
   .text {
     display: none;
   }
+
   .buttonMenu {
+    @include text($textLinkFont, 18px, 700, 21px, $textButtonColor);
+    @include button($textLinkColorHover, none, 6px);
     display: block;
 
     width: 156px;
     height: 45px;
     margin-right: 1px;
-
-    font-family: Rubik, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 21px;
-    color: #ffffff;
-
-    background: #0ca941;
-    border: none;
-    border-radius: 6px;
   }
 }
 
@@ -149,6 +118,7 @@ a:hover {
   .buttonMenu {
     width: 90px;
   }
+
   .logo {
     width: 65%;
   }

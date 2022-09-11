@@ -19,7 +19,7 @@ export const Contacts: React.FC = () => {
       <Tooltip title="Telegram">
         <img src={telegram} alt="" />
       </Tooltip>
-      <Tooltip title="VK">
+      <Tooltip title="Мы в VK">
         <a href="https://vk.com/chistya_tropa" target="blank">
           <img src={vk} alt="" />
         </a>

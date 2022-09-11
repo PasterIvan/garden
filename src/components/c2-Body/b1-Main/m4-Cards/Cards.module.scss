@@ -1,9 +1,11 @@
+@import 'src/styles/mixin.scss';
+
+@import 'src/styles/variables.scss';
+
 .cards {
-  display: flex;
-  flex-direction: column;
+  @include flexColumnJustify(space-between);
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
 }
 
 .card {

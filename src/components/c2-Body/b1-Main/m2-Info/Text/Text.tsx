@@ -1,6 +1,6 @@
 import React from 'react'
 
-import style from './Text.module.css'
+import style from 'components/c2-Body/b1-Main/m2-Info/Text/Text.module.scss'
 
 export const Text: React.FC = () => {
   return (

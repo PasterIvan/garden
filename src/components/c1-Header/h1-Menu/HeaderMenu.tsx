@@ -4,7 +4,7 @@ import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
 import { NavLink } from 'react-router-dom'
 
-import style from './HeaderMenu.module.css'
+import style from 'components/c1-Header/h1-Menu/HeaderMenu.module.scss'
 import logo from './img/logo.svg'
 
 export const scrollUp = (): void => {

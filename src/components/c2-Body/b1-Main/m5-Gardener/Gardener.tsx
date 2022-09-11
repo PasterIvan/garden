@@ -1,6 +1,6 @@
 import React from 'react'
 
-import style from './Gardener.module.css'
+import style from 'components/c2-Body/b1-Main/m5-Gardener/Gardener.module.scss'
 import { Window } from './Window/Window'
 
 import { HeaderBlock } from 'components/common/HeaderBlock'

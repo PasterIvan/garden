@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-import style from './Gallery.module.css'
+import style from 'components/c2-Body/b1-Main/m7-Gallery/Gallery.module.scss'
 import { useAppDispatch, useAppSelector } from 'hooks/hooks'
 import { galleryTC } from 'bll/adminReduser'
 

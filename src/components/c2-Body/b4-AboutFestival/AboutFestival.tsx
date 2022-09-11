@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 
 import { HeaderBlock } from 'components/common/HeaderBlock'
 
-import style from './AboutFestival.module.css'
+import style from 'components/c2-Body/b4-AboutFestival/AboutFestival.module.scss'
 import { useAppDispatch, useAppSelector } from 'hooks/hooks'
 import { festivalTC } from 'bll/adminReduser'
 

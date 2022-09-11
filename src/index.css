@@ -1,19 +1,19 @@
-/*Fredoka*/
+/*Nunito*/
 
 @font-face {
-  font-family: 'Fredoka';
+  font-family: 'Nunito';
   font-weight: 500;
   src: url('./fonts/Fredoka/Nunito-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Fredoka';
+  font-family: 'Nunito';
   font-weight: 600;
   src: url('./fonts/Fredoka/Nunito-Black.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Fredoka';
+  font-family: 'Nunito';
   font-weight: 700;
   src: url('./fonts/Fredoka/Nunito-Black.ttf') format('truetype');
 }
@@ -80,7 +80,7 @@ body {
 
   margin: 0;
 
-  font-family: -apple-system, BlinkMacSystemFont, 'Arial', 'Fredoka', 'Poppins', 'Rubik', 'Inter',
+  font-family: -apple-system, BlinkMacSystemFont, 'Arial', 'Nunito', 'Poppins', 'Rubik', 'Inter',
     sans-serif;
 
   -webkit-font-smoothing: antialiased;

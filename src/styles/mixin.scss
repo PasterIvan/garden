@@ -1,0 +1,25 @@
+@mixin text($fontFamily, $fontSize, $fontWeight, $lineHeight, $color) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: $color;
+}
+
+@mixin button($background, $border, $borderRadius) {
+  background: $background;
+  border: $border;
+  border-radius: $borderRadius;
+}
+
+@mixin flexCenterJustify($justifyContent) {
+  display: flex;
+  align-items: center;
+  justify-content: $justifyContent;
+}
+
+@mixin flexColumnJustify($justifyContent) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justifyContent;
+}

@@ -1,3 +1,7 @@
+@import 'src/styles/mixin.scss';
+
+@import 'src/styles/variables.scss';
+
 .card {
   display: flex;
   flex-wrap: wrap;
@@ -5,90 +9,72 @@
 }
 
 .box {
+  @include text($textCardsFont, 24px, 600, 30px, $textColor);
+  @include flexColumnJustify(space-evenly);
   position: relative;
-
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
 
   box-sizing: border-box;
   width: 300px;
   height: 437px;
   margin: 15px 1px 15px 0;
 
-  font-family: 'Fredoka', sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 30px;
-  color: #374a3d;
-
   background: #ffffff;
-  border: 0.5px solid rgba(0, 0, 0, 0.36);
+  border: $borderButton rgba(0, 0, 0, 0.36);
   border-radius: 37px;
 }
 
 .selectedBox {
-  display: flex;
-  flex-direction: column;
+  @include text($textCardsFont, 24px, 600, 30px, $textColor);
+  @include flexColumnJustify(space-evenly);
   align-items: center;
-  justify-content: space-evenly;
 
   box-sizing: border-box;
   width: 300px;
   height: 437px;
   margin: 15px 1px 15px 0;
 
-  font-family: 'Fredoka', sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 30px;
-  color: #374a3d;
-
   background: #ecf1e7;
-  border: 0.5px solid rgba(0, 0, 0, 0.36);
+  border: $borderButton rgba(0, 0, 0, 0.36);
   border-radius: 37px;
 }
 
 .box button {
+  @include text($textLinkFont, 16px, 400, 24px, $textTitleSecondColor);
   cursor: pointer;
 
   width: 128.06px;
   height: 43.93px;
 
-  font-family: 'Arial', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #678570;
-
   background: #ffffff;
-  border: 0.5px solid rgba(55, 74, 61, 0.36);
+  border: $borderButton rgba(55, 74, 61, 0.36);
   border-radius: 10px;
+}
+.box button:hover {
+  border: none;
+  background: #69c889;
+  color: $textButtonColor;
 }
 
 .selectedBox button {
+  @include text($textLinkFont, 16px, 400, 24px, $textButtonColor);
   cursor: pointer;
 
   width: 128.06px;
   height: 43.93px;
-
-  font-family: 'Arial', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #ecf1e7;
 
   background: #69c889;
   border: none;
   border-radius: 10px;
 }
+.selectedBox button:hover {
+  background: #ffffff;
+  border: $borderButton rgba(55, 74, 61, 0.36);
+  border-radius: 10px;
+  color: $textTitleSecondColor;
+}
 
 .img {
-  display: flex;
-  align-content: center;
-  align-items: center;
-
   width: 181px;
   height: 253px;
 

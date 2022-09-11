@@ -3,7 +3,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 
 import { Card } from './Card/Card'
-import style from './Cards.module.css'
+import style from 'components/c2-Body/b1-Main/m4-Cards/Cards.module.scss'
 
 import { HeaderBlock } from 'components/common/HeaderBlock'
 import { CardsType, ZoneType } from 'store/state'

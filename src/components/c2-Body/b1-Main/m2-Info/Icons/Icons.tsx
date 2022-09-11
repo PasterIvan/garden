@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { IconInfoToMain } from './Icon/IconInfo'
-import style from './Icons.module.css'
+import style from 'components/c2-Body/b1-Main/m2-Info/Icons/Icons.module.scss'
 import logo1 from './img/logo1.svg'
 import logo2 from './img/logo2.svg'
 import logo3 from './img/logo3.svg'

@@ -1,3 +1,6 @@
+@import 'src/styles/mixin.scss';
+@import 'src/styles/variables.scss';
+
 .border {
   display: flex;
 
@@ -9,77 +12,47 @@
 }
 
 .body {
-  display: flex;
-  flex-direction: column;
+  @include flexColumnJustify(space-evenly);
+  @include text($textLinkFont, 46px, 700, 120%, #ffffff);
   gap: 10px;
   align-items: center;
-  justify-content: space-evenly;
-
   width: 160%;
   padding: 3% 0;
-
-  font-family: 'Inter', sans-serif;
-  font-size: 46px;
-  font-weight: 700;
-  line-height: 120%;
-  color: #ffffff;
-
   background: #0ca941;
   border-radius: 16px;
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-
+  @include flexColumnJustify(space-evenly);
   width: 90%;
 }
 
 .form input {
+  @include text($textFont, 14px, 400, 120%, none);
   gap: 10px;
-
   margin: 5px;
   padding: 10px 14px;
-
-  font-family: 'Arial', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 120%;
-
   background: #ffffff;
-  border: 1px solid #bfc3ff;
+  border: $borderButton #bfc3ff;
   border-radius: 4px;
 }
 
 .form button {
+  @include text($textFont, 18px, 700, 21px, $textButtonColor);
   cursor: pointer;
-
   height: 59px;
   margin-top: 30px;
   margin-bottom: 5px;
-
-  font-family: 'Arial', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 21px;
-  color: #ffffff;
   text-align: center;
-
   background: #49f3b6;
   border: none;
   border-radius: 90px;
 }
 
 .text1 {
-  width: 62%;
-
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 120%;
+  @include text(none, 14px, 400, 120%, none);
   text-align: center;
+  width: 62%;
 }
 
 .text1 a {
@@ -95,40 +68,23 @@
 }
 
 .additional {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
+  @include text($textCardsFont, 32px, 600, 120%, none);
+  @include flexColumnJustify(center);
   padding: 0 3%;
-
-  font-family: 'Fredoka', sans-serif;
-  font-size: 32px;
-  font-weight: 600;
-  font-style: normal;
-  line-height: 120%;
-  color: #000000;
 }
 .additional a {
   color: #000000;
   text-decoration: underline;
 }
 .text2 {
-  display: flex;
-
+  @include text($textCardsFont, 16px, 500, 160%, none);
   width: 100%;
   margin-top: 24px;
-
-  font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 160%;
-  color: #000000;
 }
 
 @media (max-width: 768px) {
   .border {
     flex-direction: column;
-
     margin: 0 auto;
   }
 
@@ -138,8 +94,5 @@
 
   .additional {
     margin: 34px 10px;
-  }
-
-  .text2 {
   }
 }

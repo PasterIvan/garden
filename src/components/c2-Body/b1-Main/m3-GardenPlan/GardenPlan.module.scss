@@ -1,136 +1,92 @@
-.plan {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@import 'src/styles/mixin.scss';
 
+@import 'src/styles/variables.scss';
+
+.plan {
+  @include flexCenterJustify(space-between);
   width: 87.5%;
   margin: 0 0 0 auto;
   padding-top: 105px;
 }
 
 .column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-
+  @include flexColumnJustify(space-evenly);
   width: 100%;
   height: 100%;
   margin-right: 24px;
 }
 
 .header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-
+  @include flexColumnJustify(space-evenly);
   margin-bottom: 30px;
 }
 
 .headerTitle {
   margin-bottom: 24px;
-
-  font-family: Poppins, sans-serif;
-  font-size: 46px;
-  font-weight: 900;
-  font-style: normal;
-  line-height: 60px;
-  color: #0ca941;
+  @include text($textTitleFont, 46px, 900, 60px, $textTitleColor);
   letter-spacing: 0.05em;
 }
 
 .headerText {
   max-width: 530px;
   padding-right: 100px;
-
-  font-family: Rubik, sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 160%;
-  color: #678570;
+  @include text($textTitleFont, 16px, 300, 160%, $textTitleSecondColor);
 }
 
 .buttons input {
   cursor: default;
-
   position: absolute;
   top: 5px;
   left: 5px;
-
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
   background-color: initial;
   border: none;
-
   appearance: none;
 }
 
 .planBodyTitle {
+  @include text($textTitleFont, 24px, 700, 140%, none);
   display: flex;
   align-items: center;
-
   padding: 20px 50px 20px 20px;
-
-  font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 140%;
   letter-spacing: 0.05em;
 }
 
 .planBodyText {
+  @include text($textLinkFont, 14px, 400, 160%, #402b2b);
   align-self: stretch;
-
   padding: 20px;
-
-  font-family: 'Rubik', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 160%;
-  color: #402b2b;
 }
 
 .buttons-red input:checked::before {
   content: url('./img/blockRed.svg');
-
   position: absolute;
-
   display: block;
 }
 
 .buttons-orange input:checked::before {
   content: url('./img/blockOrange.svg');
-
   position: absolute;
-
   display: block;
 }
 
 .buttons-green input:checked::before {
   content: url('./img/blockGreen.svg');
-
   position: absolute;
-
   display: block;
 }
 
 .buttons-blue input:checked::before {
   content: url('./img/blockBlue.svg');
-
   position: absolute;
-
   display: block;
 }
 
 .buttons-violet input:checked::before {
   content: url('./img/blockViolet.svg');
-
   position: absolute;
-
   display: block;
 }
 
@@ -139,23 +95,14 @@
 }
 
 .buttons div {
-  display: flex;
+  @include text($textLinkFont, 18px, 400, 120%, $textButtonColor);
+  @include flexCenterJustify(flex-start);
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-
   box-sizing: border-box;
   width: 100%;
-
-  font-family: 'Rubik', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 120%;
-  color: #ffffff;
-
   border-radius: 10px;
 }
+
 .buttons span {
   display: flex;
   gap: 0;
@@ -163,57 +110,45 @@
 
   padding: 22px 34px 22px 0;
 }
+
 .buttons div::before {
   content: url('./img/znakVoskl.svg');
 }
 
 .buttonsInfo-red {
   gap: 34px;
-
   padding: 22px 34px;
-
   background-color: #e53f3f;
 }
 
 .buttonsInfo-orange {
   gap: 34px;
-
   padding: 22px 34px;
-
   background-color: #f38a2a;
 }
 
 .buttonsInfo-green {
   gap: 34px;
-
   padding: 22px 34px;
-
   background: #0ca941;
 }
 
 .buttonsInfo-blue {
   gap: 34px;
-
   padding: 22px 34px;
-
   background-color: #3fbee5;
 }
 
 .buttonsInfo-violet {
   gap: 34px;
-
   padding: 22px 34px;
-
   background-color: #5056b5;
 }
 
 .planBody-red {
   display: flex;
-  gap: 34px;
   align-items: center;
-
   width: 100%;
-
   color: #e53f3f;
 }
 
@@ -224,9 +159,7 @@
 .planBody-orange {
   display: flex;
   align-items: center;
-
   width: 100%;
-
   color: #f38a2a;
 }
 
@@ -237,9 +170,7 @@
 .planBody-green {
   display: flex;
   align-items: center;
-
   width: 100%;
-
   color: #0ca941;
 }
 
@@ -250,9 +181,7 @@
 .planBody-blue {
   display: flex;
   align-items: center;
-
   width: 100%;
-
   color: #3fbee5;
 }
 
@@ -263,9 +192,7 @@
 .planBody-violet {
   display: flex;
   align-items: center;
-
   width: 100%;
-
   color: #5056b5;
 }
 
@@ -275,20 +202,17 @@
 
 .picture {
   display: block;
-
   width: 100%;
   height: 100%;
 }
 
 @media (max-width: 1023px) {
   .plan {
-    display: flex;
-    flex-direction: column;
+    @include flexColumnJustify(center);
     align-items: center;
-    justify-content: center;
-
     width: 95%;
     margin: 0 auto;
+    padding-top: 60px;
   }
 
   .column {
@@ -313,14 +237,11 @@
 
 @media (max-width: 768px) {
   .column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    @include flexColumnJustify(space-evenly);
   }
 
   .header {
     align-items: center;
-
     text-align: center;
   }
 
@@ -333,11 +254,8 @@
   }
 
   .buttons {
-    display: flex;
-    flex-direction: column;
+    @include flexColumnJustify(center);
     align-items: center;
-    justify-content: center;
-
     padding: 0;
   }
   .buttons span {

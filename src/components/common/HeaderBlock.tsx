@@ -1,6 +1,6 @@
 import React from 'react'
 
-import style from './HeaderBlock.module.css'
+import style from 'components/common/HeaderBlock.module.scss'
 
 type HeaderCT = {
   title: string

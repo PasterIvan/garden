@@ -2,7 +2,7 @@ import React from 'react'
 
 import { useDispatch } from 'react-redux'
 
-import style from './Card.module.css'
+import style from 'components/c2-Body/b1-Main/m4-Cards/Card/Card.module.scss'
 
 import { choosePlantAC } from 'bll/cardsReducer'
 

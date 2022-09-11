@@ -2,7 +2,7 @@ import React from 'react'
 
 import { useDispatch, useSelector } from 'react-redux'
 
-import style from './GardenPlan.module.css'
+import style from 'components/c2-Body/b1-Main/m3-GardenPlan/GardenPlan.module.scss'
 import plan from './img/planNew.svg'
 import SuperRadio from './Radio/SuperRadio'
 
