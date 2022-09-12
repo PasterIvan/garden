@@ -93,6 +93,9 @@ export const Window: React.FC = () => {
           onClose={handleClose}
           aria-labelledby="alert-dialog-title"
           aria-describedby="alert-dialog-description"
+          PaperProps={{
+            style: { borderRadius: 20 },
+          }}
         >
           <DialogTitle id="alert-dialog-title" style={{ color: 'red' }}>
             Проверьте информацию о заказе!

@@ -1,8 +1,5 @@
 import React from 'react'
 import style from 'components/c3-Footer/Footer.module.scss'
-import f from './img/f.svg'
-import t from './img/t.svg'
-import i from './img/i.svg'
 
 export const Footer = () => {
   return (

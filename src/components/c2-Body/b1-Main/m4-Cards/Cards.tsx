@@ -17,9 +17,15 @@ export const Cards: React.FC = () => {
   const zoneTexts = zones.filter((z) => z.idZone === theme)[0]
   const zoneCards = cards[theme]
 
+  const titlePlants = zoneCards.map((cards) => ' ' + cards.title.toLowerCase())
+
   return (
     <div className={style.cards}>
-      <HeaderBlock title="Выберите растение" text={zoneTexts && zoneTexts.cardText} />
+      <HeaderBlock
+        title="Выберите растение"
+        text={zoneTexts && zoneTexts.cardText + titlePlants + '.'}
+      />
+      <span>Нажмите на картинку растения, чтобы узнать о нем подробнее.</span>
       <div className={style.card}>
         {zoneCards &&
           zoneCards.map((z) => {
@@ -30,6 +36,7 @@ export const Cards: React.FC = () => {
                 title={z.title}
                 img={z.img}
                 isDone={z.isDone}
+                text={z.text}
                 idZone={theme}
               />
             )
