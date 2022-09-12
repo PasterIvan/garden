@@ -6,7 +6,7 @@
 }
 
 .footer {
-  @include text($textLinkFont, 30px, 500, 36px, $textButtonColor);
+  @include text($textLinkFont, 24px, 600, 36px, $textButtonColor);
   display: flex;
   justify-content: space-between;
   width: 75%;
@@ -14,7 +14,7 @@
 }
 .footer p {
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 200;
 }
 .contacts,
 .documents {
@@ -35,7 +35,7 @@
 .socialNetworks img {
   cursor: pointer;
 
-  width: 36px;
+  width: 24px;
   margin-left: 31px;
 }
 

@@ -11,6 +11,10 @@ export const scrollUp = (): void => {
   window.scrollTo(0, 0)
 }
 
+type ActionType = {
+  [key: string]: boolean
+}
+
 export const HeaderMenu: React.FC = () => {
   const scrollGardenPlan = (): void => {
     document.location.href = '#/main'
@@ -38,6 +42,8 @@ export const HeaderMenu: React.FC = () => {
     window.scrollTo(0, 0)
   }
 
+  const setAction = ({ isActive }: ActionType) => (isActive ? style.active : style.item)
+
   return (
     <div className={style.menu}>
       <div className={style.logo}>
@@ -60,17 +66,45 @@ export const HeaderMenu: React.FC = () => {
             'aria-labelledby': 'basic-button',
           }}
         >
-          <MenuItem className={style.burgerLink} onClick={handleCloseAndScrollUp}>
-            <NavLink to="/main">Наш сад</NavLink>
+          <MenuItem
+            className={`${style.burgerLink} ${style.active}`}
+            onClick={handleCloseAndScrollUp}
+          >
+            <NavLink to="/main" className={setAction}>
+              Наш сад
+            </NavLink>
           </MenuItem>
-          <MenuItem className={style.burgerLink} onClick={handleCloseAndScrollUp}>
-            <NavLink to="/about_us">О нас</NavLink>
+          <MenuItem
+            className={`${style.burgerLink} ${style.active}`}
+            onClick={handleCloseAndScrollUp}
+          >
+            <NavLink to="/about_us" className={setAction}>
+              О нас
+            </NavLink>
           </MenuItem>
-          <MenuItem className={style.burgerLink} onClick={handleCloseAndScrollUp}>
-            <NavLink to="/concurs">Конкурсные работы</NavLink>
+          <MenuItem
+            className={`${style.burgerLink} ${style.active}`}
+            onClick={handleCloseAndScrollUp}
+          >
+            <NavLink to="/concurs" className={setAction}>
+              Конкурсные работы
+            </NavLink>
           </MenuItem>
-          <MenuItem className={style.burgerLink} onClick={handleCloseAndScrollUp}>
-            <NavLink to="/about_festival">О фестивале</NavLink>
+          <MenuItem
+            className={`${style.burgerLink} ${style.active}`}
+            onClick={handleCloseAndScrollUp}
+          >
+            <NavLink to="/about_festival" className={setAction}>
+              О фестивале
+            </NavLink>
+          </MenuItem>
+          <MenuItem
+            className={`${style.burgerLink} ${style.active}`}
+            onClick={handleCloseAndScrollUp}
+          >
+            <NavLink to="/contacts" className={setAction}>
+              Контакты
+            </NavLink>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <button type="button" className={style.buttonTrees} onClick={scrollGardenPlan}>
@@ -79,19 +113,22 @@ export const HeaderMenu: React.FC = () => {
           </MenuItem>
         </Menu>
       </div>
-      <div className={style.text}>
+      <div className={`${style.text} ${style.active}`}>
         <div>
-          <NavLink onClick={scrollUp} to="/main">
+          <NavLink onClick={scrollUp} to="/main" className={setAction}>
             Наш сад
           </NavLink>
-          <NavLink onClick={scrollUp} to="/about_us">
+          <NavLink onClick={scrollUp} to="/about_us" className={setAction}>
             О нас
           </NavLink>
-          <NavLink onClick={scrollUp} to="/concurs">
+          <NavLink onClick={scrollUp} to="/concurs" className={setAction}>
             Конкурсные работы
           </NavLink>
-          <NavLink onClick={scrollUp} to="/about_festival">
+          <NavLink onClick={scrollUp} to="/about_festival" className={setAction}>
             О фестивале
+          </NavLink>
+          <NavLink onClick={scrollUp} to="/contacts" className={setAction}>
+            Контакты
           </NavLink>
         </div>
         <button type="button" className={style.buttonTrees} onClick={scrollGardenPlan}>

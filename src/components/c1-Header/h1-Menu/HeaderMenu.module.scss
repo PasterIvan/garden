@@ -50,7 +50,7 @@ a:hover {
 
 .text {
   @include flexCenterJustify(space-between);
-  width: 100%;
+  width: 150%;
 
   text-align: center;
 }
@@ -67,11 +67,18 @@ a:hover {
   @include text($textLinkFont, 18px, 700, 21px, $textLinkColor);
   text-decoration: none;
 }
+.burgerLink .active {
+  color: $textLinkColorHover;
+}
 
 .text a:hover,
 .burger a:hover {
   color: $textLinkColorHover;
   text-decoration: none;
+}
+
+.text .active {
+  color: $textLinkColorHover;
 }
 
 .buttonTrees {
