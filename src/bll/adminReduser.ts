@@ -14,16 +14,7 @@ const initState = {
   },
   gallery: {
     video_link: '',
-    photo1: '',
-    photo2: '',
-    photo3: '',
-    photo4: '',
-    photo5: '',
-    photo6: '',
-    photo7: '',
-    photo8: '',
-    photo9: '',
-    photo10: '',
+    photos: [''],
   },
   festival: {
     video_link: '',

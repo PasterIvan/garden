@@ -3,35 +3,35 @@
   margin: 126px auto 0;
 }
 
-.picture {
+.pictures {
   overflow-x: scroll;
 
-  width: 100%;
   margin: 47px auto 0 auto;
 
   white-space: nowrap;
 }
-
-.picture img {
+.picture {
   display: inline-block;
 
-  width: 320px;
-  height: 200px;
+  max-height: 200px;
   margin: 0 20px 31px 0;
 
   vertical-align: top;
+}
+.picture img {
+  max-height: 200px;
 
   border-radius: 8px;
 }
 
-.picture::-webkit-scrollbar {
+.pictures::-webkit-scrollbar {
   height: 10px;
 
   background-color: #ebdbdb;
   border-radius: 5px;
 }
 
-.picture::-webkit-scrollbar-thumb {
+.pictures::-webkit-scrollbar-thumb {
   background-color: #8da67a;
   border-radius: 5px;
 }

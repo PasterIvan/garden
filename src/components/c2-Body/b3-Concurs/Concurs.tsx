@@ -10,7 +10,13 @@ import Dialog from '@mui/material/Dialog'
 import DialogContent from '@mui/material/DialogContent'
 import DialogActions from '@mui/material/DialogActions'
 import Button from '@mui/material/Button'
-import { winners } from './ConcursState'
+
+import Зямина from 'components/c2-Body/b3-Concurs/img/Зямина.png'
+import Максимова from 'components/c2-Body/b3-Concurs/img/Максимова.png'
+import Пищугина from 'components/c2-Body/b3-Concurs/img/Пищугина.png'
+import Манцурова from 'components/c2-Body/b3-Concurs/img/Манцурова.png'
+import Андреева from 'components/c2-Body/b3-Concurs/img/Андреева.png'
+import Алифанов from 'components/c2-Body/b3-Concurs/img/Алифанов.png'
 
 export const Concurs: React.FC = () => {
   const dispatch = useAppDispatch()
@@ -22,7 +28,7 @@ export const Concurs: React.FC = () => {
   const concurs = useAppSelector((state) => state.admin.concurs)
   const gallery = useAppSelector((state) => state.admin.gallery)
   const concursContent = { __html: concurs.content }
-
+  const winners = [Зямина, Максимова, Пищугина, Манцурова, Андреева, Алифанов]
   return (
     <div className={style.aboutConcurs}>
       <HeaderBlock title="КОНКУРС" text="Ознакомьтесь с работами финалистов" />
@@ -55,7 +61,7 @@ export const Concurs: React.FC = () => {
           const [open, setOpen] = React.useState(false)
           const [winner, setWinner] = useState('')
 
-          const onChangeImg = () => setWinner(w.certificate)
+          const onChangeImg = () => setWinner(w)
           const handleClickOpen = (): void => {
             onChangeImg()
             setOpen(true)
@@ -66,8 +72,8 @@ export const Concurs: React.FC = () => {
           }
 
           return (
-            <div key={w.id} className={style.aboutConcursGallery}>
-              <img src={w.certificate} alt="" onClick={handleClickOpen} onChange={onChangeImg} />
+            <div key={w} className={style.aboutConcursGallery}>
+              <img src={w} alt="" onClick={handleClickOpen} onChange={onChangeImg} />
               <Dialog
                 open={open}
                 onClose={handleClose}
