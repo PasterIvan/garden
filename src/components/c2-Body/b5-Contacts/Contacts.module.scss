@@ -11,6 +11,16 @@
   width: 75%;
   margin: 0 auto;
 }
+
+.plan {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.plan img {
+  width: 100%;
+  border-radius: 10px;
+}
 .contactsBodyBlock {
   @include flexCenterJustify(space-between);
   @include text($textLinkFont, 18px, 600, 140%, none);
@@ -24,7 +34,11 @@
   font-weight: 400;
   width: 49%;
 }
-
+@media (max-width: 1023px) {
+  .contactsBody {
+    width: 95%;
+  }
+}
 @media (max-width: 425px) {
   .contacts {
     padding-top: 70px;

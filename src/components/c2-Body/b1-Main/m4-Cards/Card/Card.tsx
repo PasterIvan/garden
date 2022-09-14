@@ -27,9 +27,9 @@ export const Card: React.FC<CardCT> = ({ idZone, idCard, img, title, isDone, tex
   const image = {
     backgroundImage: `url(${img})`,
   }
-  const clickButton = () => {
-    onChangeCard(idZone, idCard)
-  }
+  // const clickButton = () => {
+  //   onChangeCard(idZone, idCard)
+  // }
 
   const onChangeCard = (idZone: string, idCard: string): void => {
     dispatch(choosePlantAC({ idZone, idCard }))
@@ -66,15 +66,13 @@ export const Card: React.FC<CardCT> = ({ idZone, idCard, img, title, isDone, tex
           </DialogContent>
           <DialogActions>
             <Button onClick={handleClose} color={'success'}>
-              OK
+              ЗАКРЫТЬ
             </Button>
           </DialogActions>
         </Dialog>
       </div>
       <div className={isDone ? style.selectedBox : style.box}>
-        <div style={image} className={style.img} onClick={handleClickOpen}>
-          {/*<img src={img} alt="" />*/}
-        </div>
+        <div style={image} className={style.img} onClick={handleClickOpen} />
         <div style={isDone ? { display: 'none' } : {}}>{title}</div>
         <button onClick={() => onChangeCard(idZone, idCard)}>
           {isDone ? 'Отменить' : 'Выбрать'}

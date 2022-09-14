@@ -21,6 +21,13 @@
   @include flexColumnJustify(space-between);
   padding: 30px;
 }
+.contacts a {
+  color: white;
+  text-decoration: none;
+}
+.contacts a:hover {
+  color: $textLinkColorHover;
+}
 
 .contacts p,
 .documents p {

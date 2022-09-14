@@ -32,18 +32,20 @@
   color: #588535;
 }
 
-.aboutConcursGallery {
+.aboutConcursGalleryBlock {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
   width: 95%;
-  margin: 54px auto 0 auto;
+  margin: 0 auto;
+}
+.aboutConcursGallery {
+  margin: 0;
 }
 .aboutConcursGallery img {
-  min-width: 280px;
   max-width: 408px;
-  margin: 24px auto;
+  margin: 0 7px 7px;
 
   border-radius: 8px;
 }
@@ -64,5 +66,10 @@
 @media (max-width: 768px) {
   .aboutConcursBodyText {
     padding: 15px;
+  }
+}
+@media (max-width: 455px) {
+  .aboutConcursGallery img {
+    max-width: 320px;
   }
 }
