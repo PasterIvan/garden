@@ -17,7 +17,7 @@ export const adminAPI = {
     return instance.get<{ video_link: string; content: string }>('participantsPage')
   },
   getGallery() {
-    return instance.get<GalleryType>('gallery')
+    return instance.get<{ video_link: string; photos: string[] }>('gallery')
   },
   getFestival() {
     return instance.get<{ video_link: string; content: string }>('festival')
@@ -37,9 +37,4 @@ export type FormStateType = {
   blueZone: string[]
   violetZone: string[]
   contacts: FormContactsType
-}
-
-export type GalleryType = {
-  video_link: string
-  photos: string[]
 }

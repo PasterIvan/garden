@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { adminAPI, GalleryType } from 'api/api'
+import { adminAPI } from 'api/api'
 import { AppThunkType } from 'store/store'
 import { AxiosError } from 'axios'
 
@@ -32,7 +32,7 @@ const slice = createSlice({
     setConcurs(state, action: PayloadAction<{ video_link: string; content: string }>) {
       state.concurs = action.payload
     },
-    setGallery(state, action: PayloadAction<GalleryType>) {
+    setGallery(state, action: PayloadAction<{ video_link: string; photos: string[] }>) {
       state.gallery = action.payload
     },
     setFestival(state, action: PayloadAction<{ video_link: string; content: string }>) {
