@@ -17,7 +17,7 @@ export const Main: React.FC = () => {
       <GardenPlan />
       <Cards />
       <Gardener />
-      <Festival />
+      {/*<Festival />*/}
       <Gallery />
     </div>
   )

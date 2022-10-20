@@ -9,7 +9,7 @@ export const Header: React.FC = () => {
     <div className={style.flower}>
       <header>
         <HeaderMenu />
-        <Contacts />
+        {/*<Contacts />*/}
       </header>
     </div>
   )

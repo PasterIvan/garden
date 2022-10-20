@@ -33,6 +33,11 @@ export const Concurs: React.FC = () => {
     <div className={style.aboutConcurs}>
       <HeaderBlock title="КОНКУРС" text="Ознакомьтесь с работами финалистов" />
       <div className={style.aboutConcursBody}>
+        <div className={style.works}>
+          <a href={'http://konkurs.hutorstepnoi.ru/posts/'} target={'_blank'} rel="noreferrer">
+            <button>Работы финалистов</button>
+          </a>
+        </div>
         <div className={style.aboutConcursBodyPicture}>
           <img src={aboutConcurs} alt="" />
         </div>

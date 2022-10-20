@@ -16,10 +16,15 @@
   font-size: 24px;
   font-weight: 200;
 }
+
 .contacts,
 .documents {
   @include flexColumnJustify(space-between);
   padding: 30px;
+  &_link {
+    @include text($textLinkFont, 24px, 200, 36px, $textButtonColor);
+    text-decoration: none;
+  }
 }
 .contacts a {
   color: white;

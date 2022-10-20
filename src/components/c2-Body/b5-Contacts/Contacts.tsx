@@ -66,10 +66,10 @@ export const Contacts: React.FC = () => {
           <div className={title}>БИК:</div>
           <div className={text}>042007681</div>
         </div>
-        <div className={block}>
-          <div className={title}>e-mail</div>
-          <div className={text}>eduard_dolmatov@mail.ru</div>
-        </div>
+        {/*<div className={block}>*/}
+        {/*  <div className={title}>e-mail</div>*/}
+        {/*  <div className={text}>eduard_dolmatov@mail.ru</div>*/}
+        {/*</div>*/}
       </div>
     </div>
   )

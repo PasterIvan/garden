@@ -3,7 +3,7 @@ import Dialog from '@mui/material/Dialog'
 import DialogContent from '@mui/material/DialogContent'
 import DialogActions from '@mui/material/DialogActions'
 import Button from '@mui/material/Button'
-import React, { FormEvent, useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 type PictureType = {
   picture: string

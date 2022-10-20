@@ -12,14 +12,41 @@
   @include text($textLinkFont, 18px, 400, 140%, none);
   @include flexColumnJustify(center);
   width: 75%;
-  margin: 64px auto 0 auto;
+  margin: 0 auto;
 }
+
+.works {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+
+  a {
+    @include text($textLinkFont, 32px, 700, 100%, $textLinkColorHover);
+    text-decoration: none;
+    width: 50%;
+
+    button {
+      @include text($textLinkFont, 18px, 700, 21px, $textButtonColor);
+      @include button($textLinkColorHover, none, 6px);
+      cursor: pointer;
+      padding: 5px;
+      width: 100%;
+      height: 45px;
+      &:hover {
+        @include button($textButtonColor, $borderButton + $textLinkColorHover, 6px);
+        color: $textLinkColorHover;
+      }
+    }
+  }
+}
+
 .aboutConcursBodyPicture {
   display: block;
 
   width: 100%;
   height: 100%;
 }
+
 .aboutConcursBodyPicture svg {
   margin: 0;
   padding: 0;
@@ -28,6 +55,7 @@
 .aboutConcursBodyText {
   padding: 34px;
 }
+
 .aboutConcursBodyTextGreen {
   color: #588535;
 }
@@ -39,10 +67,15 @@
 
   width: 95%;
   margin: 0 auto;
+  img:hover {
+    cursor: pointer;
+  }
 }
+
 .aboutConcursGallery {
   margin: 0;
 }
+
 .aboutConcursGallery img {
   max-width: 408px;
   margin: 0 7px 7px;
@@ -59,7 +92,6 @@
   }
   .aboutConcursBody {
     width: 95%;
-    margin: 30px auto 0;
   }
 }
 
@@ -68,6 +100,7 @@
     padding: 15px;
   }
 }
+
 @media (max-width: 455px) {
   .aboutConcursGallery img {
     max-width: 320px;

@@ -5,10 +5,10 @@
   content: url('img/flower.svg');
 
   position: fixed;
-  top: 0%;
+  top: 0;
   right: 89.55%;
   bottom: 97.84%;
-  left: 2.06%;
+  left: 1%;
 }
 
 .flower {
@@ -21,8 +21,9 @@
 }
 
 header {
-  @include flexColumnJustify(space-between);
+  @include flexColumnJustify(center);
   align-items: flex-end;
+  text-align: center;
   width: 75%;
   height: 87px;
   background-color: #ffffff;

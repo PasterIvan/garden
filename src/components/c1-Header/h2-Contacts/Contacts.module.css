@@ -1,6 +1,6 @@
 .contacts {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
 
   width: 184px;
   height: 18px;
