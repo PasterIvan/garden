@@ -4,11 +4,13 @@
 
 .cards {
   @include flexColumnJustify(space-between);
+
   flex-wrap: wrap;
   align-items: center;
 }
 .cards span {
   @include text($textTitleFont, 16px, 400, 160%, $textTitleSecondColor);
+
   text-align: center;
 }
 

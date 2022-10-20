@@ -1,8 +1,10 @@
 @import 'src/styles/mixin.scss';
+
 @import 'src/styles/variables.scss';
 
 .gardener {
   @include flexColumnJustify(center);
+
   width: 75%;
   margin: 0 auto;
 }

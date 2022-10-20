@@ -1,4 +1,5 @@
 @import 'src/styles/mixin.scss';
+
 @import 'src/styles/variables.scss';
 
 .festival {
@@ -17,7 +18,9 @@
 
 .text {
   @include text($textLinkFont, 16px, 400, 140%, none);
+
   padding: 34px;
+
   background-color: #ffffff;
 }
 

@@ -10,8 +10,11 @@
 
 .box {
   @include text($textCardsFont, 24px, 600, 30px, $textColor);
+
   @include flexColumnJustify(space-evenly);
+
   position: relative;
+
   align-items: center;
 
   box-sizing: border-box;
@@ -26,7 +29,9 @@
 
 .selectedBox {
   @include text($textCardsFont, 24px, 600, 30px, $textColor);
+
   @include flexColumnJustify(space-evenly);
+
   align-items: center;
 
   box-sizing: border-box;
@@ -41,6 +46,7 @@
 
 .box button {
   @include text($textLinkFont, 16px, 400, 24px, $textTitleSecondColor);
+
   cursor: pointer;
 
   width: 128.06px;
@@ -51,13 +57,15 @@
   border-radius: 10px;
 }
 .box button:hover {
-  border: none;
-  background: #69c889;
   color: $textButtonColor;
+
+  background: #69c889;
+  border: none;
 }
 
 .selectedBox button {
   @include text($textLinkFont, 16px, 400, 24px, $textButtonColor);
+
   cursor: pointer;
 
   width: 128.06px;
@@ -68,20 +76,22 @@
   border-radius: 10px;
 }
 .selectedBox button:hover {
+  color: $textTitleSecondColor;
+
   background: #ffffff;
   border: $borderButton rgba(55, 74, 61, 0.36);
   border-radius: 10px;
-  color: $textTitleSecondColor;
 }
 
 .img {
+  cursor: pointer;
+
   width: 181px;
   height: 253px;
 
   background-position: center;
   background-size: cover;
   border-radius: 10px;
-  cursor: pointer;
 }
 
 @media (max-width: 768px) {

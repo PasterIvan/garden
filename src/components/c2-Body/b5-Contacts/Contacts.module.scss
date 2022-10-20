@@ -1,8 +1,10 @@
 @import 'src/styles/mixin.scss';
+
 @import 'src/styles/variables.scss';
 
 .contacts {
   @include flexColumnJustify(none);
+
   width: 100%;
   margin: 0 auto;
   padding-top: 100px;
@@ -19,26 +21,33 @@
 }
 .plan img {
   width: 100%;
+
   border-radius: 20px;
 }
 .contactsBodyBlock {
   @include flexCenterJustify(space-between);
+
   @include text($textLinkFont, 18px, 600, 140%, none);
+
   padding-bottom: 20px;
 }
 .contactsBodyBlockTitle {
-  text-align: end;
   width: 49%;
+
+  text-align: end;
 }
 .contactsBodyBlockText {
-  font-weight: 400;
   width: 49%;
+
+  font-weight: 400;
 }
+
 @media (max-width: 1023px) {
   .contactsBody {
     width: 95%;
   }
 }
+
 @media (max-width: 425px) {
   .contacts {
     padding-top: 70px;
@@ -47,11 +56,13 @@
     @include flexColumnJustify(none);
   }
   .contactsBodyBlockTitle {
-    text-align: start;
     width: 100%;
+
+    text-align: start;
   }
   .contactsBodyBlockText {
-    font-weight: 400;
     width: 100%;
+
+    font-weight: 400;
   }
 }

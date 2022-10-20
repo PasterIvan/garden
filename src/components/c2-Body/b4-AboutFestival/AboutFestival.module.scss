@@ -1,4 +1,5 @@
 @import 'src/styles/mixin.scss';
+
 @import 'src/styles/variables.scss';
 
 .aboutFestival {
@@ -21,10 +22,11 @@
 }
 
 .aboutFestivalBodyText {
+  @include text($textLinkFont, 16px, 400, 140%, none);
+
   width: 75%;
   margin: 0 auto;
   padding: 34px;
-  @include text($textLinkFont, 16px, 400, 140%, none);
 }
 
 .aboutFestivalBodyTextGreen {

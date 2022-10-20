@@ -1,14 +1,15 @@
 import React from 'react'
 
-import { HeaderBlock } from 'components/common/HeaderBlock'
+import plan from './img/Plan-1024x821.jpg'
 
 import style from 'components/c2-Body/b5-Contacts/Contacts.module.scss'
-import plan from './img/Plan-1024x821.jpg'
+import { HeaderBlock } from 'components/common/HeaderBlock'
 
 export const Contacts: React.FC = () => {
   const block = style.contactsBodyBlock
   const title = style.contactsBodyBlockTitle
   const text = style.contactsBodyBlockText
+
   return (
     <div className={style.contacts}>
       <HeaderBlock title="КОНТАКТЫ" />

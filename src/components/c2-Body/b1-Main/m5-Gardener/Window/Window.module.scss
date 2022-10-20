@@ -1,4 +1,5 @@
 @import 'src/styles/mixin.scss';
+
 @import 'src/styles/variables.scss';
 
 .border {
@@ -13,25 +14,33 @@
 
 .body {
   @include flexColumnJustify(space-evenly);
+
   @include text($textLinkFont, 46px, 700, 120%, #ffffff);
+
   gap: 10px;
   align-items: center;
+
   width: 160%;
   padding: 3% 0;
+
   background: #0ca941;
   border-radius: 16px;
 }
 
 .form {
   @include flexColumnJustify(space-evenly);
+
   width: 90%;
 }
 
 .form input {
   @include text($textFont, 14px, 400, 120%, none);
+
   gap: 10px;
+
   margin: 5px;
   padding: 10px 14px;
+
   background: #ffffff;
   border: $borderButton #bfc3ff;
   border-radius: 4px;
@@ -39,11 +48,15 @@
 
 .form button {
   @include text($textFont, 18px, 700, 21px, $textButtonColor);
+
   cursor: pointer;
+
   height: 59px;
   margin-top: 30px;
   margin-bottom: 5px;
+
   text-align: center;
+
   background: #49f3b6;
   border: none;
   border-radius: 90px;
@@ -51,8 +64,10 @@
 
 .text1 {
   @include text(none, 14px, 400, 120%, none);
-  text-align: center;
+
   width: 62%;
+
+  text-align: center;
 }
 
 .text1 a {
@@ -69,7 +84,9 @@
 
 .additional {
   @include text($textCardsFont, 32px, 600, 120%, none);
+
   @include flexColumnJustify(center);
+
   padding: 0 3%;
 }
 .additional a {
@@ -78,6 +95,7 @@
 }
 .text2 {
   @include text($textCardsFont, 16px, 500, 160%, none);
+
   width: 100%;
   margin-top: 24px;
 }
@@ -85,6 +103,7 @@
 @media (max-width: 768px) {
   .border {
     flex-direction: column;
+
     margin: 0 auto;
   }
 

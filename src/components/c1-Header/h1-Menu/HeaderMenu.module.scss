@@ -4,6 +4,7 @@
 
 .menu {
   @include flexCenterJustify(space-between);
+
   width: 100%;
 }
 
@@ -39,6 +40,7 @@ a:hover {
 
 .textAndButton {
   @include flexCenterJustify(space-between);
+
   width: 150%;
 }
 
@@ -50,6 +52,7 @@ a:hover {
 
 .text {
   @include flexCenterJustify(space-between);
+
   width: 150%;
 
   text-align: center;
@@ -65,6 +68,7 @@ a:hover {
 .text a,
 .burgerLink a {
   @include text($textLinkFont, 18px, 700, 21px, $textLinkColor);
+
   text-decoration: none;
 }
 .burgerLink .active {
@@ -83,7 +87,9 @@ a:hover {
 
 .buttonTrees {
   @include text($textLinkFont, 18px, 700, 21px, $textButtonColor);
+
   @include button($textLinkColorHover, none, 6px);
+
   cursor: pointer;
 
   width: 155px;
@@ -93,6 +99,7 @@ a:hover {
 .buttonTrees:hover,
 .buttonMenu:hover {
   @include button($textButtonColor, $borderButton + $textLinkColorHover, 6px);
+
   color: $textLinkColorHover;
 }
 
@@ -112,7 +119,9 @@ a:hover {
 
   .buttonMenu {
     @include text($textLinkFont, 18px, 700, 21px, $textButtonColor);
+
     @include button($textLinkColorHover, none, 6px);
+
     display: block;
 
     width: 156px;

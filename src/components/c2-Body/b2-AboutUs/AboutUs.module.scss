@@ -1,4 +1,5 @@
 @import 'src/styles/mixin.scss';
+
 @import 'src/styles/variables.scss';
 
 .aboutUs {
@@ -11,9 +12,11 @@
 }
 .aboutUsBody {
   @include text($textLinkFont, 18px, 300, 140%, none);
+
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+
   width: 87.5%;
   margin: 0 auto 0 0;
 }
@@ -40,7 +43,9 @@
   }
   .aboutUsBody {
     @include flexColumnJustify(space-between);
+
     align-items: center;
+
     width: 100%;
     margin: 30px auto 0;
   }

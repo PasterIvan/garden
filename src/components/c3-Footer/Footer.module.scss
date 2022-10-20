@@ -1,4 +1,5 @@
 @import 'src/styles/mixin.scss';
+
 @import 'src/styles/variables.scss';
 
 .background {
@@ -7,8 +8,10 @@
 
 .footer {
   @include text($textLinkFont, 24px, 600, 36px, $textButtonColor);
+
   display: flex;
   justify-content: space-between;
+
   width: 75%;
   margin: 0 auto;
 }
@@ -20,6 +23,7 @@
 .contacts,
 .documents {
   @include flexColumnJustify(space-between);
+
   padding: 30px;
   &_link {
     @include text($textLinkFont, 24px, 200, 36px, $textButtonColor);
